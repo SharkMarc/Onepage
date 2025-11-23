@@ -88,7 +88,7 @@ $min-width-xl: 1200px;
     display: flex;
   }
 
-  svg {
+  .swiper-navigation-icon, svg {
     color: #222;
     font-size: 3rem;
     width: 27px;
@@ -99,6 +99,23 @@ $min-width-xl: 1200px;
     height: 27px;
     line-height: normal;
     text-transform: none !important;
+  }
+}
+
+.app {
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-item {
+    width: 50rem;
   }
 }
 

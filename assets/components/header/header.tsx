@@ -13,12 +13,13 @@ export const Header = ({}) => (
                     <li><a href="#prozessevaluation">Prozessevaluation</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
-                <button className="cta">Get Started</button>
+                {/*<button className="cta">Get Started</button>*/}
             </nav>
             <div className="hero">
                 <h1>Welcome to MyOnePager</h1>
-                <p>Eine moderne, responsive React-Website für deine Ideen.</p>
-                <button className="cta">Learn More</button>
+                <p>Hier eine Idee einfügen.</p>
+                <p>öööh n bild hier ?</p>
+                <button className="cta">ööh button</button>
             </div>
 
         </header>

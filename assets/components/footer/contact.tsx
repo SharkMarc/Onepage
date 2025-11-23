@@ -19,11 +19,11 @@ export const Contact = ({}) => (
                                  loading="lazy" fetchPriority="auto"/></picture>
                     </div>
                 </div>
-                <div className="contact-text d-grid small-gap"><p className="text-bold">Alexander Becker</p><a
-                    data-testid="phone-contact" data-id="phone-contact" href="phone:+49 40 3290473818"
-                    className="fm-btn fm-btn-no-style text-thin text ">+49 40 3290473818</a><a
-                    data-testid="mail-contact" data-id="mail-contact" href="mailto:presse@freelancermap.de"
-                    className="fm-btn fm-btn-no-style text-thin text ">presse@freelancermap.de</a></div>
+                <div className="contact-text d-grid gap-4"><p className="text-bold">Marc Spree</p><a
+                    data-testid="phone-contact" data-id="phone-contact" href="phone:+49 40 111111111111"
+                    className="btn style">+49 40 1111111111111</a><a
+                    data-testid="mail-contact" data-id="mail-contact" href="mailto:marcspree.steam@gmx.de"
+                    className="fm-btn fm-btn-no-style text-thin text ">marcspree.steam@gmx.de</a></div>
             </div>
         </div>
 

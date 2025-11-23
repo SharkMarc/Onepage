@@ -53,7 +53,7 @@ const App = () => (
     <>
         <Header/>
 
-        <div className="app flex-wrap">
+        <main className="app flex-wrap">
             <Carousel/>
             <div className={'flex-wrap gap-8'}>
                 {cards.map((card, i) => (
@@ -86,7 +86,7 @@ const App = () => (
                 </div>
             </div>
            <Contact />
-        </div>
+        </main>
     </>
 );
 
