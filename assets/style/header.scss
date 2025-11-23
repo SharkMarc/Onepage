@@ -1,0 +1,114 @@
+$min-width-sm: 576px;
+$min-width-md: 768px;
+$min-width-lg: 992px;
+$min-width-xl: 1200px;
+
+:root {
+  --content-width: 100%;
+  --spacing-80: 5rem; //80px
+  --spacing-40: 2.5rem; //40px
+  --spacing-24: 1.5rem; //24px
+  --spacing-18: 1.125rem; //18px
+  --spacing-16: 1rem; //16px
+  --spacing-12: .75rem; //12px
+  --spacing-8: .5rem; //8px
+  --spacing-6: .375rem; //6px
+  --spacing-4: .25rem; //4px
+  --spacing-2: .125rem; //2px
+  --pagemargin: var(--spacing-16);
+
+  @media (min-width: $min-width-sm) {
+    --pagemargin: var(--spacing-24);
+    --content-width: 48rem;
+  }
+
+  @media (min-width: $min-width-md) {
+    --content-width: 64rem;
+    --pagemargin: var(--spacing-40);
+  }
+
+  @media (min-width: $min-width-lg) {
+    --content-width: 80rem;
+    --gap-betweensections: var(--spacing-40);
+  }
+}
+
+
+.header-content {
+  margin-left: auto;
+  margin-right: auto;
+  --content-width: 64rem;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
+
+  nav {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .cta {
+      background: #fff;
+      color: #764ba2;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      text-underline: none;
+      align-items: center;
+      margin: 0;
+      padding-inline-start: 0;
+
+      li{
+        padding:8px;
+        margin:8px;
+      }
+
+      li:hover {
+        background: #ffffff14;
+        text-underline: #764ba2;
+        color:red;
+
+        font-size: 16px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .hero {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      font-size: 1rem;
+    }
+  }
+}

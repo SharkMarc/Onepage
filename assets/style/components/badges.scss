@@ -1,0 +1,77 @@
+.badge{
+  align-items: center;
+  background: #fff;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  color: #222222;
+  cursor: default;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight:400;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding: .375rem .375rem;
+  text-wrap: nowrap;
+}
+
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px
+}
+
+.badge {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  color: #222;
+  cursor: default;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1;
+  padding: 0.375rem 0.375rem;
+  text-wrap: nowrap
+}
+
+.badge.badge-no-border {
+  border-color: transparent
+}
+
+.badge.badge-brand,.badge.badge-highlight {
+  border: 1px solid #000
+}
+
+.badge i {
+  font-size: 8px;
+  font-weight: 500
+}
+
+.badge i.fa-solid,.badge i.fas {
+  font-weight: 900
+}
+
+.badge.badge-icon-start i {
+  margin-right: 8px
+}
+
+.badge.badge-icon-end i {
+  margin-left: 8px
+}
+
+@media (hover: hover) {
+  .badge.badge-action:focus-visible:hover,a.badge:focus-visible:hover {
+    box-shadow:none
+  }
+}
+
+.badge-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  white-space: break-spaces
+}

@@ -1,0 +1,21 @@
+@use "components/badges" as *;
+@use "components/column" as *;
+@use "components/carousell" as *;
+@use "components/card" as *;
+@use "components/swiper" as *;
+
+body {
+  margin: 0;
+}
+
+.break-out {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+.app {
+  //background: linear-gradient(90deg, rgba(101, 47, 128, 1) 0%, rgba(139, 87, 199, 1) 50%, rgba(101, 47, 128, 1) 100%);
+}

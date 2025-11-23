@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",  // oder "react" bei älteren Versionen
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true
+  },
+  "include": ["assets/**/*.tsx", "assets/**/*.ts"]
+}

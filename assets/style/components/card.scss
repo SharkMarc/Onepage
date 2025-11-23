@@ -1,0 +1,38 @@
+.card {
+  flex-direction: column;
+  display:flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+
+  .info {
+    color: #646464;
+  }
+
+  .title{
+    font-size: 1.25rem;
+    font-weight: 600
+  }
+
+  .place {
+    font-weight: 500;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+}

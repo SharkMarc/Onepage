@@ -1,0 +1,116 @@
+@use "sass:math";
+@use "sass:map";
+@use "../variables";
+
+$breakpoints: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+$min-width-xs: 576px;
+$min-width-sm: 576px;
+$min-width-md: 768px;
+$min-width-lg: 992px;
+$min-width-xl: 1200px;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: map.get($breakpoints, xl);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+[class*="col-"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+@function col-width($cols) {
+  @return calc($cols / 12);
+}
+
+
+
+// Responsive columns
+@each $break, $size in $breakpoints {
+  @for $i from 1 through 12 {
+    .col-#{$break}-#{$i} {
+      @media (min-width: $size) {
+        flex: 0 0 col-width($i);
+        max-width: col-width($i);
+      }
+    }
+  }
+}
+
+// Optional: full width for extra small
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.d-flex {
+  display:flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.tab-panel {
+  padding: unset;
+  border-radius: unset;
+  background: unset;
+  border: unset;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 2rem;
+  font-style: normal;
+  color: #222222;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+}
+
+.swiper-pagination-bullet-active {
+  color: #222222;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  padding: 0;
+  color: #222222;
+  display: none;
+
+  @media (min-width: $min-width-xs) {
+    display: flex;
+  }
+}
+
+.swiper-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Anzahl der Zeilen */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
