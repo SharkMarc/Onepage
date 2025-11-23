@@ -8,13 +8,13 @@ export const Contact = ({}) => (
                 <div className="rounded-image-border">
                     <div className="rounded-profile-image" style={{borderRadius:"1rem"}}>
                         <picture>
-                            <source
-                                srcSet="https://img-cdn.freelancermap.de/116x0/filters:format(webp)//press/Alexander-Becker-pr-2.jpg"
-                                type="image/webp"/>
-                            <source
-                                srcSet="https://img-cdn.freelancermap.de/116x0/filters:format(png)}//press/Alexander-Becker-pr-2.jpg"
-                                type="image/png"/>
-                            <img src="https://img-cdn.freelancermap.de/64x0//press/Alexander-Becker-pr-2.jpg"
+                            {/*<source*/}
+                            {/*    srcSet="https://img-cdn.freelancermap.de/116x0/filters:format(webp)//press/Alexander-Becker-pr-2.jpg"*/}
+                            {/*    type="image/webp"/>*/}
+                            {/*<source*/}
+                            {/*    srcSet="https://img-cdn.freelancermap.de/116x0/filters:format(png)}//press/Alexander-Becker-pr-2.jpg"*/}
+                            {/*    type="image/png"/>*/}
+                            <img src="example.com"
                                  alt="Alexander Becker, Presse" width="116" height="116" className="img-responsive "
                                  loading="lazy" fetchPriority="auto"/></picture>
                     </div>
