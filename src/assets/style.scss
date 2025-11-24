@@ -1,6 +1,6 @@
-@use "style/flex" as *;
-@use "style/header" as *;
-@use "style/base" as *;
+@use "flex" as *;
+@use "header" as *;
+@use "base" as *;
 
 .app {
   display: flex;

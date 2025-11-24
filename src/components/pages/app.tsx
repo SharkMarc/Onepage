@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style.scss';
-import {Card} from './components/card';
-import {Header} from "./components/header/header";
-import {Badge} from "./components/badge";
-import {Carousel} from "./components/carousell";
-import {Preva} from "./components/preva/preva";
-import {Contact} from "./components/footer/contact";
+import '../../assets/style.scss';
+import {Card} from '../card';
+import {Header} from "../header/header";
+import {Badge} from "../badge";
+import {Carousel} from "../carousell";
+import {Preva} from "../preva/preva";
+import {Contact} from "../footer/contact";
 
 const badgesClientSide = ["React",
     "Javascript",
