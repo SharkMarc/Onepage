@@ -30,7 +30,7 @@ export const Carousel: React.FC = () => {
                     modules={[Navigation, Pagination]}
                     slidesPerView={1}
                     navigation
-                    pagination={{clickable: true,}}
+                    pagination={{clickable: true, type: "bullets"}}
                     autoplay={{
                         delay: 3000,      // 3 Sekunden
                         disableOnInteraction: false
