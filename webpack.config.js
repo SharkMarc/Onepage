@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './assets/app.tsx',
+    entry: './src/app.tsx',
     module: {
         rules: [
             {
@@ -33,7 +33,7 @@ module.exports = {
         static: './public',
         hot: true,
         watchFiles: {
-            paths: ['src/**/*', 'assets/**/*'],
+            paths: ['src/**/*', 'src/**/*'],
             options: { usePolling: true },
         },
     },

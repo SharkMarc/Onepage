@@ -78,7 +78,7 @@ c303 -144 373 -525 139 -759 -186 -186 -476 -186 -662 0 -186 186 -186 476 0
                 <div className="hero">
                     <h1>Welcome to MyOnePager</h1>
                     <p>Hier eine Idee einfügen.</p>
-                    <img src={'../assets/images/marc_white.png'} alt={'Marc'}/>
+                    {/*<img src={'../assets/images/marc_white.png'} alt={'Marc'}/>*/}
 
                     {/*<img src={Marc} alt={'Marc'}/>*/}
                     <p>öööh n bild hier ?</p>
