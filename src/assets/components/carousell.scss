@@ -1,10 +1,4 @@
-@use "../variables";
-
-$min-width-xs: 576px;
-$min-width-sm: 576px;
-$min-width-md: 768px;
-$min-width-lg: 992px;
-$min-width-xl: 1200px;
+@use "../variables" as *;
 
 .carousel {
   display: flex;

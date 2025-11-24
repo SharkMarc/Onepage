@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "sass:map";
-@use "../variables";
+@use "../variables" as *;
 
 $breakpoints: (
         sm: 576px,
@@ -8,12 +8,6 @@ $breakpoints: (
         lg: 992px,
         xl: 1200px
 );
-
-$min-width-xs: 576px;
-$min-width-sm: 576px;
-$min-width-md: 768px;
-$min-width-lg: 992px;
-$min-width-xl: 1200px;
 
 .container {
   width: 100%;

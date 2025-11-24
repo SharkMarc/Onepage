@@ -6,11 +6,8 @@ export const Contact = ({}) => (
         <div id={"aboutMe"} className="contact"><h2 className="mg-b-display-m">Kontakt</h2>
             <div className="contact-information mg-b-xl">
                 <div className="rounded-image-border">
-                    <div className="rounded-profile-image" style={{borderRadius:"1rem"}}>
-                        <picture>
-                            <img src="example.com"
-                                 alt="Marc Spree" width="116" height="116" className="img-responsive "
-                                 loading="lazy" fetchPriority="auto"/></picture>
+                    <div className="rounded-image" style={{borderRadius:"1rem"}}>
+                        <img className={'img-marc img-responsive'} src={'../assets/images/marc_white.png'} alt={'Marc'}/>
                     </div>
                 </div>
                 <div className="contact-text d-grid gap-4"><p className="text-bold">Marc Spree</p><a
