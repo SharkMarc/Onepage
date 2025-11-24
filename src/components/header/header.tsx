@@ -58,7 +58,7 @@ c303 -144 373 -525 139 -759 -186 -186 -476 -186 -662 0 -186 186 -186 476 0
                     </ul>
                 </nav>
 
-                <nav className="mobile-nav slide-in">
+                <nav className={isOpen ? "mobile-nav slide-in":"mobile-nav "}>
                     <ul className={isOpen ? "nav-links" : "d-none"}>
                         <li>
                             <div onClick={() => scrollTo("aboutMe")}>About me</div>

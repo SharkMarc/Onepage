@@ -4,6 +4,7 @@
 @use "components/card" as *;
 @use "components/swiper" as *;
 @use "components/preva" as *;
+@use "components/buttons" as *;
 @use "components/image" as *;
 
 body {
@@ -17,6 +18,9 @@ body {
   width: 100%;
 }
 
+.text-bold {
+  font-weight: 600;
+}
 
 
 :root {

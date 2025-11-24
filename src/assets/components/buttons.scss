@@ -1,0 +1,12 @@
+.btn-no-style{
+  background-color: unset;
+  border: unset;
+  border-radius: unset;
+  box-shadow: none;
+  color: #222;
+  padding: 0;
+
+  &:hover{
+    color: #5200ff
+  }
+}

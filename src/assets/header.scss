@@ -134,13 +134,16 @@
     top: 48px;
     bottom: 48px;
     width: 100%;
-    z-index: 3;
+    z-index: -3;
     left: 0;
+
+    &.slide-in{
+      z-index:3;
+    }
 
     @media (min-width: 768px) {
       display: none;
     }
-
 
     ul {
       display: block;
