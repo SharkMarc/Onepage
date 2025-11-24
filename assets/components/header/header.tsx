@@ -1,5 +1,5 @@
 import React from 'react';
-import Marc from '../../images/marc_white.png'
+
 
 
 export const Header = ({}) => {
@@ -79,7 +79,8 @@ c303 -144 373 -525 139 -759 -186 -186 -476 -186 -662 0 -186 186 -186 476 0
                     <h1>Welcome to MyOnePager</h1>
                     <p>Hier eine Idee einfügen.</p>
                     <img src={'../assets/images/marc_white.png'} alt={'Marc'}/>
-                    <img src={Marc} alt={'Marc'}/>
+
+                    {/*<img src={Marc} alt={'Marc'}/>*/}
                     <p>öööh n bild hier ?</p>
                     <button className="btn">ööh button</button>
                 </div>
