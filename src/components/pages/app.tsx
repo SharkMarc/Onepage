@@ -8,6 +8,47 @@ import {Carousel} from "../carousell";
 import {Preva} from "../preva/preva";
 import {Contact} from "../footer/contact";
 import {HowIWork} from "./howIWork";
+// src/components/pages/projectImages.ts
+import freelancermapImg from '../assets/images/freelancermap.png';
+import designenlassenImg from '../assets/images/designenlassen.png';
+import speisekarteImg from '../assets/images/speisekarte.png';
+import prevaImg from '../assets/images/preva.png';
+import freelanceomatImg from '../assets/images/freelanceomat.png';
+import gastromanagerImg from '../assets/images/gastromanager.png';
+
+export const projectImagePaths = [
+    {
+        src: freelancermapImg,
+        alt: 'freelancermap',
+        link: 'https://www.freelancermap.de/'
+    },
+    {
+        src: designenlassenImg,
+        alt: 'designenlassen',
+        link: 'https://www.designenlassen.de/'
+    },
+    {
+        src: speisekarteImg,
+        alt: 'speisekarte',
+        link: 'https://www.speisekarte.de/'
+    },
+    {
+        src: prevaImg,
+        alt: 'processevaluation',
+        link: 'https://processevaluation.de/'
+    },
+    {
+        src: freelanceomatImg,
+        alt: 'freelanceomat',
+        link: 'https://www.freelance-o-mat.de/'
+    },
+    {
+        src: gastromanagerImg,
+        alt: 'gastromanager',
+        link: 'https://gastro.speisekarte.de/anmelden'
+    }
+];
+
 
 const badgesClientSide = [
     {label: "React", tooltip: "Frontend Library für UI-Komponenten"},
@@ -43,41 +84,6 @@ const badgesServerSide = [
 const badgesUiUx = [
     {label: "Figma", tooltip: "UI/UX Design & Prototyping Tool"}
 ];
-
-const projectImagePaths = [
-    {
-        src: '../assets/images/freelancermap.png',
-        alt: 'freelancermap',
-        link: 'https://www.freelancermap.de/'
-    },
-    {
-        src: '../assets/images/designenlassen.png',
-        alt: 'designenlassen',
-        link: 'https://www.designenlassen.de/'
-    },
-    {
-        src: '../assets/images/speisekarte.png',
-        alt: 'speisekarte',
-        link: 'https://www.speisekarte.de/'
-    },
-    {
-        src: '../assets/images/preva.png',
-        alt: 'processevaluation',
-        link: 'https://processevaluation.de/'
-    },
-    {
-        src: '../assets/images/freelanceomat.png',
-        alt: 'freelanceomat',
-        link: 'https://www.freelance-o-mat.de/'
-    },
-    {
-        src: '../assets/images/gastromanager.png',
-        alt: 'gastromanager',
-        link: 'https://gastro.speisekarte.de/anmelden'
-    }
-
-
-]
 
 const badgesHowIWork = []
 

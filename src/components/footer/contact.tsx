@@ -1,5 +1,5 @@
 import React from 'react';
-
+import marc from '../assets/images/marc_white.png';
 
 export const Contact = ({}) => (
     <div className={''}>
@@ -7,7 +7,7 @@ export const Contact = ({}) => (
             <div className="contact-information mg-b-xl">
                 <div className="rounded-image-border">
                     <div className="rounded-image" style={{borderRadius: "1rem"}}>
-                        <img className={'img-marc img-responsive'} src={'../assets/images/marc_white.png'}
+                        <img className={'img-marc img-responsive'} src={marc}
                              alt={'Marc'}/>
                     </div>
                 </div>

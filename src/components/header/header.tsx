@@ -1,7 +1,7 @@
 import React from 'react';
 import {Contact} from "../footer/contact";
 import {Preva} from "../preva/preva";
-
+import marc from '../assets/images/marc_white.png';
 
 export const Header = ({}) => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -89,7 +89,7 @@ export const Header = ({}) => {
                                 Ich spreche Deutsch als Muttersprache und Englisch verhandlungssicher
                                 {/*</div>*/}</p>
                         </div>
-                        <img className={'img-marc img-responsive'} src={'../assets/images/marc_white.png'}
+                        <img className={'img-marc img-responsive'} src={marc}
                              alt={'Marc'}/>
                     </div>
 
