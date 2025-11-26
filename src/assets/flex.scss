@@ -40,6 +40,23 @@ $breakpoints: (
   display: grid;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 
 // Responsive columns
 @each $break, $size in $breakpoints {

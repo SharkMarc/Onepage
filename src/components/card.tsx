@@ -7,7 +7,7 @@ interface CardProps {
     link?: string;
     date?: string;
     place?: string;
-    name: string;
+    name?: string;
 }
 
 export const Card= ({ title, content, name, link, date, place }:CardProps) => (

@@ -17,10 +17,14 @@ export const Contact = ({}) => (
                        className="btn-no-style">
                         +49 40 1111111111111
                     </a>
-                    <a data-testid="mail-contact" data-id="mail-contact" href="mailto:marcspree.steam@gmx.de"
-                       className="btn-no-style">
-                        marcspree.steam@gmx.de
-                    </a>
+                    <p>
+                        Bei weiteren Fragen stehe ich ihnen per Mail gerne zur Verfügung:
+                        <a data-testid="mail-contact" data-id="mail-contact" href="mailto:marcspree.steam@gmx.de"
+                           className="btn-no-style">
+                            marcspree.steam@gmx.de
+                        </a>
+                    </p>
+
                 </div>
             </div>
         </div>

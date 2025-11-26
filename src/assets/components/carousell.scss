@@ -43,12 +43,12 @@
     &.prev {
       left: -50px;
     }
+
     &.next {
       right: -50px;
     }
   }
 }
-
 
 
 .tab-panel {
@@ -119,4 +119,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.projects-container {
+  border-radius: 16px;
+
+  img {
+    border-radius: 16px;
+  }
 }

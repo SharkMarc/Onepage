@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from './card';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Navigation, Pagination} from 'swiper/modules';
+import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,7 +23,70 @@ const cardsData = [
     },
 ];
 
-export const Carousel: React.FC = () => {
+const projectsData = [
+    {
+        title: 'designenlassen.de',
+        place: "designenlassen.de",
+        content: 'This is the first card.',
+        date: "01/2019 - 12/2020"
+    },
+    {
+        title: 'Frontend Developer',
+        place: "freelanceomat.de",
+        content: 'This is the second card.',
+        date: "01/2021 - bis heute"
+    },
+    {
+        title: 'gastromanager',
+        place: "gastromanager.de",
+        content: 'This is the second card.',
+        date: "01/2021 - bis heute"
+    },
+    {
+        title: 'prozessevaluation',
+        place: "prozessevaluation.de",
+        content: 'This is the second card.',
+        date: "01/2021 - bis heute"
+    },
+]
+
+interface CarouselProps {
+    isProject: boolean;
+    data?: any;
+}
+
+export const Carousel = ({isProject, data}: CarouselProps) => {
+    if (isProject) {
+        return (
+            <div className={"swiper-header-container"}>
+                <Swiper spaceBetween={50}
+                        modules={[Navigation, Pagination, Autoplay]}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{clickable: true, type: "bullets"}}
+                        speed={1200}
+                        autoplay={{
+                            delay: 3000,      // 3 Sekunden
+                            disableOnInteraction: false
+                        }}
+                        loop={true}
+
+                >
+                    {data.map((data, index) => (
+                        <SwiperSlide key={index}>
+
+                            <div className={'swiper-item'}>
+                                <a className={'projects-container'} href={data.link} target="_blank"
+                                   rel="noopener noreferrer">
+                                    <img className={'img-responsive'} src={data.src} alt={data.title}/>
+                                </a>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        );
+    }
     return (
         <div className={"swiper-header-container"}>
             <Swiper spaceBetween={50}
@@ -51,21 +114,6 @@ export const Carousel: React.FC = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {/*<div className="carousel">*/}
-            {/*    <button className="prev" onClick={prev}>&lt;</button>*/}
-            {/*    <div className="cards">*/}
-            {/*        {cardsData.map((card, index) => (*/}
-            {/*            <div*/}
-            {/*                key={index}*/}
-            {/*                className={`card-wrapper ${index === current ? 'active' : ''}`}*/}
-            {/*            >*/}
-            {/*                <Card name={card.title} title={card.title} content={card.content}/>*/}
-            {/*            </div>*/}
-            {/*        ))}*/}
-            {/*    </div>*/}
-            {/*    <button className="next" onClick={next}>&gt;</button>*/}
-            {/*</div>*/}
-
         </div>
     );
 };

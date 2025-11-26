@@ -7,40 +7,79 @@ import {Badge} from "../badge";
 import {Carousel} from "../carousell";
 import {Preva} from "../preva/preva";
 import {Contact} from "../footer/contact";
+import {HowIWork} from "./howIWork";
 
-const badgesClientSide = ["React",
-    "Javascript",
-    "TypeScript",
-    "Twig",
-    "JEST",
-    "(S)CSS",
-    "Bootstrap",
-    "SASS",
-    "Node.js",
-    "Responsive Design",
-    "SEO",
-    "Barrierefreiheit",
-    "React Server Side Rendering",
-    'Javascript',
-    'Typescript'
+const badgesClientSide = [
+    {label: "React", tooltip: "Frontend Library für UI-Komponenten"},
+    {label: "Javascript", tooltip: "DIE Sprache des Webs"},
+    {label: "TypeScript", tooltip: "JS + Types für bessere Wartbarkeit"},
+    {label: "Twig", tooltip: "Templating Engine für PHP/Symfony"},
+    {label: "JEST", tooltip: "JavaScript Testing Framework"},
+    {label: "(S)CSS", tooltip: "Moderne Stylesheets mit Nesting & mehr"},
+    {label: "Bootstrap", tooltip: "CSS-Framework für schnelle Layouts"},
+    {label: "SASS", tooltip: "CSS Präprozessor mit Variablen & Mixins"},
+    {label: "Node.js", tooltip: "Backend JS-Laufzeitumgebung"},
+    {label: "Responsive Design", tooltip: "Mobile-first Layout Prinzipien"},
+    {label: "SEO", tooltip: "Optimierung für Suchmaschinen"},
+    {label: "Barrierefreiheit", tooltip: "Accessibility Standards"},
+    {label: "React Server Side Rendering", tooltip: "SSR mit React (Next.js etc.)"},
+    {label: "Javascript", tooltip: "Programmiersprache für Frontend & Backend"},
+    {label: "Typescript", tooltip: "Statisches Typing für JS"}
 ];
 const tools = [
     "npm", "webpack", "git", "github"
 ]
 const badgesServerSide = [
-    "PHP",
-    "Symfony",
-    "MariaDB",
-    "Infrastruktur",
-    "DevOps",
-    "Docker / Docker Compose",
-    "Bitbucket",
-    "Jira",
+    {label: "PHP", tooltip: "Backend-Skriptsprache für Webanwendungen"},
+    {label: "Symfony", tooltip: "Enterprise PHP Framework für komplexe Apps"},
+    {label: "MariaDB", tooltip: "Open-Source SQL Datenbank (MySQL Fork)"},
+    {label: "Infrastruktur", tooltip: "Server, Netzwerke & Deployment-Prozesse"},
+    {label: "DevOps", tooltip: "CI/CD, Automatisierung & Deployment"},
+    {label: "Docker / Docker Compose", tooltip: "Containerisierung & Multi-Service Setup"},
+    {label: "Bitbucket", tooltip: "Code-Repository & Git Management Tool"},
+    {label: "Jira", tooltip: "Projekt- & Ticketmanagement für Teams"}
 ];
 
 const badgesUiUx = [
-    "Figma"
+    {label: "Figma", tooltip: "UI/UX Design & Prototyping Tool"}
 ];
+
+const projectImagePaths = [
+    {
+        src: '../assets/images/freelancermap.png',
+        alt: 'freelancermap',
+        link: 'https://www.freelancermap.de/'
+    },
+    {
+        src: '../assets/images/designenlassen.png',
+        alt: 'designenlassen',
+        link: 'https://www.designenlassen.de/'
+    },
+    {
+        src: '../assets/images/speisekarte.png',
+        alt: 'speisekarte',
+        link: 'https://www.speisekarte.de/'
+    },
+    {
+        src: '../assets/images/preva.png',
+        alt: 'processevaluation',
+        link: 'https://processevaluation.de/'
+    },
+    {
+        src: '../assets/images/freelanceomat.png',
+        alt: 'freelanceomat',
+        link: 'https://www.freelance-o-mat.de/'
+    },
+    {
+        src: '../assets/images/gastromanager.png',
+        alt: 'gastromanager',
+        link: 'https://gastro.speisekarte.de/anmelden'
+    }
+
+
+]
+
+const badgesHowIWork = []
 
 const cards = [
     {
@@ -57,61 +96,105 @@ const cards = [
     },
 ];
 
-const App = () => (
-    <>
-        <Header/>
 
-        <main>
-            <div className={'app flex-wrap'}>
-                <Carousel/>
-                <div className={'flex-wrap gap-8'}>
-                    {cards.map((card, i) => (
-                        <Card key={"badge-" + i} content={card.content} name={card.name} title={card.title}
-                              link={card.link}/>
-                    ))}
-                </div>
-                <div className={'flex-column gap-8 w-100'}>
-                    <h3>Client-side
-                        {/*<hr/>*/}
-                    </h3>
+const App = () => {
+// Katze in der Konsole für F12-Öffner
+    (function() {
+        const catArt = `
+      |\\---/|
+      | o_o |
+       \\_^_/ 
+  `;
 
-                    <div className={'badge-list'}>
-                        {badgesClientSide.map((badge, i) => (
-                            <Badge key={"badge-" + i} content={badge}/>
-                        ))}
+        const message = "%cHey du! Schön, dass du die Konsole geöffnet hast! 😸";
+
+        const styles = [
+            "color: #ff69b4; font-size: 16px; font-weight: bold;", // Nachricht
+            "color: #00ffff; font-size: 14px;" // Katze
+        ];
+
+        let devtoolsOpen = false;
+        const detectDevTools = () => {
+            const start = new Date();
+
+            const end = new Date();
+            if (end.getTime() - start.getTime() > 100) { // ✅ TypeScript-kompatibel
+                if (!devtoolsOpen) {
+                    devtoolsOpen = true;
+                    console.log("%c" + catArt, styles[1]);
+                    console.log(message, styles[0]);
+                }
+            }
+        };
+
+        setInterval(detectDevTools, 1000);
+    })();
+
+    return (
+        <>
+            <Header/>
+
+            <main>
+                <div className={'app flex-wrap'}>
+                    <h2>Projekte</h2>
+                    <Carousel isProject={true} data={projectImagePaths}/>
+                    <h2>Lebenslauf</h2>
+                    <Carousel isProject={false}/>
+                    {/*<div className={'flex-wrap gap-8'}>*/}
+                    {/*    {cards.map((card, i) => (*/}
+                    {/*        <Card key={"badge-" + i} content={card.content} name={card.name} title={card.title}*/}
+                    {/*              link={card.link}/>*/}
+                    {/*    ))}*/}
+                    {/*</div>*/}
+                    <div>
+                        <h2>Skills</h2>
+
+                        <div className={'flex-column gap-8 w-100'}>
+                            <h3>Client-side</h3>
+
+                            <div className={'badge-list'}>
+                                {badgesClientSide.map((badge, i) => (
+                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className={'flex-column gap-8 w-100'}>
+                            <h3>Server-side</h3>
+                            <div className={'badge-list'}>
+                                {badgesServerSide.map((badge, i) => (
+                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className={'flex-column gap-8 w-100'}>
+                            <h3>Ui / Ux</h3>
+                            <div className={'badge-list'}>
+                                {badgesUiUx.map((badge, i) => (
+                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className={'flex-column gap-8 w-100'}>
-                    <h3>Server-side</h3>
-                    <div className={'badge-list'}>
-                        {badgesServerSide.map((badge, i) => (
-                            <Badge key={"badge-" + i} content={badge}/>
-                        ))}
+
+                    <div>
+                        <h2>How i work</h2>
+                        <div className={'flex-column gap-8 w-100 text-center'}>
+                            <HowIWork/>
+                        </div>
                     </div>
-                </div>
-                <div className={'flex-column gap-8 w-100'}>
-                    <h3>Ui / Ux</h3>
-                    <div className={'badge-list'}>
-                        {badgesUiUx.map((badge, i) => (
-                            <Badge key={"badge-" + i} content={badge}/>
-                        ))}
-                    </div>
-                </div>
-                <div>
-                    Sprachen
-                    Deutsch
-                    Muttersprache
-                    Englisch
-                    verhandlungssicher
-                </div>
-                <div className={'preva-grid'}>
-                    <Preva/>
+
                     <Contact/>
+
+                    <div className={'preva-grid'}>
+                        <Preva/>
+                    </div>
                 </div>
-            </div>
-        </main>
-    </>
-);
+            </main>
+        </>
+    )
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(<App/>);
