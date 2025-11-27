@@ -75,6 +75,30 @@ $breakpoints: (
   }
 }
 
+.collapsible-header {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.collapsible-header:hover {
+  color: #007bff; /* Highlight beim Hover */
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow-y: hidden;    /* nur vertikal beschneiden */
+  overflow-x: visible;   /* Tooltip kann horizontal rausgehen */
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 0;
+}
+
+.collapsible-content.open {
+  max-height: 500px;     /* groß genug für Inhalte */
+  padding: 8px 0;
+  gap: 8px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
 // Optional: full width for extra small
 .col-12 {
   flex: 0 0 100%;

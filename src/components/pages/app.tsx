@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import '../../assets/style.scss';
 import {Card} from '../card';
@@ -143,6 +143,21 @@ const App = () => {
         setInterval(detectDevTools, 1000);
     })();
 
+    const [openSections, setOpenSections] = useState({});
+
+    const toggleSection = (section) => {
+        setOpenSections((prev) => ({
+            ...prev,
+            [section]: !prev[section], // toggle this section
+        }));
+    };
+
+    const sections = [
+        { name: 'Client-side', badges: badgesClientSide, key: 'client' },
+        { name: 'Server-side', badges: badgesServerSide, key: 'server' },
+        { name: 'UI / UX', badges: badgesUiUx, key: 'uiux' },
+    ];
+
     return (
         <>
             <Header/>
@@ -160,36 +175,64 @@ const App = () => {
                     {/*              link={card.link}/>*/}
                     {/*    ))}*/}
                     {/*</div>*/}
-                    <div>
+                    <div className={"w-100"}>
+
                         <h2>Skills</h2>
 
-                        <div className={'flex-column gap-8 w-100'}>
-                            <h3>Client-side</h3>
-
-                            <div className={'badge-list'}>
-                                {badgesClientSide.map((badge, i) => (
-                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
-                                ))}
-                            </div>
+                        <div className="flex-column gap-8 w-100">
+                            {sections.map(({ name, badges, key }) => (
+                                <div key={key} className="flex-column gap-8 w-100">
+                                    <h3
+                                        onClick={() => toggleSection(key)}
+                                        className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
+                                    >
+                                        {name}
+                                    </h3>
+                                    <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
+                                        {badges.map((badge, i) => (
+                                            <Badge key={`${key}-badge-${i}`} content={badge.label} tooltip={badge.tooltip} />
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
+                        {/*<div className="flex-column gap-8 w-100">*/}
+                        {/*    /!* Client-side *!/*/}
+                        {/*    <div className="flex-column gap-8 w-100">*/}
+                        {/*        <h3 onClick={() => toggleSection('client')} className="collapsible-header">*/}
+                        {/*            Client-side*/}
+                        {/*        </h3>*/}
+                        {/*        <div className={`collapsible-content ${openSection === 'client' ? 'open' : ''}`}>*/}
+                        {/*            {badgesClientSide.map((badge, i) => (*/}
+                        {/*                <Badge key={'badge-client-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
 
-                        <div className={'flex-column gap-8 w-100'}>
-                            <h3>Server-side</h3>
-                            <div className={'badge-list'}>
-                                {badgesServerSide.map((badge, i) => (
-                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
-                                ))}
-                            </div>
-                        </div>
+                        {/*    /!* Server-side *!/*/}
+                        {/*    <div className="flex-column gap-8 w-100">*/}
+                        {/*        <h3 onClick={() => toggleSection('server')} className="collapsible-header">*/}
+                        {/*            Server-side*/}
+                        {/*        </h3>*/}
+                        {/*        <div className={`collapsible-content ${openSection === 'server' ? 'open' : ''}`}>*/}
+                        {/*            {badgesServerSide.map((badge, i) => (*/}
+                        {/*                <Badge key={'badge-server-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
 
-                        <div className={'flex-column gap-8 w-100'}>
-                            <h3>Ui / Ux</h3>
-                            <div className={'badge-list'}>
-                                {badgesUiUx.map((badge, i) => (
-                                    <Badge key={"badge-" + i} content={badge.label} tooltip={badge.tooltip}/>
-                                ))}
-                            </div>
-                        </div>
+                        {/*    /!* UI/UX *!/*/}
+                        {/*    <div className="flex-column gap-8 w-100">*/}
+                        {/*        <h3 onClick={() => toggleSection('uiux')} className="collapsible-header">*/}
+                        {/*            UI / UX*/}
+                        {/*        </h3>*/}
+                        {/*        <div className={`collapsible-content ${openSection === 'uiux' ? 'open' : ''}`}>*/}
+                        {/*            {badgesUiUx.map((badge, i) => (*/}
+                        {/*                <Badge key={'badge-uiux-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
 
                     <div>
