@@ -15,6 +15,7 @@ import speisekarteImg from '../assets/images/speisekarte.png';
 import prevaImg from '../assets/images/preva.png';
 import freelanceomatImg from '../assets/images/freelanceomat.png';
 import gastromanagerImg from '../assets/images/gastromanager.png';
+import {VerticalTimeline} from "../timeline-fnction";
 
 export const projectImagePaths = [
     {
@@ -145,7 +146,8 @@ const App = () => {
                     <h2>Projekte</h2>
                     <Carousel isProject={true} data={projectImagePaths}/>
                     <h2>Lebenslauf</h2>
-                    <Carousel isProject={false}/>
+                    <VerticalTimeline />
+                    {/*<Carousel isProject={false}/>*/}
                     {/*<div className={'flex-wrap gap-8'}>*/}
                     {/*    {cards.map((card, i) => (*/}
                     {/*        <Card key={"badge-" + i} content={card.content} name={card.name} title={card.title}*/}
