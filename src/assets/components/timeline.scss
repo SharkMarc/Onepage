@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../variables" as *;
 
 .timeline-container {
   position: relative;
@@ -13,12 +13,22 @@
 
 .timeline-line {
   position: absolute;
-  left: 50px;
+  left: 35px;
   top: 42px;
   bottom: 0;
   width: 4px;
   background: #d2d2d2;
   border-radius: 2px;
+
+
+  @media (min-width: $min-width-sm) {
+    left: 50px;
+
+  }
+  @media (min-width: $min-width-sm) {
+    left: 50px;
+
+  }
 }
 
 .timeline-line {
@@ -31,9 +41,13 @@
 
 .timeline-item {
   position: relative;
-  padding-left: 3.5rem;
+  padding-left: 2.5rem;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $min-width-sm) {
+    padding-left: 3.5rem;
+  }
 }
 
 .timeline-dot {
@@ -92,6 +106,7 @@
 
   li {
     margin-bottom: 0.25rem;
+    word-break: break-word;
   }
 }
 

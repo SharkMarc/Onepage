@@ -65,10 +65,10 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                         navigation
                         pagination={{clickable: true, type: "bullets"}}
                         speed={1200}
-                        autoplay={{
-                            delay: 3000,      // 3 Sekunden
-                            disableOnInteraction: false
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,      // 3 Sekunden
+                        //     disableOnInteraction: false
+                        // }}
                         loop={true}
 
                 >
@@ -76,10 +76,13 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                         <SwiperSlide key={index}>
 
                             <div className={'swiper-item'}>
+                                <h3 className={'text-center'}>{data.title}</h3>
+
                                 <a className={'projects-container'} href={data.link} target="_blank"
                                    rel="noopener noreferrer">
                                     <img className={'img-responsive'} src={data.src} alt={data.title}/>
                                 </a>
+
                             </div>
                         </SwiperSlide>
                     ))}

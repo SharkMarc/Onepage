@@ -10,11 +10,11 @@ export const VerticalTimeline  = ()=> {
     });
 
     return (
-        <div className="timeline-container">
+        <div className="timeline-container"
+             ref={ref}>
             <div className="timeline-line" />
             {timeline.map((entry, index) => (
                 <motion.div
-                    ref={ref}
                     key={index}
                     className="timeline-item"
                     initial={{opacity: 0, scaleY: 0 }}

@@ -21,31 +21,37 @@ export const projectImagePaths = [
     {
         src: freelancermapImg,
         alt: 'freelancermap',
+        title: 'Freelancermap',
         link: 'https://www.freelancermap.de/'
     },
     {
         src: designenlassenImg,
         alt: 'designenlassen',
+        title: 'Designenlassen',
         link: 'https://www.designenlassen.de/'
     },
     {
         src: speisekarteImg,
         alt: 'speisekarte',
+        title: 'Speisekarte',
         link: 'https://www.speisekarte.de/'
     },
     {
         src: prevaImg,
         alt: 'processevaluation',
+        title: 'Processevaluation',
         link: 'https://processevaluation.de/'
     },
     {
         src: freelanceomatImg,
         alt: 'freelanceomat',
+        title: 'Freelance-o-mat',
         link: 'https://www.freelance-o-mat.de/'
     },
     {
         src: gastromanagerImg,
         alt: 'gastromanager',
+        title: 'Gastromanager',
         link: 'https://gastro.speisekarte.de/anmelden'
     }
 ];
