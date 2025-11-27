@@ -3,7 +3,7 @@ export interface TimelineEntry {
     subtitle?: string;
     location?: string;
     start: string;
-    end: string;
+    end?: string;
     details?: string[];
     category: "profile" | "experience" | "education" | "job";
 }
@@ -16,7 +16,6 @@ export const timeline: TimelineEntry[] = [
         subtitle: "21. Mai 1992",
         location: "Nürnberg, Deutschland",
         start: "1992-05-21",
-        end: "1992-05-21",
         category: "profile"
     },
 
