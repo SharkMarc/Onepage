@@ -27,7 +27,7 @@ export const HowIWork= ({   }) => {
             content: "Ich teile mein Wissen durch gemeinsame Programmier-Sessions und lerne gleichzeitig dazu."
         },
         {
-            title: "Selbstständigkeit",
+            title: "Selbtständigkeit",
             content: "Ich übernehme Verantwortung und arbeite eigenständig an Aufgaben."
         },
         {

@@ -24,6 +24,20 @@ export const Contact = ({}) => (
                             marcspree.steam@gmx.de
                         </a>
                     </p>
+                    <p>
+                        Wer möchte darf mich auch gerne über steam kontaktieren:
+                        <a data-testid="mail-contact" data-id="mail-contact" href="mailto:marcspree.steam@gmx.de"
+                           className="btn-no-style">
+                            marcspree.steam@gmx.de
+                        </a>
+                    </p>
+                    <p>
+                        Oder auf meinem discord channel vorbeischauen
+                        <a data-testid="mail-contact" data-id="mail-contact" href="mailto:marcspree.steam@gmx.de"
+                           className="btn-no-style">
+                            marcspree.steam@gmx.de
+                        </a>
+                    </p>
 
                 </div>
             </div>

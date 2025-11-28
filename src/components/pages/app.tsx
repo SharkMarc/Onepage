@@ -168,15 +168,8 @@ const App = () => {
                     <Carousel isProject={true} data={projectImagePaths}/>
                     <h2>Lebenslauf</h2>
                     <VerticalTimeline />
-                    {/*<Carousel isProject={false}/>*/}
-                    {/*<div className={'flex-wrap gap-8'}>*/}
-                    {/*    {cards.map((card, i) => (*/}
-                    {/*        <Card key={"badge-" + i} content={card.content} name={card.name} title={card.title}*/}
-                    {/*              link={card.link}/>*/}
-                    {/*    ))}*/}
-                    {/*</div>*/}
-                    <div className={"w-100"}>
 
+                    <div className={"w-100"}>
                         <h2>Skills</h2>
 
                         <div className="flex-column gap-8 w-100">
@@ -196,43 +189,6 @@ const App = () => {
                                 </div>
                             ))}
                         </div>
-                        {/*<div className="flex-column gap-8 w-100">*/}
-                        {/*    /!* Client-side *!/*/}
-                        {/*    <div className="flex-column gap-8 w-100">*/}
-                        {/*        <h3 onClick={() => toggleSection('client')} className="collapsible-header">*/}
-                        {/*            Client-side*/}
-                        {/*        </h3>*/}
-                        {/*        <div className={`collapsible-content ${openSection === 'client' ? 'open' : ''}`}>*/}
-                        {/*            {badgesClientSide.map((badge, i) => (*/}
-                        {/*                <Badge key={'badge-client-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
-                        {/*            ))}*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-
-                        {/*    /!* Server-side *!/*/}
-                        {/*    <div className="flex-column gap-8 w-100">*/}
-                        {/*        <h3 onClick={() => toggleSection('server')} className="collapsible-header">*/}
-                        {/*            Server-side*/}
-                        {/*        </h3>*/}
-                        {/*        <div className={`collapsible-content ${openSection === 'server' ? 'open' : ''}`}>*/}
-                        {/*            {badgesServerSide.map((badge, i) => (*/}
-                        {/*                <Badge key={'badge-server-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
-                        {/*            ))}*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-
-                        {/*    /!* UI/UX *!/*/}
-                        {/*    <div className="flex-column gap-8 w-100">*/}
-                        {/*        <h3 onClick={() => toggleSection('uiux')} className="collapsible-header">*/}
-                        {/*            UI / UX*/}
-                        {/*        </h3>*/}
-                        {/*        <div className={`collapsible-content ${openSection === 'uiux' ? 'open' : ''}`}>*/}
-                        {/*            {badgesUiUx.map((badge, i) => (*/}
-                        {/*                <Badge key={'badge-uiux-' + i} content={badge.label} tooltip={badge.tooltip} />*/}
-                        {/*            ))}*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
                     </div>
 
                     <div>
