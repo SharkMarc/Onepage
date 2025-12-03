@@ -153,7 +153,6 @@ const App = () => {
                 <div className={'app flex-wrap'}>
                     <h2>Projekte</h2>
                     <Carousel isProject={true} data={projectImagePaths}/>
-                    <h2>Lebenslauf</h2>
                     <VerticalTimeline/>
 
                     <div className={"w-100"}>
@@ -161,7 +160,7 @@ const App = () => {
 
                         <div className="flex-column gap-8 w-100">
                             {sections.map(({name, badges, key}) => (
-                                <div key={key} className="flex-column gap-8 w-100">
+                                <div key={key} className="flex-column w-100">
                                     <h3
                                         onClick={() => toggleSection(key)}
                                         className={`collapsible-header ${openSections[key] ? 'open' : ''}`}

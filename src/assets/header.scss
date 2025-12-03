@@ -86,6 +86,10 @@
     height: 100vh;
   }
 
+  .flex-column{
+    justify-content: start;
+  }
+
   .btn-no-style {
     color: $white;
     font-size: $standard-font;

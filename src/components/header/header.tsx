@@ -1,5 +1,10 @@
 import React from 'react';
 import marc from '../assets/images/marc_white.png';
+import birthday from '../assets/images/birthday.png';
+import home from '../assets/images/home.png';
+import user from '../assets/images/user.png';
+import global from '../assets/images/global.png';
+import name from '../assets/images/name.png';
 
 export const Header = ({}) => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -23,12 +28,11 @@ export const Header = ({}) => {
 
                         <div className={'hero-content'}>
                             <div className={'flex-column justify-content-center'}>
-                                <p>Hi ich bin der Marc schön dass du reinschaust</p>
-                                <p>Geboren am 21.05.1992</p>
-                                <p>
-                                    Ich spreche Deutsch als Muttersprache und Englisch verhandlungssicher
-                                </p>
-                                <button className={'cursor-pointer btn-no-style'} onClick={() => scrollTo('contact')}>Kontakt</button>
+                                <p><img className={'icon'} src={name} alt={'name'}/> Marc Spree</p>
+                                <p><img className={'icon'} src={birthday} alt={'birthday'}/> 21.05.1992</p>
+                                <p><img className={'icon'} src={home} alt={'home'}/> Deutschland, Nürnberg</p>
+                                <p><img className={'icon'} src={global} alt={'global'}/>Deutsch Muttersprache, Englisch verhandlungssicher</p>
+                                <button className={'cursor-pointer btn-no-style'} onClick={() => scrollTo('contact')}> <img className={'icon'} src={user} alt={'user'}/>Kontakt</button>
                             </div>
                         </div>
                     </div>

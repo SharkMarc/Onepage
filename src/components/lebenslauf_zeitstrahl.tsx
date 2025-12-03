@@ -19,38 +19,6 @@ export const timeline: TimelineEntry[] = [
         category: "profile"
     },
 
-
-// EXPERIENCE
-
-    {
-        title: 'Frontend Developer',
-        subtitle: "freelancermap GmbH",
-        location: "Nürnberg",
-        category: "job",
-        start: "01/2021",
-        end: "bis heute",
-        details: [
-            "Redesign 2021",
-            "Redesign 2024-25",
-            "Admin",
-            "freelance-o-mat",
-            "designenlassen.de",
-        ]
-    },
-    {
-        title: 'Junior Frontend Developer',
-        subtitle: "united vertical media GmbH",
-        location: "Nürnberg",
-        category: "job",
-        start: "01/2019",
-        end: "12/2020",
-        details: [
-            "Gastromanager",
-            "Pickupcard"
-        ],
-    },
-
-
 // EDUCATION
     {
         title: "Kein Abschluss",
@@ -82,5 +50,38 @@ export const timeline: TimelineEntry[] = [
         start: "2012",
         end: "2012",
         category: "education"
+    },
+];
+
+export const timelineExperience: TimelineEntry[] = [
+
+// EXPERIENCE
+
+    {
+        title: 'Frontend Developer',
+        subtitle: "freelancermap GmbH",
+        location: "Nürnberg",
+        category: "job",
+        start: "01/2021",
+        end: "bis heute",
+        details: [
+            "Redesign 2021",
+            "Redesign 2024-25",
+            "Admin",
+            "freelance-o-mat",
+            "designenlassen.de",
+        ]
+    },
+    {
+        title: 'Junior Frontend Developer',
+        subtitle: "united vertical media GmbH",
+        location: "Nürnberg",
+        category: "job",
+        start: "01/2019",
+        end: "12/2020",
+        details: [
+            "Gastromanager",
+            "Pickupcard"
+        ],
     },
 ];

@@ -19,16 +19,11 @@
 }
 
 .swiper-wrapper {
+  height: auto;
   display: flex;
   align-items: center;
 }
 
-.swiper-header-container{
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  width: 100%;
-}
 
 .swiper-button-prev {
   position: relative;
@@ -45,7 +40,7 @@
 .swiper-button-next {
   border-radius: unset;
   background-color: unset;
-  color: $black!important;
+  color: $black !important;
   border: unset;
   font-size: 3rem;
   display: none;
@@ -175,19 +170,37 @@
 }
 
 .swiper {
-  height: 45rem;
+  height: 28rem;
 
-  @media (min-width: $min-width-xs) {
-    height: 42rem;
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
+
   @media (min-width: $min-width-sm) {
-    height: 45rem;
+    height: 28rem;
   }
   @media (min-width: $min-width-md) {
-    height: 45rem;
+    height: 36rem;
   }
   @media (min-width: $min-width-lg) {
-    height: 45rem;
+    height: 40rem;
+
+    img {
+      height: 38rem;
+    }
+  }
+}
+
+.swiper-header-container {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  .swiper-wrapper {
+    height: auto;
   }
 }
 
@@ -262,39 +275,6 @@
   gap: var(--lp-gap-display-xs);
 }
 
-.press-item {
-  display: flex;
-  padding: 8px;
-  margin-bottom: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-  border-radius: $radius-medium;
-  background: grey;
-
-  @media (min-width: $min-width-md) {
-    padding: 16px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  .date {
-    color: #646464;
-    font-weight: 400;
-    font-size: $standard-font;
-  }
-
-  .title {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    color: $black;
-  }
-}
-
 .tab-panel {
   padding: unset;
   border-radius: unset;
@@ -322,7 +302,7 @@
   justify-content: center;
 }
 
-.swiper{
+.swiper {
   .swiper-button-prev, .swiper-button-next {
     padding: 0;
     color: $black;
