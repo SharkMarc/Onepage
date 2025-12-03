@@ -23,32 +23,32 @@ const cardsData = [
     },
 ];
 
-const projectsData = [
-    {
-        title: 'designenlassen.de',
-        place: "designenlassen.de",
-        content: 'This is the first card.',
-        date: "01/2019 - 12/2020"
-    },
-    {
-        title: 'Frontend Developer',
-        place: "freelanceomat.de",
-        content: 'This is the second card.',
-        date: "01/2021 - bis heute"
-    },
-    {
-        title: 'gastromanager',
-        place: "gastromanager.de",
-        content: 'This is the second card.',
-        date: "01/2021 - bis heute"
-    },
-    {
-        title: 'prozessevaluation',
-        place: "prozessevaluation.de",
-        content: 'This is the second card.',
-        date: "01/2021 - bis heute"
-    },
-]
+// const projectsData = [
+//     {
+//         title: 'designenlassen.de',
+//         place: "designenlassen.de",
+//         content: 'This is the first card.',
+//         date: "01/2019 - 12/2020"
+//     },
+//     {
+//         title: 'Frontend Developer',
+//         place: "freelanceomat.de",
+//         content: 'This is the second card.',
+//         date: "01/2021 - bis heute"
+//     },
+//     {
+//         title: 'gastromanager',
+//         place: "gastromanager.de",
+//         content: 'This is the second card.',
+//         date: "01/2021 - bis heute"
+//     },
+//     {
+//         title: 'prozessevaluation',
+//         place: "prozessevaluation.de",
+//         content: 'This is the second card.',
+//         date: "01/2021 - bis heute"
+//     },
+// ]
 
 interface CarouselProps {
     isProject: boolean;

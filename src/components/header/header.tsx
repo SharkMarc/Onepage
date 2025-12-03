@@ -4,10 +4,6 @@ import marc from '../assets/images/marc_white.png';
 export const Header = ({}) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
-    const toggleNav = () => {
-        setIsOpen(!isOpen);
-    }
-
     const scrollTo = (id) => {
         setIsOpen(!isOpen);
         const el = document.getElementById(id);

@@ -78,9 +78,9 @@ const badgesClientSide = [
     {label: "Javascript", tooltip: "Programmiersprache für Frontend & Backend"},
     {label: "Typescript", tooltip: "Statisches Typing für JS"}
 ];
-const tools = [
-    "npm", "webpack", "git", "github"
-]
+// const tools = [
+//     "npm", "webpack", "git", "github"
+// ]
 const badgesServerSide = [
     {label: "PHP", tooltip: "Backend-Skriptsprache für Webanwendungen"},
     {label: "Symfony", tooltip: "Enterprise PHP Framework für komplexe Apps"},
