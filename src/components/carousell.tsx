@@ -65,7 +65,10 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                         navigation
                         pagination={{clickable: true, type: "bullets"}}
                         speed={1200}
-
+                        autoplay={{
+                            delay: 3000,      // 3 Sekunden
+                            disableOnInteraction: false
+                        }}
                         loop={true}
 
                 >
