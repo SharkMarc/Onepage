@@ -92,8 +92,9 @@ $breakpoints: (
 }
 
 .collapsible-content.open {
-  max-height: 500px;     /* groß genug für Inhalte */
+  max-height: 5000px;     /* groß genug für Inhalte */
   padding: 8px 0;
+  overflow: visible;
   gap: 8px;
   flex-wrap: wrap;
   display: flex;

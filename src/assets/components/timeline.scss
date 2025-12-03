@@ -52,12 +52,16 @@
 
 .timeline-dot {
   position: absolute;
-  left: 13px;
+  left: 14px;
   top: 0.5rem;
   width: 14px;
   height: 14px;
   background: #000;
   border-radius: 50%;
+
+  @media (min-width: $min-width-sm) {
+    left: 13px;
+  }
 }
 
 

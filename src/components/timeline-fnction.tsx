@@ -10,7 +10,7 @@ export const VerticalTimeline = () => {
     });
 
     return (
-        <div className="timeline-container"
+        <div className="timeline-container w-100"
              ref={ref}>
             <div className="timeline-line"/>
             {timeline.map((entry, index) => (

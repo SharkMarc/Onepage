@@ -52,7 +52,7 @@ export const HowIWork = ({}) => {
         <div>
             <div className={'grid-1-1 gap-8'}>
                 {workItems.map((item, i) => (
-                    <div key={"how-i-work-" + i} className="card gap-8 cursor-pointer"
+                    <div key={"how-i-work-" + i} className={`${openSections["how-i-work-" + i] ? "card gap-8 cursor-pointer": "card cursor-pointer"}`}>
                          onClick={() => toggleSection("how-i-work-" + i)}>
                         <div className={"title d-flex justify-content-center"}>{item.title}
                             <img alt={'collapse carrot'}
