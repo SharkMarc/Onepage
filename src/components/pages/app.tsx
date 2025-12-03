@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import '../../assets/style.scss';
-import {Card} from '../card';
 import {Header} from "../header/header";
 import {Badge} from "../badge";
 import {Carousel} from "../carousell";
-import {Preva} from "../preva/preva";
 import {Contact} from "../footer/contact";
 import {HowIWork} from "./howIWork";
 import {AboutMe} from "./about-me";
-// src/components/pages/projectImages.ts
 import freelancermapImg from '../assets/images/freelancermap.png';
 import designenlassenImg from '../assets/images/designenlassen.png';
 import speisekarteImg from '../assets/images/speisekarte.png';
@@ -192,10 +189,6 @@ const App = () => {
                     <AboutMe/>
 
                     <Contact/>
-
-                    <div className={'preva-grid'}>
-                        <Preva/>
-                    </div>
                 </div>
             </main>
         </>

@@ -74,13 +74,35 @@
 
 
 .header {
-  height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $white;
   text-align: center;
+
+  @media (min-width: $min-width-lg) {
+    height: 100vh;
+  }
+
+  .btn-no-style {
+    color: $white;
+    font-size: $standard-font;
+  }
+
+  .hero-inner {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    max-width: var(--content-width); /* ← DEIN LIMIT */
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    position: relative;
+    min-height: 200px; /* optional, falls Text kurz ist */
+  }
 
   nav {
     display: flex;
@@ -128,7 +150,6 @@
     }
   }
 
-
   .mobile-nav {
     position: fixed;
     top: 48px;
@@ -137,8 +158,8 @@
     z-index: -3;
     left: 0;
 
-    &.slide-in{
-      z-index:3;
+    &.slide-in {
+      z-index: 3;
     }
 
     @media (min-width: 768px) {
@@ -184,13 +205,28 @@
       margin-bottom: 1rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
     .cta {
       font-size: 1rem;
+    }
+  }
+
+  .hero-img {
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+    object-fit: contain;
+    right: 0px;
+    max-width: 300px;
+
+    @media (min-width: $min-width-lg) {
+      max-width: 500px;
+      position: absolute;
+    }
+    @media (min-width: $min-width-xl) {
+      max-width: 700px;
     }
   }
 }
