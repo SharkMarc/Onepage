@@ -1,0 +1,36 @@
+@use "../variables" as *;
+
+#contact {
+  p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .btn-no-style {
+    font-size: $standard-font;
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: $black;
+  color: white;
+  padding: 12px 18px;
+  border-radius: $radius-small;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

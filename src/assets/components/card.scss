@@ -1,7 +1,9 @@
+@use "../variables" as *;
+
 .card {
   flex-direction: column;
   display:flex;
-  background-color: #fff;
+  background-color: $white;
   border: 1px solid #ddd;
   border-radius: 1.5rem;
   padding: 1.5rem;

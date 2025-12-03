@@ -20,13 +20,13 @@ export const VerticalTimeline = () => {
                     initial={{opacity: 0, scaleY: 0}}
                     animate={inView ? {opacity: 1, scaleY: 1} : {}}
                     style={{originY: 0}}
-                    transition={{duration: 0.3, delay: index * 0.2 + 0.2}}
+                    transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
                 >
                     <motion.div
                         className="timeline-dot"
                         initial={{opacity: 0, scaleY: 0}}
                         animate={inView ? {opacity: 1, scaleY: 1} : {}}
-                        transition={{duration: 0.3, delay: index * 0.2 + 0.2}}
+                        transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
                     />
 
 

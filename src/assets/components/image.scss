@@ -1,4 +1,4 @@
-@use "../variables";
+@use "../variables" as *;
 
 .rounded-image {
   border-radius: 50%;
@@ -14,16 +14,41 @@
   }
 }
 
+.icon {
+  width: 32px;
+  border-radius: $radius-small;
+}
+
+.swiper img {
+  height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 .img-responsive {
   display: inline;
   height: auto;
   max-width: 100%;
 }
 
-.rounded-image-border{
+.rounded-image-border {
   border-radius: 1rem;
 }
 
 .img-marc {
   width: 600px;
+}
+
+.caret {
+  transition: transform 0.3s ease;
+  width: 24px;
+  margin-left: auto;
+}
+
+.caret.rotated {
+  transform: rotate(180deg);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

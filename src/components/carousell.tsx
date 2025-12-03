@@ -12,13 +12,13 @@ const cardsData = [
     {
         title: 'Junior Frontend Developer',
         place: "speisekarte.de",
-        content: 'This is the first card.',
+        content: 'Redesign Speisekarte.de',
         date: "01/2019 - 12/2020"
     },
     {
         title: 'Frontend Developer',
         place: "freelancermap.de",
-        content: 'This is the second card.',
+        content: 'multiple redesigns',
         date: "01/2021 - bis heute"
     },
 ];
@@ -65,10 +65,7 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                         navigation
                         pagination={{clickable: true, type: "bullets"}}
                         speed={1200}
-                        autoplay={{
-                            delay: 3000,      // 3 Sekunden
-                            disableOnInteraction: false
-                        }}
+
                         loop={true}
 
                 >
@@ -82,6 +79,8 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                                    rel="noopener noreferrer">
                                     <img className={'img-responsive'} src={data.src} alt={data.title}/>
                                 </a>
+
+                                <p>{data.content}</p>
 
                             </div>
                         </SwiperSlide>

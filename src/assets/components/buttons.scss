@@ -1,9 +1,12 @@
+@use "../variables" as *;
+
 .btn-no-style{
   background-color: unset;
   border: unset;
   border-radius: unset;
   box-shadow: none;
-  color: #222;
+  color: $black;
+  cursor: pointer;
   padding: 0;
 
   &:hover{

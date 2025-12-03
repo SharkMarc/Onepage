@@ -28,8 +28,14 @@
     }
   }
 
+  @media (min-width: $min-width-md) {
+    .swiper {
+      height: 55rem;
+    }
+  }
+
   button {
-    background: #222222;
+    background: $black;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -50,7 +56,6 @@
   }
 }
 
-
 .tab-panel {
   padding: unset;
   border-radius: unset;
@@ -61,7 +66,7 @@
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 2rem;
   font-style: normal;
-  color: #222222;
+  color: $black;
   font-weight: 400;
   line-height: normal;
   text-transform: none !important;
@@ -70,31 +75,9 @@
 }
 
 .swiper-pagination-bullet-active {
-  color: #222222;
+  color: $black;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  padding: 0;
-  color: #222222;
-  display: none;
-
-  @media (min-width: $min-width-xs) {
-    display: flex;
-  }
-
-  .swiper-navigation-icon, svg {
-    color: #222;
-    font-size: 3rem;
-    width: 27px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    height: 27px;
-    line-height: normal;
-    text-transform: none !important;
-  }
-}
 
 .app {
   .swiper-slide {
@@ -122,9 +105,9 @@
 }
 
 .projects-container {
-  border-radius: 16px;
+  border-radius: $radius-medium;
 
   img {
-    border-radius: 16px;
+    border-radius: $radius-medium;
   }
 }

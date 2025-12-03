@@ -8,6 +8,7 @@ import {Carousel} from "../carousell";
 import {Preva} from "../preva/preva";
 import {Contact} from "../footer/contact";
 import {HowIWork} from "./howIWork";
+import {AboutMe} from "./about-me";
 // src/components/pages/projectImages.ts
 import freelancermapImg from '../assets/images/freelancermap.png';
 import designenlassenImg from '../assets/images/designenlassen.png';
@@ -22,36 +23,42 @@ export const projectImagePaths = [
         src: freelancermapImg,
         alt: 'freelancermap',
         title: 'Freelancermap',
+        content: 'Redesign / Admin / Suche / Daily Work',
         link: 'https://www.freelancermap.de/'
     },
     {
         src: designenlassenImg,
         alt: 'designenlassen',
         title: 'Designenlassen',
+        content: 'Redesign',
         link: 'https://www.designenlassen.de/'
     },
     {
         src: speisekarteImg,
         alt: 'speisekarte',
         title: 'Speisekarte',
+        content: 'Redesign - Daily work',
         link: 'https://www.speisekarte.de/'
     },
     {
         src: prevaImg,
         alt: 'processevaluation',
         title: 'Processevaluation',
+        content: 'Erstellung der Provessevaluation Seite',
         link: 'https://processevaluation.de/'
     },
     {
         src: freelanceomatImg,
         alt: 'freelanceomat',
         title: 'Freelance-o-mat',
+        content: 'Erstellung des FreelanceOMat',
         link: 'https://www.freelance-o-mat.de/'
     },
     {
         src: gastromanagerImg,
         alt: 'gastromanager',
         title: 'Gastromanager',
+        content: 'Erstellung des Gastromanagers',
         link: 'https://gastro.speisekarte.de/anmelden'
     }
 ];
@@ -92,27 +99,10 @@ const badgesUiUx = [
     {label: "Figma", tooltip: "UI/UX Design & Prototyping Tool"}
 ];
 
-const badgesHowIWork = []
-
-const cards = [
-    {
-        name: 'Javascript',
-        title: 'Javascript',
-        content: "content und so text",
-        link: ""
-    },
-    {
-        name: 'foo',
-        title: 'foo',
-        content: "content und so text",
-        link: ""
-    },
-];
-
 
 const App = () => {
 // Katze in der Konsole für F12-Öffner
-    (function() {
+    (function () {
         const catArt = `
       |\\---/|
       | o_o |
@@ -153,9 +143,9 @@ const App = () => {
     };
 
     const sections = [
-        { name: 'Client-side', badges: badgesClientSide, key: 'client' },
-        { name: 'Server-side', badges: badgesServerSide, key: 'server' },
-        { name: 'UI / UX', badges: badgesUiUx, key: 'uiux' },
+        {name: 'Client-side', badges: badgesClientSide, key: 'client'},
+        {name: 'Server-side', badges: badgesServerSide, key: 'server'},
+        {name: 'UI / UX', badges: badgesUiUx, key: 'uiux'},
     ];
 
     return (
@@ -167,23 +157,24 @@ const App = () => {
                     <h2>Projekte</h2>
                     <Carousel isProject={true} data={projectImagePaths}/>
                     <h2>Lebenslauf</h2>
-                    <VerticalTimeline />
+                    <VerticalTimeline/>
 
                     <div className={"w-100"}>
                         <h2>Skills</h2>
 
                         <div className="flex-column gap-8 w-100">
-                            {sections.map(({ name, badges, key }) => (
+                            {sections.map(({name, badges, key}) => (
                                 <div key={key} className="flex-column gap-8 w-100">
                                     <h3
                                         onClick={() => toggleSection(key)}
                                         className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
                                     >
-                                        {name}
+                                        {name} ({badges.length})
                                     </h3>
                                     <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
                                         {badges.map((badge, i) => (
-                                            <Badge key={`${key}-badge-${i}`} content={badge.label} tooltip={badge.tooltip} />
+                                            <Badge key={`${key}-badge-${i}`} content={badge.label}
+                                                   tooltip={badge.tooltip}/>
                                         ))}
                                     </div>
                                 </div>
@@ -197,6 +188,8 @@ const App = () => {
                             <HowIWork/>
                         </div>
                     </div>
+
+                    <AboutMe/>
 
                     <Contact/>
 

@@ -58,7 +58,7 @@
     position: unset;
     margin-top: auto;
     margin-bottom: auto;
-    color: #fff;
+    color: $white;
     margin-left: 2rem;
   }
 
@@ -79,7 +79,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: $white;
   text-align: center;
 
   nav {
@@ -97,7 +97,7 @@
     }
 
     .cta {
-      background: #fff;
+      background: $white;
       color: #764ba2;
       padding: 0.5rem 1rem;
       border-radius: 5px;
@@ -122,8 +122,8 @@
         text-underline: #764ba2;
         color: red;
 
-        font-size: 16px;
-        border-radius: 8px;
+        font-size: $standard-font;
+        border-radius: $radius-small;
       }
     }
   }
@@ -150,7 +150,7 @@
       text-align: left;
       cursor: pointer;
       width: 100%;
-      background: #fff;
+      background: $white;
       z-index: 1;
       position: absolute;
       padding-left: 0;

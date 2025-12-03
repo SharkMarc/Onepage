@@ -45,7 +45,7 @@
 .swiper-button-next {
   border-radius: unset;
   background-color: unset;
-  color: #222!important;
+  color: $black!important;
   border: unset;
   font-size: 3rem;
   display: none;
@@ -89,7 +89,7 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: $standard-font;
   }
 }
 
@@ -135,7 +135,7 @@
   }
 
   .link {
-    font-size: 16px;
+    font-size: $standard-font;
   }
 }
 
@@ -175,19 +175,19 @@
 }
 
 .swiper {
-  height: 36rem;
+  height: 45rem;
 
   @media (min-width: $min-width-xs) {
     height: 42rem;
   }
   @media (min-width: $min-width-sm) {
-    height: 23.125rem;
+    height: 45rem;
   }
   @media (min-width: $min-width-md) {
-    height: 29.188rem;
+    height: 45rem;
   }
   @media (min-width: $min-width-lg) {
-    height: 29.688rem;
+    height: 45rem;
   }
 }
 
@@ -215,7 +215,7 @@
 .swiper-pagination {
   display: flex;
   justify-content: start;
-  color: #222;
+  color: $black;
 
   @media (min-width: $min-width-xs) {
     display: none;
@@ -223,7 +223,7 @@
 }
 
 .swiper-button-next {
-  color: #222;
+  color: $black;
   display: none;
 
   &:after {
@@ -245,7 +245,7 @@
     background: grey;
 
     &.swiper-pagination-bullet-active {
-      background: #222;
+      background: $black;
     }
   }
 }
@@ -270,7 +270,7 @@
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  border-radius: 16px;
+  border-radius: $radius-medium;
   background: grey;
 
   @media (min-width: $min-width-md) {
@@ -284,14 +284,14 @@
   .date {
     color: #646464;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $standard-font;
   }
 
   .title {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    color: #222222;
+    color: $black;
   }
 }
 
@@ -305,7 +305,7 @@
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 2rem;
   font-style: normal;
-  color: #222;
+  color: $black;
   font-weight: 400;
   line-height: normal;
   text-transform: none !important;
@@ -314,18 +314,39 @@
 }
 
 .swiper-pagination-bullet-active {
-  color: #222;
+  color: $black;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  padding: 0;
-  color: #222;
-  display: none;
 
-  @media (min-width: $min-width-xs) {
-    display: flex;
+.swiper-pagination.swiper-pagination-bullets {
+  justify-content: center;
+}
+
+.swiper{
+  .swiper-button-prev, .swiper-button-next {
+    padding: 0;
+    color: $black;
+    display: none;
+
+    @media (min-width: $min-width-md) {
+      display: flex;
+    }
+
+    .swiper-navigation-icon, svg {
+      color: $black;
+      font-size: 3rem;
+      width: 27px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      letter-spacing: 0;
+      height: 27px;
+      line-height: normal;
+      text-transform: none !important;
+    }
   }
 }
+
 
 .swiper-text {
   display: -webkit-box;
