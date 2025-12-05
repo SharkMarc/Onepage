@@ -46,6 +46,12 @@
   }
 
   body {
+    section {
+      padding-bottom: 72px;
+      padding-top: 72px;
+    //  background: #f5f5f5
+    }
+
     p {
       font-size: var(--fonts-size-body);
       font-weight: 400;
@@ -71,7 +77,7 @@
       font-weight: 600;
       line-height: 1.2;
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
 
     h3 {

@@ -50,7 +50,7 @@ export const HowIWork = ({}) => {
     return (
 
         <div>
-            <div className={'grid-1-1 gap-8'}>
+            <div className={'align-item-start grid-1-1 gap-8'}>
                 {workItems.map((item, i) => (
                     <div key={"how-i-work-" + i} className={`${openSections["how-i-work-" + i] ? "card gap-8 cursor-pointer": "card cursor-pointer"}`}
                          onClick={() => toggleSection("how-i-work-" + i)}>

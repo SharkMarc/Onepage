@@ -75,6 +75,10 @@ $breakpoints: (
   }
 }
 
+.align-item-start {
+  align-items: start;
+}
+
 .collapsible-header {
   cursor: pointer;
   transition: color 0.2s;

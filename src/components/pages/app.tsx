@@ -20,21 +20,21 @@ export const projectImagePaths = [
         src: freelancermapImg,
         alt: 'freelancermap',
         title: 'Freelancermap',
-        content: 'Redesign / Admin / Suche / Daily Work',
+        content: 'Redesign / Admin / Suche / Daily Work für die größte Projektplattform für Freelancing im deutschsprachigen Raum',
         link: 'https://www.freelancermap.de/'
     },
     {
         src: designenlassenImg,
         alt: 'designenlassen',
         title: 'Designenlassen',
-        content: 'Redesign',
+        content: 'Redesign - Portal für Logo-Design, Webdesign, Print-Design, Namensfindung ',
         link: 'https://www.designenlassen.de/'
     },
     {
         src: speisekarteImg,
         alt: 'speisekarte',
         title: 'Speisekarte',
-        content: 'Redesign - Daily work',
+        content: 'Redesign - Daily work - Die Speisekarte ist das Aushängeschild eines jeden Restaurants. Sie vermittelt den Gästen einen ersten Eindruck, was sie bei einem Besuch erwartet und ist häufig ausschlaggebend dafür, ob ein Restaurant besucht wird oder nicht. ',
         link: 'https://www.speisekarte.de/'
     },
     {
@@ -48,14 +48,16 @@ export const projectImagePaths = [
         src: freelanceomatImg,
         alt: 'freelanceomat',
         title: 'Freelance-o-mat',
-        content: 'Erstellung des FreelanceOMat',
+        content: 'Erstellung des FreelanceOMat laut der Fragestellung => Kreativer Kopf oder analytische Intelligenzbestie?\n' +
+            'Netzwerk-Profi oder strukturierte EinzelkämpferIn?\n' +
+            'Finde heraus, welcher Freelancer-Typ du bist.',
         link: 'https://www.freelance-o-mat.de/'
     },
     {
         src: gastromanagerImg,
         alt: 'gastromanager',
         title: 'Gastromanager',
-        content: 'Erstellung des Gastromanagers',
+        content: 'Erstellung des Gastromanagers - Ein Ort für gastronomen, ihren Online auftritt zu verwalten. Von Öffnungszeiten, Speisekarten erstellen,  eine Pickup karte zu erstellen ( Corona), Reservierungen zu verwalten und mehr.',
         link: 'https://gastro.speisekarte.de/anmelden'
     }
 ];
@@ -150,44 +152,51 @@ const App = () => {
             <Header/>
 
             <main>
-                <div className={'app flex-wrap'}>
-                    <h2>Projekte</h2>
-                    <Carousel isProject={true} data={projectImagePaths}/>
+                {/*<div className={'app flex-wrap'}>*/}
+                <div className={''}>
+                    <section>
+                        <h2>Projekte</h2>
+                        <Carousel isProject={true} data={projectImagePaths}/>
+                    </section>
+
+                    {/*has sections inside */}
                     <VerticalTimeline/>
+                    <section>
+                        <div className={"w-100"}>
+                            <h2>Skills</h2>
 
-                    <div className={"w-100"}>
-                        <h2>Skills</h2>
-
-                        <div className="flex-column gap-8 w-100">
-                            {sections.map(({name, badges, key}) => (
-                                <div key={key} className="flex-column w-100">
-                                    <h3
-                                        onClick={() => toggleSection(key)}
-                                        className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
-                                    >
-                                        {name} ({badges.length})
-                                    </h3>
-                                    <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
-                                        {badges.map((badge, i) => (
-                                            <Badge key={`${key}-badge-${i}`} content={badge.label}
-                                                   tooltip={badge.tooltip}/>
-                                        ))}
+                            <div className="flex-column gap-8 w-100">
+                                {sections.map(({name, badges, key}) => (
+                                    <div key={key} className="flex-column w-100">
+                                        <h3
+                                            onClick={() => toggleSection(key)}
+                                            className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
+                                        >
+                                            {name} ({badges.length})
+                                        </h3>
+                                        <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
+                                            {badges.map((badge, i) => (
+                                                <Badge key={`${key}-badge-${i}`} content={badge.label}
+                                                       tooltip={badge.tooltip}/>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <h2>How i work</h2>
-                        <div className={'flex-column gap-8 w-100 text-center'}>
-                            <HowIWork/>
+                    </section>
+                    <section>
+                        <div>
+                            <h2>How i work</h2>
+                            <div className={'flex-column gap-8 w-100 text-center'}>
+                                <HowIWork/>
+                            </div>
                         </div>
-                    </div>
-
+                    </section>
                     <AboutMe/>
-
-                    <Contact/>
+                    <section>
+                        <Contact/>
+                    </section>
                 </div>
             </main>
         </>

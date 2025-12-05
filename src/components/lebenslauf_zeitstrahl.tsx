@@ -32,17 +32,17 @@ export const timeline: TimelineEntry[] = [
             "Ziel: Entwicklung einer mobilen Geoinformationsanwendung mit Javascript, HTML und CSS"
         ]
     },
-    {
-        title: "Kein Abschluss",
-        subtitle: "Hochschule Ansbach – Wirtschaftsinformatik",
-        location: "Ansbach",
-        start: "2013",
-        end: "2013",
-        category: "education",
-        details: [
-            "Aushilfskraft bei Gossenmetrawatt 2014 – IT-Support"
-        ]
-    },
+    // {
+    //     title: "Kein Abschluss",
+    //     subtitle: "Hochschule Ansbach – Wirtschaftsinformatik",
+    //     location: "Ansbach",
+    //     start: "2013",
+    //     end: "2013",
+    //     category: "education",
+    //     details: [
+    //         "Aushilfskraft bei Gossenmetrawatt 2014 – IT-Support"
+    //     ]
+    // },
     {
         title: "Fachhochschulreife",
         subtitle: "Fachhochschule Nürnberg – BWL, VWL, Wirtschaftswissenschaften",
