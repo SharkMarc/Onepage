@@ -34,7 +34,7 @@
 .header-content {
   margin-left: auto;
   margin-right: auto;
-  --content-width: 64rem;
+  //--content-width: 64rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
@@ -107,7 +107,7 @@
     position: relative;
     min-height: 200px; /* optional, falls Text kurz ist */
 
-    .flex-column.justify-content-center   {
+    .flex-column.justify-content-center {
       text-align: left;
     }
 
@@ -218,6 +218,11 @@
 
   .hero {
     display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $min-width-lg) {
+      flex-wrap: unset;
+    }
 
     h1 {
       font-size: 3rem;
@@ -243,7 +248,7 @@
 
     @media (min-width: $min-width-lg) {
       max-width: 500px;
-      //position: absolute;
+      position: absolute;
     }
     @media (min-width: $min-width-xxl) {
       max-width: 700px;

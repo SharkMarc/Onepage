@@ -16,91 +16,91 @@ export const VerticalTimeline = () => {
 
     return (
         <>
-            <section>
-                <h2>Experience</h2>
+            <section className={'grid-1-1'}>
+                <div>
+                    <h2>Experience</h2>
 
-                <div className="timeline-container blue"
-                     ref={ref2}>
-                    <div className="timeline-line"/>
-                    {timelineExperience.map((entry, index) => (
-                        <motion.div
-                            key={index}
-                            className="timeline-item"
-                            initial={{opacity: 0, scaleY: 0}}
-                            animate={inView2 ? {opacity: 1, scaleY: 1} : {}}
-                            style={{originY: 0}}
-                            transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
-                        >
+                    <div className="timeline-container blue"
+                         ref={ref2}>
+                        <div className="timeline-line"/>
+                        {timelineExperience.map((entry, index) => (
                             <motion.div
-                                className="timeline-dot"
+                                key={index}
+                                className="timeline-item"
                                 initial={{opacity: 0, scaleY: 0}}
                                 animate={inView2 ? {opacity: 1, scaleY: 1} : {}}
+                                style={{originY: 0}}
                                 transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
-                            />
+                            >
+                                <motion.div
+                                    className="timeline-dot"
+                                    initial={{opacity: 0, scaleY: 0}}
+                                    animate={inView2 ? {opacity: 1, scaleY: 1} : {}}
+                                    transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
+                                />
 
 
-                            <div className="timeline-card">
-                                <h2>{entry.title}</h2>
-                                {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
-                                {entry.location && <p className="location">{entry.location}</p>}
-                                <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>
+                                <div className="timeline-card">
+                                    <h2>{entry.title}</h2>
+                                    {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
+                                    {entry.location && <p className="location">{entry.location}</p>}
+                                    <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>
 
 
-                                {entry.details && (
-                                    <ul className="details">
-                                        {entry.details.map((d, i) => (
-                                            <li key={i}>{d}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        </motion.div>
-                    ))}
-
-
-                    {/*<Separator className="my-6" />*/}
+                                    {entry.details && (
+                                        <ul className="details">
+                                            {entry.details.map((d, i) => (
+                                                <li key={i}>{d}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
-            </section>
-            <section>
-                <h2>Lebenslauf</h2>
+                <div>
+                    <h2>Lebenslauf</h2>
 
-                <div className="timeline-container silver"
-                     ref={ref}>
-                    <div className="timeline-line"/>
-                    {timeline.map((entry, index) => (
-                        <motion.div
-                            key={index}
-                            className="timeline-item"
-                            initial={{opacity: 0, scaleY: 0}}
-                            animate={inView ? {opacity: 1, scaleY: 1} : {}}
-                            style={{originY: 0}}
-                            transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
-                        >
+                    <div className="timeline-container silver"
+                         ref={ref}>
+                        <div className="timeline-line"/>
+                        {timeline.map((entry, index) => (
                             <motion.div
-                                className="timeline-dot"
+                                key={index}
+                                className="timeline-item"
                                 initial={{opacity: 0, scaleY: 0}}
                                 animate={inView ? {opacity: 1, scaleY: 1} : {}}
+                                style={{originY: 0}}
                                 transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
-                            />
+                            >
+                                <motion.div
+                                    className="timeline-dot"
+                                    initial={{opacity: 0, scaleY: 0}}
+                                    animate={inView ? {opacity: 1, scaleY: 1} : {}}
+                                    transition={{duration: 0.5, delay: index * 0.4 + 0.4}}
+                                />
 
 
-                            <div className="timeline-card">
-                                <h2>{entry.title}</h2>
-                                {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
-                                {entry.location && <p className="location">{entry.location}</p>}
-                                <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>
+                                <div className="timeline-card">
+                                    <h2>{entry.title}</h2>
+                                    {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
+                                    {entry.location && <p className="location">{entry.location}</p>}
+                                    <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>
 
 
-                                {entry.details && (
-                                    <ul className="details">
-                                        {entry.details.map((d, i) => (
-                                            <li key={i}>{d}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        </motion.div>
-                    ))}
+                                    {entry.details && (
+                                        <ul className="details">
+                                            {entry.details.map((d, i) => (
+                                                <li key={i}>{d}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+
                 </div>
             </section>
         </>

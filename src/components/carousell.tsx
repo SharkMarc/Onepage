@@ -12,13 +12,45 @@ const cardsData = [
     {
         title: 'Junior Frontend Developer',
         place: "speisekarte.de",
-        content: 'Redesign Speisekarte.de',
+        content: {
+            experience: [
+                'Redesign von Speisekarte.de',
+                'Daily business',
+                'Pickup card',
+                'Speisekarten WYSIWYG',
+                'Premium seiten'
+            ],
+            text: [
+                'Twig',
+                'Javascript',
+                'css',
+                'REST Api'
+            ]
+        },
         date: "01/2019 - 12/2020"
     },
     {
         title: 'Frontend Developer',
         place: "freelancermap.de",
-        content: 'multiple redesigns',
+        content: {
+            experience: [
+                    "2 Redesigns",
+                    "Admin",
+                    "Freelancer/Provider Suche",
+                    "Daily business",
+            ],
+            text: [
+                'Redux',
+                'REST Api',
+                'SCSS',
+                'Typescript',
+                'Jest',
+                'PHP',
+                'Pagespeed',
+                'React Admin',
+                'Figma'
+                ]
+        },
         date: "01/2021 - bis heute"
     },
 ];
@@ -83,8 +115,24 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
                                     <img className={'img-responsive'} src={data.src} alt={data.title}/>
                                 </a>
 
-                                <p>{data.content}</p>
-
+                                <div className={'grid-1-1 gap-8'}>
+                                    <div className={''}>
+                                        <h3 className={'w-100'}>Anforderung</h3>
+                                        <ul>
+                                            {data.content.experience && data.content.experience.length && data.content.experience.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                       </ul>
+                                    </div>
+                                    <div className={''}>
+                                        <h3 className={'w-100'}>Werkzeug</h3>
+                                        <ul>
+                                            {data.content && data.content.text && data.content.text.length && data.content.text.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}

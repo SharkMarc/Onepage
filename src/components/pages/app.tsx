@@ -20,44 +20,119 @@ export const projectImagePaths = [
         src: freelancermapImg,
         alt: 'freelancermap',
         title: 'Freelancermap',
-        content: 'Redesign / Admin / Suche / Daily Work für die größte Projektplattform für Freelancing im deutschsprachigen Raum',
+        content: {
+            experience: [
+                "2 Redesigns",
+                "Admin",
+                "Freelancer/Provider Suche",
+                "Daily business",
+            ],
+            text: [
+                'Redux',
+                'REST Api',
+                'SCSS',
+                'Typescript',
+                'Jest',
+                'PHP',
+                'Pagespeed',
+                'React Admin',
+                'Figma'
+            ]
+        } ,
         link: 'https://www.freelancermap.de/'
     },
     {
         src: designenlassenImg,
         alt: 'designenlassen',
         title: 'Designenlassen',
-        content: 'Redesign - Portal für Logo-Design, Webdesign, Print-Design, Namensfindung ',
+        content: {
+            experience: [
+                "Redesign",
+                "Admin",
+                "4 Wochen Zeit"
+            ],
+            text: [
+                'TWIG',
+                'REST Api',
+                'SCSS',
+                'Pagespeed',
+                'Admin',
+                'Figma'
+            ]
+        },
         link: 'https://www.designenlassen.de/'
     },
     {
         src: speisekarteImg,
         alt: 'speisekarte',
         title: 'Speisekarte',
-        content: 'Redesign - Daily work - Die Speisekarte ist das Aushängeschild eines jeden Restaurants. Sie vermittelt den Gästen einen ersten Eindruck, was sie bei einem Besuch erwartet und ist häufig ausschlaggebend dafür, ob ein Restaurant besucht wird oder nicht. ',
+        content: {
+            experience: [
+                'Redesign von Speisekarte.de',
+                'Daily business',
+                'Pickup card',
+                'Speisekarten WYSIWYG',
+                'Premium seiten'
+            ],
+            text: [
+                'Twig',
+                'Javascript',
+                'css',
+                'REST Api'
+            ]},
         link: 'https://www.speisekarte.de/'
     },
     {
         src: prevaImg,
         alt: 'processevaluation',
         title: 'Processevaluation',
-        content: 'Erstellung der Provessevaluation Seite',
+        content: {
+            experience: [
+                'Umsetzung der Doktorarbeit',
+                'Algorythmen inplentation'
+            ],
+            text: [
+                'Redux',
+                'PHP',
+                'Server',
+                'SCSS'
+            ]
+        },
         link: 'https://processevaluation.de/'
     },
     {
         src: freelanceomatImg,
         alt: 'freelanceomat',
         title: 'Freelance-o-mat',
-        content: 'Erstellung des FreelanceOMat laut der Fragestellung => Kreativer Kopf oder analytische Intelligenzbestie?\n' +
-            'Netzwerk-Profi oder strukturierte EinzelkämpferIn?\n' +
-            'Finde heraus, welcher Freelancer-Typ du bist.',
+        content: {
+            experience: [
+                'Erstellung des Freelance-O-Mat',
+                'Umfrage'
+            ],
+            text: [
+                'Figma',
+                'scss',
+                'Redux',
+            ],
+        },
         link: 'https://www.freelance-o-mat.de/'
     },
     {
         src: gastromanagerImg,
         alt: 'gastromanager',
         title: 'Gastromanager',
-        content: 'Erstellung des Gastromanagers - Ein Ort für gastronomen, ihren Online auftritt zu verwalten. Von Öffnungszeiten, Speisekarten erstellen,  eine Pickup karte zu erstellen ( Corona), Reservierungen zu verwalten und mehr.',
+        content: {
+            experience: [
+                'Erstellung des Gastromanagers - Ein Ort für gastronomen, ihren Online auftritt zu verwalten.',
+                'Umfrage'
+            ],
+            text: [
+                'scss',
+                'React',
+                'REST Api',
+            ],
+            // text:'Von Öffnungszeiten, Speisekarten erstellen,  eine Pickup karte zu erstellen ( Corona), Reservierungen zu verwalten und mehr.',
+        },
         link: 'https://gastro.speisekarte.de/anmelden'
     }
 ];

@@ -28,7 +28,7 @@ export const Header = ({}) => {
                     <div className={'hero-inner'}>
                         <h1>Welcome to MyOnePager</h1>
 
-                        <div className={'hero-content'}>
+                        <div className={'hero-content grid-1-1'}>
                             <div className={'flex-column justify-content-center'}>
                                 <p><img className={'icon'} src={name} alt={'name'}/> Marc Spree</p>
                                 <p><img className={'icon'} src={birthday} alt={'birthday'}/> 21.05.1992</p>
@@ -65,7 +65,7 @@ export const Header = ({}) => {
                                 <button className={'d-flex cursor-pointer btn-no-style'} onClick={() => scrollTo('contact')}>
                                     <img className={'icon'} src={user} alt={'user'}/>Kontakt
                                 </button>
-                            </div>
+                            </div><div></div>
                         </div>
                     </div>
                     <img className={'img-marc hero-img img-responsive'} src={marc}

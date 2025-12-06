@@ -3,7 +3,10 @@ import React from 'react';
 
 interface CardProps {
     title: string;
-    content: string;
+    content: {
+        experience: string[],
+        text: string[];
+    };
     link?: string;
     date?: string;
     place?: string;
@@ -18,7 +21,8 @@ export const Card= ({ title, content, name, link, date, place, details }:CardPro
         <div className={"title"}>{title}</div>
 
         <h3>{name}</h3>
-        <p>{content}</p>
+        <p>{content.experience}</p>
+        <p>{content.text}</p>
         {details && details.map((d, i) => (
             <li key={i}>{d}</li>
         ))}

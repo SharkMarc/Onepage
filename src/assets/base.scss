@@ -8,6 +8,7 @@
 @use "components/image" as *;
 @use "components/timeline" as *;
 @use "pages/contact" as *;
+@use "variables" as *;
 
 body {
   margin: 0;
@@ -45,6 +46,11 @@ body {
     --content-width: 80rem;
     --gap-betweensections: var(--spacing-40);
   }
+
+  @media (min-width: $min-width-xxl) {
+    --pagemargin: auto;
+  }
+
   --gap-betweensections: var(--spacing-40);
 }
 
@@ -56,14 +62,26 @@ main {
 }
 
 section {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: var(--pagemargin);
+  margin-right: var(--pagemargin);
   max-width: 100%;
-  width: var(--content-width);
+  //width: var(--content-width);
+}
+
+.header-content {
+  padding-left: var(--pagemargin);
+  padding-right: var(--pagemargin);
+
+  .grid-1-1 {
+    grid-template-columns: unset;
+    @media (min-width: $min-width-lg) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
 }
 
 header {
-  width: var(--content-width);
+  max-width: var(--content-width);
   margin: auto;
 }
 
