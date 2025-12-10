@@ -16,9 +16,9 @@ export const VerticalTimeline = () => {
 
     return (
         <>
-            <section className={'grid-1-1'}>
+            <section id="resume" className={'grid-1-1'}>
                 <div>
-                    <h2>Experience</h2>
+                    <h2>Qualifikation</h2>
 
                     <div className="timeline-container blue"
                          ref={ref2}>
@@ -41,7 +41,7 @@ export const VerticalTimeline = () => {
 
 
                                 <div className="timeline-card">
-                                    <h2>{entry.title}</h2>
+                                    <h3>{entry.title}</h3>
                                     {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
                                     {entry.location && <p className="location">{entry.location}</p>}
                                     <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>
@@ -83,7 +83,7 @@ export const VerticalTimeline = () => {
 
 
                                 <div className="timeline-card">
-                                    <h2>{entry.title}</h2>
+                                    <h3>{entry.title}</h3>
                                     {entry.subtitle && <p className="subtitle">{entry.subtitle}</p>}
                                     {entry.location && <p className="location">{entry.location}</p>}
                                     <p className="date">{entry.start}{entry.end ? " – " + entry.end : null}</p>

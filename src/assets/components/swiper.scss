@@ -172,10 +172,11 @@
 .swiper {
   height: auto;
 
-  img {
+  img:not(.icon) {
     height: auto;
     width: 100%;
     object-fit: cover;
+    border: 1px solid #000;
   }
 
   @media (min-width: $min-width-sm) {
@@ -187,14 +188,14 @@
   @media (min-width: $min-width-lg) {
     //height: 40rem;
 
-    img {
+    img:not(.icon) {
       height: 24rem;
       min-height: 24rem;
     }
   }
 
   .grid-1-1 {
-    margin-top: 16px;
+    margin-top: 32px;
   }
 }
 
@@ -205,12 +206,26 @@
   width: 100%;
 
   .swiper-wrapper {
+    align-items: flex-start;
     height: auto;
+
+    h3 {
+      margin-bottom: 32px;
+    }
+
+    .align-items-center h3{
+      margin-bottom: 0;
+      align-items: center;
+    }
   }
 }
 
 .swiper-item {
   margin: auto auto 60px;
+
+  ul {
+    margin-top: 8px;
+  }
 
   @media (min-width: $min-width-xs) {
     margin: auto 3rem auto 3rem;

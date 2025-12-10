@@ -18,16 +18,16 @@ export const Contact = ({}) => {
 
     return (
         <div className={''}>
-            <div id={"contact"} className="contact"><h2 className="mg-b-display-m">Kontakt</h2>
-                <div className="contact-information mg-b-xl">
-                    <div className="rounded-image-border">
-                        <div className="rounded-image" style={{borderRadius: "1rem"}}>
-                            <img className={'img-marc img-responsive'} src={marc}
-                                 alt={'Marc'}/>
+            <div id={"contact"}>
+                <h2 className="display-desktop">Kontakt</h2>
+
+                    <div className="contact d-grid gap-8">
+                        <div className="rounded-image-border">
+                            <div className="rounded-image" style={{borderRadius: "1rem"}}>
+                                <img className={'img-marc img-responsive'} src={marc}
+                                     alt={'Marc'}/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="contact-text d-grid gap-8">
-                        <p className="text-bold">Marc Spree</p>
                         <p>
                             <img className={'icon'} src={phone} alt={'phone'}/>
                             <a data-testid="phone-contact" data-id="phone-contact" href="phone:+49 15155540232"
@@ -64,7 +64,6 @@ export const Contact = ({}) => {
                     <div className={`toast ${showToast ? "show" : ""}`}>
                         Copied!
                     </div>
-                </div>
             </div>
         </div>
     )

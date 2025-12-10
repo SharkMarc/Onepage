@@ -111,9 +111,20 @@
       text-align: left;
     }
 
+    p, ul, button {
+      font-size: 18px
+    }
+
+    button {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
     ul {
       list-style: none;
       margin-top: 0;
+      gap: 8px;
+      display: grid;
 
       li {
         margin-left: 16px;
@@ -227,7 +238,12 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 3rem;
-      margin-top: 0;
+      margin-top: 3rem;
+
+      @media (min-width: $min-width-lg) {
+        margin-bottom: 4rem;
+        margin-top: 0;
+      }
     }
 
     .cta {
@@ -245,13 +261,17 @@
     object-fit: contain;
     right: 0;
     max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $min-width-lg) {
       max-width: 500px;
       position: absolute;
+      margin-left: unset;
+      margin-right: unset;
     }
     @media (min-width: $min-width-xxl) {
-      max-width: 700px;
+      max-width: 600px;
     }
   }
 }

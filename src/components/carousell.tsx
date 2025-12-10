@@ -2,6 +2,8 @@ import React from 'react';
 import {Card} from './card';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination, Autoplay} from 'swiper/modules';
+import pen from './assets/images/pen.png';
+import hammer from './assets/images/hammer.png';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -34,10 +36,10 @@ const cardsData = [
         place: "freelancermap.de",
         content: {
             experience: [
-                    "2 Redesigns",
-                    "Admin",
-                    "Freelancer/Provider Suche",
-                    "Daily business",
+                "2 Redesigns",
+                "Admin",
+                "Freelancer/Provider Suche",
+                "Daily business",
             ],
             text: [
                 'Redux',
@@ -49,7 +51,7 @@ const cardsData = [
                 'Pagespeed',
                 'React Admin',
                 'Figma'
-                ]
+            ]
         },
         date: "01/2021 - bis heute"
     },
@@ -117,15 +119,24 @@ export const Carousel = ({isProject, data}: CarouselProps) => {
 
                                 <div className={'grid-1-1 gap-8'}>
                                     <div className={''}>
-                                        <h3 className={'w-100'}>Anforderung</h3>
+                                        <div className={'w-100 d-flex align-items-center'}>
+                                            <img className="icon"
+                                                 alt="Erfahrung / Aufgaben"
+                                                 src={hammer}/>
+                                            <h3>Anforderungen</h3>
+                                        </div>
                                         <ul>
                                             {data.content.experience && data.content.experience.length && data.content.experience.map((item, index) => (
                                                 <li key={index}>{item}</li>
                                             ))}
-                                       </ul>
+                                        </ul>
                                     </div>
                                     <div className={''}>
-                                        <h3 className={'w-100'}>Werkzeug</h3>
+                                        <div className={'w-100 d-flex align-items-center'}>
+                                            <img className="icon" alt="Werkzeug"
+                                                 src={pen}/>
+                                            <h3>Werkzeug</h3>
+                                        </div>
                                         <ul>
                                             {data.content && data.content.text && data.content.text.length && data.content.text.map((item, index) => (
                                                 <li key={index}>{item}</li>

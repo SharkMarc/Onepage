@@ -8,16 +8,21 @@ export const HowIWork = ({}) => {
             content: "Ich arbeite strukturiert mit Aufgaben und Tickets, um den Überblick zu behalten."
         },
         {
+            title: "KI & Smart Tools",
+            content: "Ich nutze KI-gestützte Tools wie GitHub Copilot, JetBrains AI und ChatGPT, " +
+                "um effizienter zu arbeiten, Ideen schneller umzusetzen und die Qualität meines Codes zu verbessern."
+        },
+        {
             title: "Zusammenarbeit mit Product Ownern",
             content: "Ich stimme mich regelmäßig ab, um Anforderungen klar zu verstehen."
         },
         {
-            title: "Designer",
-            content: "Ich arbeite eng mit Designern zusammen, um eine einheitliche User Experience zu gewährleisten."
+            title: "Zusammenarbeit mit Designer",
+            content: "Eine enge Zusammenarbeit mit den Designern stellt sicher, dass die User Experience konsistent bleibt."
         },
         {
             title: "Code Reviews",
-            content: "Ich überprüfe und gebe Feedback zu Code, um Qualität und Best Practices sicherzustellen."
+            content: "Durch gründliche Code Reviews steuere ich aktiv zur Qualitätssicherung und zur Einhaltung von Best Practices bei."
         },
         {
             title: "Neuster Stand der Technik",
@@ -25,7 +30,7 @@ export const HowIWork = ({}) => {
         },
         {
             title: "Pair Programming",
-            content: "Ich teile mein Wissen durch gemeinsame Programmier-Sessions und lerne gleichzeitig dazu."
+            content: "Gemeinsame Programmier-Sessions ermöglichen es mir, Wissen zu teilen und gleichzeitig neue Ansätze kennenzulernen."
         },
         {
             title: "Selbtständigkeit",
@@ -52,7 +57,8 @@ export const HowIWork = ({}) => {
         <div>
             <div className={'align-item-start grid-1-1 gap-8'}>
                 {workItems.map((item, i) => (
-                    <div key={"how-i-work-" + i} className={`${openSections["how-i-work-" + i] ? "card gap-8 cursor-pointer": "card cursor-pointer"}`}
+                    <div key={"how-i-work-" + i}
+                         className={`${openSections["how-i-work-" + i] ? "card gap-8 cursor-pointer" : "card cursor-pointer"}`}
                          onClick={() => toggleSection("how-i-work-" + i)}>
                         <div className={"title d-flex justify-content-center"}>{item.title}
                             <img alt={'collapse carrot'}

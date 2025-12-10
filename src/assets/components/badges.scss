@@ -24,7 +24,7 @@
 }
 
 .badge {
-  position: relative;   /* <<< DAS FEHLT! */
+  position: relative;
   overflow: visible;
   align-items: center;
   background: $white;
@@ -39,14 +39,14 @@
   line-height: 1;
   padding: 0.5em;
   text-wrap: nowrap;
+
+  &.badge-success{
+    background: #e0dbf1
+  }
 }
 
 .badge.badge-no-border {
   border-color: transparent
-}
-
-.badge.badge-brand,.badge.badge-highlight {
-  border: 1px solid #000
 }
 
 .badge i {
@@ -54,23 +54,12 @@
   font-weight: 500
 }
 
-.badge i.fa-solid,.badge i.fas {
-  font-weight: 900
-}
-
-.badge.badge-icon-start i {
-  margin-right: 8px
-}
-
-.badge.badge-icon-end i {
-  margin-left: 8px
-}
-
 @media (hover: hover) {
   .badge.badge-action:focus-visible:hover,a.badge:focus-visible:hover {
     box-shadow:none
   }
 }
+
 
 .badge-list {
   align-items: center;

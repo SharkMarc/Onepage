@@ -13,6 +13,8 @@ import speisekarteImg from '../assets/images/speisekarte.png';
 import prevaImg from '../assets/images/preva.png';
 import freelanceomatImg from '../assets/images/freelanceomat.png';
 import gastromanagerImg from '../assets/images/gastromanager.png';
+import kom21 from '../assets/images/kom21.png';
+import gossenmetrawatt from '../assets/images/gossenmetrawatt.png';
 import {VerticalTimeline} from "../timeline-fnction";
 
 export const projectImagePaths = [
@@ -38,7 +40,7 @@ export const projectImagePaths = [
                 'React Admin',
                 'Figma'
             ]
-        } ,
+        },
         link: 'https://www.freelancermap.de/'
     },
     {
@@ -79,7 +81,8 @@ export const projectImagePaths = [
                 'Javascript',
                 'css',
                 'REST Api'
-            ]},
+            ]
+        },
         link: 'https://www.speisekarte.de/'
     },
     {
@@ -111,7 +114,7 @@ export const projectImagePaths = [
             ],
             text: [
                 'Figma',
-                'scss',
+                'SCSS',
                 'Redux',
             ],
         },
@@ -127,50 +130,84 @@ export const projectImagePaths = [
                 'Umfrage'
             ],
             text: [
-                'scss',
+                'SCSS',
                 'React',
                 'REST Api',
             ],
             // text:'Von Öffnungszeiten, Speisekarten erstellen,  eine Pickup karte zu erstellen ( Corona), Reservierungen zu verwalten und mehr.',
         },
         link: 'https://gastro.speisekarte.de/anmelden'
-    }
+    },
+    {
+        src: kom21,
+        alt: 'kom21',
+        title: 'kom21',
+        content: {
+            experience: [
+                "Praxissemester",
+                "Geoserver"
+            ],
+            text: [
+                'HTML',
+                'SCSS',
+            ]
+        },
+        link: 'https://www.kom21.de/geoserver_fachschalen.html'
+    },
+    {
+        src: gossenmetrawatt,
+        alt: 'Aushilfskraft bei Gossenmetrawatt – IT-Support',
+        title: 'Aushilfskraft bei Gossenmetrawatt – IT-Support',
+        content: {
+            experience: [
+                "Support",
+            ],
+            text: [
+                'Support',
+            ]
+        },
+        link: 'https://www.gossenmetrawatt.de/'
+    },
 ];
 
 
 const badgesClientSide = [
-    {label: "React", tooltip: "Frontend Library für UI-Komponenten"},
-    {label: "Javascript", tooltip: "DIE Sprache des Webs"},
-    {label: "TypeScript", tooltip: "JS + Types für bessere Wartbarkeit"},
-    {label: "Twig", tooltip: "Templating Engine für PHP/Symfony"},
-    {label: "JEST", tooltip: "JavaScript Testing Framework"},
-    {label: "(S)CSS", tooltip: "Moderne Stylesheets mit Nesting & mehr"},
-    {label: "Bootstrap", tooltip: "CSS-Framework für schnelle Layouts"},
-    {label: "SASS", tooltip: "CSS Präprozessor mit Variablen & Mixins"},
-    {label: "Node.js", tooltip: "Backend JS-Laufzeitumgebung"},
-    {label: "Responsive Design", tooltip: "Mobile-first Layout Prinzipien"},
-    {label: "SEO", tooltip: "Optimierung für Suchmaschinen"},
-    {label: "Barrierefreiheit", tooltip: "Accessibility Standards"},
-    {label: "React Server Side Rendering", tooltip: "SSR mit React (Next.js etc.)"},
-    {label: "Javascript", tooltip: "Programmiersprache für Frontend & Backend"},
-    {label: "Typescript", tooltip: "Statisches Typing für JS"}
+    {label: "Javascript", tooltip: "★★★ DIE Sprache des Webs", isSuccess: true},
+    {label: "TypeScript", tooltip: "★★★ JS + Types für bessere Wartbarkeit", isSuccess: true},
+    {label: "React", tooltip: "★★★ Frontend Library für UI-Komponenten", isSuccess: true},
+    {label: "React Server Side Rendering", tooltip: "★★★ SSR mit React (Next.js etc.)", isSuccess: true},
+    {label: "Responsive Design", tooltip: "★★★ Mobile-first Layout Prinzipien", isSuccess: true},
+
+    {label: "SCSS", tooltip: "★★★ Moderne Stylesheets mit Nesting & mehr", isSuccess: true},
+    {label: "SASS", tooltip: "★★★ CSS Präprozessor mit Variablen & Mixins", isSuccess: true},
+    {label: "Bootstrap", tooltip: "★★★ CSS-Framework für schnelle Layouts", isSuccess: true},
+
+    {label: "Twig", tooltip: "★★ Templating Engine für PHP/Symfony", isSuccess: false},
+    {label: "Node.js", tooltip: "★★ Backend JS-Laufzeitumgebung", isSuccess: false},
+
+    {label: "Barrierefreiheit", tooltip: "★★★ Accessibility Standards", isSuccess: true},
+    {label: "SEO", tooltip: "★★★ Optimierung für Suchmaschinen", isSuccess: true},
+
+    {label: "JEST", tooltip: "★★★ JavaScript Testing Framework", isSuccess: true},
 ];
 // const tools = [
 //     "npm", "webpack", "git", "github"
 // ]
 const badgesServerSide = [
-    {label: "PHP", tooltip: "Backend-Skriptsprache für Webanwendungen"},
-    {label: "Symfony", tooltip: "Enterprise PHP Framework für komplexe Apps"},
-    {label: "MariaDB", tooltip: "Open-Source SQL Datenbank (MySQL Fork)"},
-    {label: "Infrastruktur", tooltip: "Server, Netzwerke & Deployment-Prozesse"},
-    {label: "DevOps", tooltip: "CI/CD, Automatisierung & Deployment"},
-    {label: "Docker / Docker Compose", tooltip: "Containerisierung & Multi-Service Setup"},
-    {label: "Bitbucket", tooltip: "Code-Repository & Git Management Tool"},
-    {label: "Jira", tooltip: "Projekt- & Ticketmanagement für Teams"}
+    {label: "PHP", tooltip: "★★ Backend-Skriptsprache für Webanwendungen", isSuccess: false},
+    {label: "Symfony", tooltip: "★★ Enterprise PHP Framework für komplexe Apps", isSuccess: false},
+    {label: "MariaDB", tooltip: "★★ Open-Source SQL Datenbank (MySQL Fork)", isSuccess: false},
+
+    {label: "DevOps", tooltip: "★★ CI/CD, Automatisierung & Deployment", isSuccess: false},
+    {label: "Docker / Docker Compose", tooltip: "★★ Containerisierung & Multi-Service Setup", isSuccess: false},
+    {label: "Infrastruktur", tooltip: "★ Server, Netzwerke & Deployment-Prozesse", isSuccess: false},
+
+    {label: "Bitbucket", tooltip: "★★★ Code-Repository & Git Management Tool", isSuccess: true},
+    {label: "Jira", tooltip: "★★★ Projekt- & Ticketmanagement für Teams", isSuccess: true}
 ];
 
 const badgesUiUx = [
-    {label: "Figma", tooltip: "UI/UX Design & Prototyping Tool"}
+    {label: "Figma", tooltip: "★★★ UI/UX Design & Prototyping Tool", isSuccess: true}
 ];
 
 
@@ -229,14 +266,7 @@ const App = () => {
             <main>
                 {/*<div className={'app flex-wrap'}>*/}
                 <div className={''}>
-                    <section>
-                        <h2>Projekte</h2>
-                        <Carousel isProject={true} data={projectImagePaths}/>
-                    </section>
-
-                    {/*has sections inside */}
-                    <VerticalTimeline/>
-                    <section>
+                    <section id={"skills"}>
                         <div className={"w-100"}>
                             <h2>Skills</h2>
 
@@ -252,7 +282,7 @@ const App = () => {
                                         <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
                                             {badges.map((badge, i) => (
                                                 <Badge key={`${key}-badge-${i}`} content={badge.label}
-                                                       tooltip={badge.tooltip}/>
+                                                       tooltip={badge.tooltip} isSuccess={badge.isSuccess} />
                                             ))}
                                         </div>
                                     </div>
@@ -260,15 +290,26 @@ const App = () => {
                             </div>
                         </div>
                     </section>
-                    <section>
+
+                    <section id={"projects"}>
+                        <h2>Meine Projekte</h2>
+                        <Carousel isProject={true} data={projectImagePaths}/>
+                    </section>
+
+                    {/*has sections inside */}
+                    <VerticalTimeline/>
+
+                    <section id={'howiwork'}>
                         <div>
-                            <h2>How i work</h2>
+                            <h2>How I work</h2>
                             <div className={'flex-column gap-8 w-100 text-center'}>
                                 <HowIWork/>
                             </div>
                         </div>
                     </section>
+
                     <AboutMe/>
+
                     <section>
                         <Contact/>
                     </section>

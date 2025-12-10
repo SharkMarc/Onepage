@@ -11,38 +11,37 @@ export interface TimelineEntry {
 
 export const timeline: TimelineEntry[] = [
 // PROFILE
-    {
-        title: "Geburtsdatum",
-        subtitle: "21. Mai 1992",
-        location: "Nürnberg, Deutschland",
-        start: "1992-05-21",
-        category: "profile"
-    },
+//     {
+//         title: "Geburtsdatum",
+//         subtitle: "21. Mai 1992",
+//         location: "Nürnberg, Deutschland",
+//         start: "1992-05-21",
+//         category: "profile"
+//     },
 
 // EDUCATION
     {
-        title: "Kein Abschluss",
-        subtitle: "Hochschule Schmalkalden – BWL, IT und Marketing",
+        title: "Bachelor",
+        subtitle: "Hochschule Schmalkalden – Multimediamarketing",
         location: "Thüringen",
-        start: "2018",
+        start: "2013",
         end: "2018",
         category: "education",
         details: [
-            "Praxissemester bei KOM21",
-            "Ziel: Entwicklung einer mobilen Geoinformationsanwendung mit Javascript, HTML und CSS"
+            "Bachelor"
         ]
     },
-    // {
-    //     title: "Kein Abschluss",
-    //     subtitle: "Hochschule Ansbach – Wirtschaftsinformatik",
-    //     location: "Ansbach",
-    //     start: "2013",
-    //     end: "2013",
-    //     category: "education",
-    //     details: [
-    //         "Aushilfskraft bei Gossenmetrawatt 2014 – IT-Support"
-    //     ]
-    // },
+    {
+        title: "Bachelor",
+        subtitle: "Hochschule Ansbach – Wirtschaftsinformatik",
+        location: "Ansbach",
+        start: "2013",
+        end: "2013",
+        category: "education",
+        details: [
+            "Ohne Abschluss"
+        ]
+    },
     {
         title: "Fachhochschulreife",
         subtitle: "Fachhochschule Nürnberg – BWL, VWL, Wirtschaftswissenschaften",
