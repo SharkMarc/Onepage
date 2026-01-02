@@ -1,0 +1,286 @@
+header:
+  headline: "Digital solutions — with heart & code"
+
+  personal:
+    name: "Marc Spree"
+    birthday: "21.05.1992"
+    location: "Germany, Nuremberg"
+    languages: "German (native), English (fluent)"
+
+  intro:
+    greeting: "Hi, I'm Marc."
+    text: >
+      I love connecting people, ideas, and projects and finding ways to
+      create meaningful impact together.
+      What drives me: genuine collaboration, clear communication, and
+      projects that are fun and create real value.
+
+  hobbies:
+    title: "Hobbies"
+    items:
+      soccer: "Football"
+      cooking: "Cooking"
+      gaming: "Gaming"
+
+  navigation:
+    skills: "Skills"
+    projects: "Projects"
+    resume: "Portfolio"
+    howIWork: "How I work"
+    contact: "Contact"
+
+skills:
+  title: My Skills
+  client: Client-side
+  server: Server-side
+  uiux: UI / UX
+  badges:
+    javascript:
+      label: Javascript
+      tooltip: "★★★ The language of the web"
+    typescript:
+      label: TypeScript
+      tooltip: "★★★ JS + Types for better maintainability"
+    react:
+      label: React
+      tooltip: "★★★ Frontend library for UI components"
+    reactSSR:
+      label: React Server Side Rendering
+      tooltip: "★★★ SSR with React (Next.js etc.)"
+    responsive:
+      label: Responsive Design
+      tooltip: "★★★ Mobile-first layout principles"
+    scss:
+      label: SCSS
+      tooltip: "★★★ Modern stylesheets with nesting & more"
+    sass:
+      label: SASS
+      tooltip: "★★★ CSS preprocessor with variables & mixins"
+    bootstrap:
+      label: Bootstrap
+      tooltip: "★★★ CSS framework for fast layouts"
+    twig:
+      label: Twig
+      tooltip: "★★ Templating engine for PHP/Symfony"
+    node:
+      label: Node.js
+      tooltip: "★★ Backend JS runtime"
+    accessibility:
+      label: Accessibility
+      tooltip: "★★★ Accessibility standards"
+    seo:
+      label: SEO
+      tooltip: "★★★ Search engine optimization"
+    jest:
+      label: JEST
+      tooltip: "★★★ JavaScript testing framework"
+    php:
+      label: PHP
+      tooltip: "★★ Backend scripting language for web apps"
+    symfony:
+      label: Symfony
+      tooltip: "★★ Enterprise PHP framework for complex apps"
+    mariadb:
+      label: MariaDB
+      tooltip: "★★ Open-source SQL database (MySQL fork)"
+    devops:
+      label: DevOps
+      tooltip: "★★ CI/CD, automation & deployment"
+    docker:
+      label: Docker / Docker Compose
+      tooltip: "★★ Containerization & multi-service setup"
+    infrastructure:
+      label: Infrastructure
+      tooltip: "★ Servers, networks & deployment processes"
+    bitbucket:
+      label: Bitbucket
+      tooltip: "★★★ Code repository & git management tool"
+    jira:
+      label: Jira
+      tooltip: "★★★ Project & ticket management for teams"
+    figma:
+      label: Figma
+      tooltip: "★★★ UI/UX design & prototyping tool"
+
+projects:
+  title: My Projects
+  label_experience: Requirements
+  label_tools: Tools
+  freelancermap:
+    title: Freelancermap
+    experience:
+      - "2 redesigns"
+      - "Admin"
+      - "Freelancer/Provider search"
+      - "Daily business"
+    text:
+      - "Redux"
+      - "REST Api"
+      - "SCSS"
+      - "Typescript"
+      - "Jest"
+      - "PHP"
+      - "Pagespeed"
+      - "React Admin"
+      - "Figma"
+    link: "https://www.freelancermap.de/"
+  designenlassen:
+    title: Designenlassen
+    experience:
+      - "Redesign"
+      - "Admin"
+      - "4 weeks"
+    text:
+      - "TWIG"
+      - "REST Api"
+      - "SCSS"
+      - "Pagespeed"
+      - "Admin"
+      - "Figma"
+    link: "https://www.designenlassen.de/"
+  speisekarte:
+    title: Speisekarte
+    experience:
+      - "Redesign of Speisekarte.de"
+      - "Daily business"
+      - "Pickup card"
+      - "Menu WYSIWYG"
+      - "Premium pages"
+    text:
+      - "Twig"
+      - "Javascript"
+      - "CSS"
+      - "REST Api"
+    link: "https://www.speisekarte.de/"
+  preva:
+    title: Processevaluation
+    experience:
+      - "Doctoral thesis implementation"
+      - "Algorithm implementation"
+    text:
+      - "Redux"
+      - "PHP"
+      - "Server"
+      - "SCSS"
+    link: "https://processevaluation.de/"
+  freelanceomat:
+    title: Freelance-o-mat
+    experience:
+      - "Creation of Freelance-O-Mat"
+      - "Survey"
+    text:
+      - "Figma"
+      - "SCSS"
+      - "Redux"
+    link: "https://www.freelance-o-mat.de/"
+  gastromanager:
+    title: Gastromanager
+    experience:
+      - "Creation of Gastromanager – a place for restaurateurs to manage their online presence"
+      - "Survey"
+    text:
+      - "SCSS"
+      - "React"
+      - "REST Api"
+    link: "https://gastro.speisekarte.de/anmelden"
+  kom21:
+    title: kom21
+    experience:
+      - "Internship"
+      - "Geoserver"
+    text:
+      - "HTML"
+      - "SCSS"
+    link: "https://www.kom21.de/geoserver_fachschalen.html"
+  gossenmetrawatt:
+    title: Temp Worker at Gossenmetrawatt – IT Support
+    experience:
+      - "Support"
+    text:
+      - "Support"
+    link: "https://www.gossenmetrawatt.de/"
+
+howIWork:
+  title: How I work
+  items:
+    ticketBased:
+      title: Ticket-based Work
+      content: "I work consistently in a ticket-based manner to prioritize tasks transparently, estimate effort realistically, and reliably meet deadlines. This enables clear planning, proper documentation, and traceable execution for all stakeholders."
+    smartTools:
+      title: AI & Smart Tools
+      content: "I use AI-powered tools like GitHub Copilot, JetBrains AI, and ChatGPT purposefully to work more efficiently, implement ideas faster, and sustainably improve code quality."
+    collaborationPO:
+      title: Collaboration with Product Owners
+      content: "Regular coordination with Product Owners ensures that requirements are clearly understood and implemented purposefully."
+    collaborationDesign:
+      title: Collaboration with Designers
+      content: "Close collaboration with designers ensures a consistent user experience and clean implementation of design concepts."
+    codeReviews:
+      title: Code Reviews
+      content: "Through thorough code reviews, I actively contribute to quality assurance and adherence to best practices and coding standards."
+    upToDate:
+      title: Keeping Up-to-Date
+      content: "I continuously educate myself and keep my knowledge of modern technologies, frameworks, and best practices up-to-date."
+    pairProgramming:
+      title: Pair Programming
+      content: "I use pair programming deliberately to share knowledge, develop solutions collaboratively, and gain new perspectives."
+    selfReliance:
+      title: Self-Reliance
+      content: "I take responsibility for my tasks and work independently and solution-oriented."
+    teamPlayer:
+      title: Team Player
+      content: "As a team player, I actively support my colleagues and foster an open, constructive, and cooperative working atmosphere."
+
+timeline:
+  titles:
+    education: Curriculum Vitae
+    experience: Qualifications
+  education:
+    - title: Bachelor
+      subtitle: Schmalkalden University – Multimedia Marketing
+      location: Thuringia
+      start: "2013"
+      end: "2018"
+      category: education
+      details:
+        - Bachelor’s degree
+
+    - title: Bachelor
+      subtitle: Ansbach University – Business Informatics
+      location: Ansbach
+      start: "2013"
+      end: "2013"
+      category: education
+      details:
+        - No degree
+
+    - title: University Entrance Qualification
+      subtitle: Nuremberg University – Business Administration & Economics
+      location: Nuremberg
+      start: "2012"
+      end: "2012"
+      category: education
+
+  experience:
+    - title: Frontend Developer
+      subtitle: freelancermap GmbH
+      location: Nuremberg
+      start: "01/2021"
+      end: present
+      category: job
+      details:
+        - Redesign 2021
+        - Redesign 2024–2025
+        - Admin
+        - freelance-o-mat
+        - designenlassen.de
+
+    - title: Junior Frontend Developer
+      subtitle: united vertical media GmbH
+      location: Nuremberg
+      start: "01/2019"
+      end: "12/2020"
+      category: job
+      details:
+        - Gastromanager
+        - Pickupcard

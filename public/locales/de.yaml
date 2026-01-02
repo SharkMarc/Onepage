@@ -1,0 +1,325 @@
+header:
+  headline: "Digitale Lösungen — mit Herz & Code"
+
+  personal:
+    name: "Marc Spree"
+    birthday: "21.05.1992"
+    location: "Deutschland, Nürnberg"
+    languages: "Deutsch Muttersprache, Englisch verhandlungssicher"
+
+  intro:
+    greeting: "Hey, ich bin Marc."
+    text: >
+      Ich liebe es, Menschen, Ideen und Projekte miteinander zu verbinden
+      und Wege zu finden, wie man gemeinsam etwas bewegen kann.
+      Was mich antreibt: echte Zusammenarbeit, klare Kommunikation und
+      Projekte, die Spaß machen und Mehrwert schaffen.
+
+  hobbies:
+    title: "Hobbys"
+    items:
+      soccer: "Fußball"
+      cooking: "Kochen"
+      gaming: "Gaming"
+
+  navigation:
+    skills: "Skills"
+    projects: "Projekte"
+    resume: "Portfolio"
+    howIWork: "How I work"
+    contact: "Kontakt"
+
+
+skills:
+  title: Meine Skills
+  client: Client-seitig
+  server: Server-seitig
+  uiux: UI / UX
+  badges:
+    javascript:
+      label: Javascript
+      tooltip: "★★★ Die Sprache des Webs"
+    typescript:
+      label: TypeScript
+      tooltip: "★★★ JS + Types für bessere Wartbarkeit"
+    react:
+      label: React
+      tooltip: "★★★ Frontend-Bibliothek für UI-Komponenten"
+    reactSSR:
+      label: React Server Side Rendering
+      tooltip: "★★★ SSR mit React (Next.js etc.)"
+    responsive:
+      label: Responsives Design
+      tooltip: "★★★ Mobile-first Layout-Prinzipien"
+    scss:
+      label: SCSS
+      tooltip: "★★★ Moderne Stylesheets mit Nesting & mehr"
+    sass:
+      label: SASS
+      tooltip: "★★★ CSS-Präprozessor mit Variablen & Mixins"
+    bootstrap:
+      label: Bootstrap
+      tooltip: "★★★ CSS-Framework für schnelle Layouts"
+    twig:
+      label: Twig
+      tooltip: "★★ Templating-Engine für PHP/Symfony"
+    node:
+      label: Node.js
+      tooltip: "★★ Backend-JavaScript-Laufzeitumgebung"
+    accessibility:
+      label: Barrierefreiheit
+      tooltip: "★★★ Accessibility-Standards"
+    seo:
+      label: SEO
+      tooltip: "★★★ Optimierung für Suchmaschinen"
+    jest:
+      label: JEST
+      tooltip: "★★★ JavaScript Testing Framework"
+    php:
+      label: PHP
+      tooltip: "★★ Backend-Skriptsprache für Webanwendungen"
+    symfony:
+      label: Symfony
+      tooltip: "★★ Enterprise-PHP-Framework für komplexe Apps"
+    mariadb:
+      label: MariaDB
+      tooltip: "★★ Open-Source SQL-Datenbank (MySQL-Fork)"
+    devops:
+      label: DevOps
+      tooltip: "★★ CI/CD, Automatisierung & Deployment"
+    docker:
+      label: Docker / Docker Compose
+      tooltip: "★★ Containerisierung & Multi-Service Setup"
+    infrastructure:
+      label: Infrastruktur
+      tooltip: "★ Server, Netzwerke & Deployment-Prozesse"
+    bitbucket:
+      label: Bitbucket
+      tooltip: "★★★ Code-Repository & Git-Management-Tool"
+    jira:
+      label: Jira
+      tooltip: "★★★ Projekt- & Ticketmanagement für Teams"
+    figma:
+      label: Figma
+      tooltip: "★★★ UI/UX Design & Prototyping Tool"
+
+projects:
+  title: Meine Projekte
+  label_experience: Anforderungen
+  label_tools: Werkzeug
+  freelancermap:
+    title: Freelancermap
+    experience:
+      - "2 Redesigns"
+      - "Admin"
+      - "Freelancer/Provider Suche"
+      - "Daily Business"
+    text:
+      - "Redux"
+      - "REST Api"
+      - "SCSS"
+      - "Typescript"
+      - "Jest"
+      - "PHP"
+      - "Pagespeed"
+      - "React Admin"
+      - "Figma"
+    link: "https://www.freelancermap.de/"
+  designenlassen:
+    title: Designenlassen
+    experience:
+      - "Redesign"
+      - "Admin"
+      - "4 Wochen"
+    text:
+      - "TWIG"
+      - "REST Api"
+      - "SCSS"
+      - "Pagespeed"
+      - "Admin"
+      - "Figma"
+    link: "https://www.designenlassen.de/"
+  speisekarte:
+    title: Speisekarte
+    experience:
+      - "Redesign von Speisekarte.de"
+      - "Daily Business"
+      - "Pickup-Karte"
+      - "Menü WYSIWYG"
+      - "Premium-Seiten"
+    text:
+      - "Twig"
+      - "Javascript"
+      - "CSS"
+      - "REST Api"
+    link: "https://www.speisekarte.de/"
+  preva:
+    title: Processevaluation
+    experience:
+      - "Umsetzung der Doktorarbeit"
+      - "Algorithmus-Implementierung"
+    text:
+      - "Redux"
+      - "PHP"
+      - "Server"
+      - "SCSS"
+    link: "https://processevaluation.de/"
+  freelanceomat:
+    title: Freelance-o-mat
+    experience:
+      - "Erstellung des Freelance-O-Mat"
+      - "Umfrage"
+    text:
+      - "Figma"
+      - "SCSS"
+      - "Redux"
+    link: "https://www.freelance-o-mat.de/"
+  gastromanager:
+    title: Gastromanager
+    experience:
+      - "Erstellung des Gastromanagers – Ein Ort für Gastronomen, um ihren Online-Auftritt zu verwalten"
+      - "Umfrage"
+    text:
+      - "SCSS"
+      - "React"
+      - "REST Api"
+    link: "https://gastro.speisekarte.de/anmelden"
+  kom21:
+    title: kom21
+    experience:
+      - "Praxissemester"
+      - "Geoserver"
+    text:
+      - "HTML"
+      - "SCSS"
+    link: "https://www.kom21.de/geoserver_fachschalen.html"
+  gossenmetrawatt:
+    title: Aushilfskraft bei Gossenmetrawatt – IT-Support
+    experience:
+      - "Support"
+    text:
+      - "Support"
+    link: "https://www.gossenmetrawatt.de/"
+
+howIWork:
+  title: Wie ich arbeite
+  items:
+    ticketBased:
+      title: Ticketbasiertes Arbeiten
+      content: "Ich arbeite konsequent ticketbasiert, um Aufgaben transparent zu priorisieren, den Arbeitsaufwand realistisch einzuschätzen und Deadlines zuverlässig einzuhalten. Dies ermöglicht eine klare Planung, eine saubere Dokumentation sowie eine nachvollziehbare Umsetzung für alle Beteiligten."
+    smartTools:
+      title: KI & Smart Tools
+      content: "Ich setze KI-gestützte Tools wie GitHub Copilot, JetBrains AI und ChatGPT gezielt ein, um effizienter zu arbeiten, Ideen schneller umzusetzen und die Codequalität nachhaltig zu verbessern."
+    collaborationPO:
+      title: Zusammenarbeit mit Product Ownern
+      content: "Durch regelmäßige Abstimmungen mit Product Ownern stelle ich sicher, dass Anforderungen klar verstanden und zielgerichtet umgesetzt werden."
+    collaborationDesign:
+      title: Zusammenarbeit mit Designern
+      content: "Die enge Zusammenarbeit mit Designern gewährleistet eine konsistente User Experience und eine saubere Umsetzung der gestalterischen Konzepte."
+    codeReviews:
+      title: Code Reviews
+      content: "Durch sorgfältige Code Reviews trage ich aktiv zur Qualitätssicherung sowie zur Einhaltung von Best Practices und Coding-Standards bei."
+    upToDate:
+      title: Aktueller Stand der Technik
+      content: "Ich bilde mich kontinuierlich weiter und halte mein Wissen zu modernen Technologien, Frameworks und Best Practices stets auf dem neuesten Stand."
+    pairProgramming:
+      title: Pair Programming
+      content: "Pair Programming nutze ich gezielt, um Wissen zu teilen, Lösungen gemeinsam zu erarbeiten und neue Perspektiven kennenzulernen."
+    selfReliance:
+      title: Selbstständigkeit
+      content: "Ich übernehme Verantwortung für meine Aufgaben und arbeite selbstständig sowie lösungsorientiert."
+    teamPlayer:
+      title: Teamplayer
+      content: "Als Teamplayer unterstütze ich meine Kolleginnen und Kollegen aktiv und fördere eine offene, konstruktive kooperative Arbeitsatmosphäre."
+
+cards:
+  - title: Junior Frontend Developer
+    place: "speisekarte.de"
+    content:
+      experience:
+        - "Redesign von Speisekarte.de"
+        - "Daily business"
+        - "Pickup card"
+        - "Speisekarten WYSIWYG"
+        - "Premium seiten"
+      text:
+        - "Twig"
+        - "Javascript"
+        - "CSS"
+        - "REST Api"
+    date: "01/2019 - 12/2020"
+  - title: Frontend Developer
+    place: "freelancermap.de"
+    content:
+      experience:
+        - "2 Redesigns"
+        - "Admin"
+        - "Freelancer/Provider Suche"
+        - "Daily business"
+      text:
+        - "Redux"
+        - "REST Api"
+        - "SCSS"
+        - "Typescript"
+        - "Jest"
+        - "PHP"
+        - "Pagespeed"
+        - "React Admin"
+        - "Figma"
+    date: "01/2021 - bis heute"
+
+timeline:
+  titles:
+    education: Lebenslauf
+    experience: Qualifikation
+  education:
+    - title: Bachelor
+      subtitle: Hochschule Schmalkalden – Multimediamarketing
+      location: Thüringen
+      start: "2013"
+      end: "2018"
+      category: education
+      details:
+        - Bachelor
+
+    - title: Bachelor
+      subtitle: Hochschule Ansbach – Wirtschaftsinformatik
+      location: Ansbach
+      start: "2013"
+      end: "2013"
+      category: education
+      details:
+        - Ohne Abschluss
+
+    - title: Fachhochschulreife
+      subtitle: Fachhochschule Nürnberg – BWL, VWL, Wirtschaftswissenschaften
+      location: Nürnberg
+      start: "2012"
+      end: "2012"
+      category: education
+
+  experience:
+    - title: Frontend Developer
+      subtitle: freelancermap GmbH
+      location: Nürnberg
+      start: "01/2021"
+      end: bis heute
+      category: job
+      details:
+        - Redesign 2021
+        - Redesign 2024–2025
+        - Admin
+        - freelance-o-mat
+        - designenlassen.de
+
+    - title: Junior Frontend Developer
+      subtitle: united vertical media GmbH
+      location: Nürnberg
+      start: "01/2019"
+      end: "12/2020"
+      category: job
+      details:
+        - Gastromanager
+        - Pickupcard
+
+

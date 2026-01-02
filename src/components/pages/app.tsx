@@ -16,235 +16,177 @@ import gastromanagerImg from '../assets/images/gastromanager.png';
 import kom21 from '../assets/images/kom21.png';
 import gossenmetrawatt from '../assets/images/gossenmetrawatt.png';
 import {VerticalTimeline} from "../timeline-fnction";
+import {useTranslation} from "../../hooks/useTranslation";
 
-export const projectImagePaths = [
+// images bleiben wie bisher
+export const projectImagePaths = (t: any) => [
     {
         src: freelancermapImg,
         alt: 'freelancermap',
-        title: 'Freelancermap',
+        title: t.projects.freelancermap.title,
         content: {
-            experience: [
-                "2 Redesigns",
-                "Admin",
-                "Freelancer/Provider Suche",
-                "Daily business",
-            ],
-            text: [
-                'Redux',
-                'REST Api',
-                'SCSS',
-                'Typescript',
-                'Jest',
-                'PHP',
-                'Pagespeed',
-                'React Admin',
-                'Figma'
-            ]
+            experience: t.projects.freelancermap.experience,
+            text: t.projects.freelancermap.text
         },
-        link: 'https://www.freelancermap.de/'
+        link: t.projects.freelancermap.link
     },
     {
         src: designenlassenImg,
         alt: 'designenlassen',
-        title: 'Designenlassen',
+        title: t.projects.designenlassen.title,
         content: {
-            experience: [
-                "Redesign",
-                "Admin",
-                "4 Wochen Zeit"
-            ],
-            text: [
-                'TWIG',
-                'REST Api',
-                'SCSS',
-                'Pagespeed',
-                'Admin',
-                'Figma'
-            ]
+            experience: t.projects.designenlassen.experience,
+            text: t.projects.designenlassen.text
         },
-        link: 'https://www.designenlassen.de/'
+        link: t.projects.designenlassen.link
     },
     {
         src: speisekarteImg,
         alt: 'speisekarte',
-        title: 'Speisekarte',
+        title: t.projects.speisekarte.title,
         content: {
-            experience: [
-                'Redesign von Speisekarte.de',
-                'Daily business',
-                'Pickup card',
-                'Speisekarten WYSIWYG',
-                'Premium seiten'
-            ],
-            text: [
-                'Twig',
-                'Javascript',
-                'css',
-                'REST Api'
-            ]
+            experience: t.projects.speisekarte.experience,
+            text: t.projects.speisekarte.text
         },
-        link: 'https://www.speisekarte.de/'
+        link: t.projects.speisekarte.link
     },
     {
         src: prevaImg,
         alt: 'processevaluation',
-        title: 'Processevaluation',
+        title: t.projects.preva.title,
         content: {
-            experience: [
-                'Umsetzung der Doktorarbeit',
-                'Algorythmen inplentation'
-            ],
-            text: [
-                'Redux',
-                'PHP',
-                'Server',
-                'SCSS'
-            ]
+            experience: t.projects.preva.experience,
+            text: t.projects.preva.text
         },
-        link: 'https://processevaluation.de/'
+        link: t.projects.preva.link
     },
     {
         src: freelanceomatImg,
         alt: 'freelanceomat',
-        title: 'Freelance-o-mat',
+        title: t.projects.freelanceomat.title,
         content: {
-            experience: [
-                'Erstellung des Freelance-O-Mat',
-                'Umfrage'
-            ],
-            text: [
-                'Figma',
-                'SCSS',
-                'Redux',
-            ],
+            experience: t.projects.freelanceomat.experience,
+            text: t.projects.freelanceomat.text
         },
-        link: 'https://www.freelance-o-mat.de/'
+        link: t.projects.freelanceomat.link
     },
     {
         src: gastromanagerImg,
         alt: 'gastromanager',
-        title: 'Gastromanager',
+        title: t.projects.gastromanager.title,
         content: {
-            experience: [
-                'Erstellung des Gastromanagers - Ein Ort für gastronomen, ihren Online auftritt zu verwalten.',
-                'Umfrage'
-            ],
-            text: [
-                'SCSS',
-                'React',
-                'REST Api',
-            ],
-            // text:'Von Öffnungszeiten, Speisekarten erstellen,  eine Pickup karte zu erstellen ( Corona), Reservierungen zu verwalten und mehr.',
+            experience: t.projects.gastromanager.experience,
+            text: t.projects.gastromanager.text
         },
-        link: 'https://gastro.speisekarte.de/anmelden'
+        link: t.projects.gastromanager.link
     },
     {
         src: kom21,
         alt: 'kom21',
-        title: 'kom21',
+        title: t.projects.kom21.title,
         content: {
-            experience: [
-                "Praxissemester",
-                "Geoserver"
-            ],
-            text: [
-                'HTML',
-                'SCSS',
-            ]
+            experience: t.projects.kom21.experience,
+            text: t.projects.kom21.text
         },
-        link: 'https://www.kom21.de/geoserver_fachschalen.html'
+        link: t.projects.kom21.link
     },
     {
         src: gossenmetrawatt,
-        alt: 'Aushilfskraft bei Gossenmetrawatt – IT-Support',
-        title: 'Aushilfskraft bei Gossenmetrawatt – IT-Support',
+        alt: 'gossenmetrawatt',
+        title: t.projects.gossenmetrawatt.title,
         content: {
-            experience: [
-                "Support",
-            ],
-            text: [
-                'Support',
-            ]
+            experience: t.projects.gossenmetrawatt.experience,
+            text: t.projects.gossenmetrawatt.text
         },
-        link: 'https://www.gossenmetrawatt.de/'
+        link: t.projects.gossenmetrawatt.link
     },
 ];
 
 
-const badgesClientSide = [
-    {label: "Javascript", tooltip: "★★★ DIE Sprache des Webs", isSuccess: true},
-    {label: "TypeScript", tooltip: "★★★ JS + Types für bessere Wartbarkeit", isSuccess: true},
-    {label: "React", tooltip: "★★★ Frontend Library für UI-Komponenten", isSuccess: true},
-    {label: "React Server Side Rendering", tooltip: "★★★ SSR mit React (Next.js etc.)", isSuccess: true},
-    {label: "Responsive Design", tooltip: "★★★ Mobile-first Layout Prinzipien", isSuccess: true},
+export const badgesClientSide = (t: any) => [
+    { label: t.skills.badges.javascript.label, tooltip: t.skills.badges.javascript.tooltip, isSuccess: true },
+    { label: t.skills.badges.typescript.label, tooltip: t.skills.badges.typescript.tooltip, isSuccess: true },
+    { label: t.skills.badges.react.label, tooltip: t.skills.badges.react.tooltip, isSuccess: true },
+    { label: t.skills.badges.reactSSR.label, tooltip: t.skills.badges.reactSSR.tooltip, isSuccess: true },
+    { label: t.skills.badges.responsive.label, tooltip: t.skills.badges.responsive.tooltip, isSuccess: true },
 
-    {label: "SCSS", tooltip: "★★★ Moderne Stylesheets mit Nesting & mehr", isSuccess: true},
-    {label: "SASS", tooltip: "★★★ CSS Präprozessor mit Variablen & Mixins", isSuccess: true},
-    {label: "Bootstrap", tooltip: "★★★ CSS-Framework für schnelle Layouts", isSuccess: true},
+    { label: t.skills.badges.scss.label, tooltip: t.skills.badges.scss.tooltip, isSuccess: true },
+    { label: t.skills.badges.sass.label, tooltip: t.skills.badges.sass.tooltip, isSuccess: true },
+    { label: t.skills.badges.bootstrap.label, tooltip: t.skills.badges.bootstrap.tooltip, isSuccess: true },
 
-    {label: "Twig", tooltip: "★★ Templating Engine für PHP/Symfony", isSuccess: false},
-    {label: "Node.js", tooltip: "★★ Backend JS-Laufzeitumgebung", isSuccess: false},
+    { label: t.skills.badges.twig.label, tooltip: t.skills.badges.twig.tooltip, isSuccess: false },
+    { label: t.skills.badges.node.label, tooltip: t.skills.badges.node.tooltip, isSuccess: false },
 
-    {label: "Barrierefreiheit", tooltip: "★★★ Accessibility Standards", isSuccess: true},
-    {label: "SEO", tooltip: "★★★ Optimierung für Suchmaschinen", isSuccess: true},
+    { label: t.skills.badges.accessibility.label, tooltip: t.skills.badges.accessibility.tooltip, isSuccess: true },
+    { label: t.skills.badges.seo.label, tooltip: t.skills.badges.seo.tooltip, isSuccess: true },
 
-    {label: "JEST", tooltip: "★★★ JavaScript Testing Framework", isSuccess: true},
-];
-// const tools = [
-//     "npm", "webpack", "git", "github"
-// ]
-const badgesServerSide = [
-    {label: "PHP", tooltip: "★★ Backend-Skriptsprache für Webanwendungen", isSuccess: false},
-    {label: "Symfony", tooltip: "★★ Enterprise PHP Framework für komplexe Apps", isSuccess: false},
-    {label: "MariaDB", tooltip: "★★ Open-Source SQL Datenbank (MySQL Fork)", isSuccess: false},
-
-    {label: "DevOps", tooltip: "★★ CI/CD, Automatisierung & Deployment", isSuccess: false},
-    {label: "Docker / Docker Compose", tooltip: "★★ Containerisierung & Multi-Service Setup", isSuccess: false},
-    {label: "Infrastruktur", tooltip: "★ Server, Netzwerke & Deployment-Prozesse", isSuccess: false},
-
-    {label: "Bitbucket", tooltip: "★★★ Code-Repository & Git Management Tool", isSuccess: true},
-    {label: "Jira", tooltip: "★★★ Projekt- & Ticketmanagement für Teams", isSuccess: true}
+    { label: t.skills.badges.jest.label, tooltip: t.skills.badges.jest.tooltip, isSuccess: true },
 ];
 
-const badgesUiUx = [
-    {label: "Figma", tooltip: "★★★ UI/UX Design & Prototyping Tool", isSuccess: true}
+export const badgesServerSide = (t: any) => [
+    { label: t.skills.badges.php.label, tooltip: t.skills.badges.php.tooltip, isSuccess: false },
+    { label: t.skills.badges.symfony.label, tooltip: t.skills.badges.symfony.tooltip, isSuccess: false },
+    { label: t.skills.badges.mariadb.label, tooltip: t.skills.badges.mariadb.tooltip, isSuccess: false },
+
+    { label: t.skills.badges.devops.label, tooltip: t.skills.badges.devops.tooltip, isSuccess: false },
+    { label: t.skills.badges.docker.label, tooltip: t.skills.badges.docker.tooltip, isSuccess: false },
+    { label: t.skills.badges.infrastructure.label, tooltip: t.skills.badges.infrastructure.tooltip, isSuccess: false },
+
+    { label: t.skills.badges.bitbucket.label, tooltip: t.skills.badges.bitbucket.tooltip, isSuccess: true },
+    { label: t.skills.badges.jira.label, tooltip: t.skills.badges.jira.tooltip, isSuccess: true },
+];
+
+export const badgesUiUx = (t: any) => [
+    { label: t.skills.badges.figma.label, tooltip: t.skills.badges.figma.tooltip, isSuccess: true },
 ];
 
 
 const App = () => {
-// Katze in der Konsole für F12-Öffner
-    (function () {
-        const catArt = `
-      |\\---/|
-      | o_o |
-       \\_^_/ 
-  `;
-
-        const message = "%cHey du! Schön, dass du die Konsole geöffnet hast! 😸";
-
-        const styles = [
-            "color: #ff69b4; font-size: 16px; font-weight: bold;", // Nachricht
-            "color: #00ffff; font-size: 14px;" // Katze
-        ];
-
-        let devtoolsOpen = false;
-        const detectDevTools = () => {
-            const start = new Date();
-
-            const end = new Date();
-            if (end.getTime() - start.getTime() > 100) { // ✅ TypeScript-kompatibel
-                if (!devtoolsOpen) {
-                    devtoolsOpen = true;
-                    console.log("%c" + catArt, styles[1]);
-                    console.log(message, styles[0]);
-                }
-            }
-        };
-
-        setInterval(detectDevTools, 1000);
-    })();
-
+    const {t, lang, setLang} = useTranslation("de");
     const [openSections, setOpenSections] = useState({});
+
+    React.useEffect(() => {
+        const storedLang = localStorage.getItem("lang") as "de" | "en" | null;
+
+        if (storedLang) {
+            setLang(storedLang);
+        }
+    }, []);
+
+    if (!t) return null;
+
+// Katze in der Konsole für F12-Öffner
+//     (function () {
+//         const catArt = `
+//       |\\---/|
+//       | o_o |
+//        \\_^_/
+//   `;
+//
+//         const message = "%cHey du! Schön, dass du die Konsole geöffnet hast! 😸";
+//
+//         const styles = [
+//             "color: #ff69b4; font-size: 16px; font-weight: bold;", // Nachricht
+//             "color: #00ffff; font-size: 14px;" // Katze
+//         ];
+//
+//         let devtoolsOpen = false;
+//         const detectDevTools = () => {
+//             const start = new Date();
+//
+//             const end = new Date();
+//             if (end.getTime() - start.getTime() > 100) { // ✅ TypeScript-kompatibel
+//                 if (!devtoolsOpen) {
+//                     devtoolsOpen = true;
+//                     console.log("%c" + catArt, styles[1]);
+//                     console.log(message, styles[0]);
+//                 }
+//             }
+//         };
+//
+//         setInterval(detectDevTools, 1000);
+//     })();
+
 
     const toggleSection = (section) => {
         setOpenSections((prev) => ({
@@ -254,21 +196,24 @@ const App = () => {
     };
 
     const sections = [
-        {name: 'Client-side', badges: badgesClientSide, key: 'client'},
-        {name: 'Server-side', badges: badgesServerSide, key: 'server'},
-        {name: 'UI / UX', badges: badgesUiUx, key: 'uiux'},
+        {name: t.skills.client, badges: badgesClientSide(t), key: "client"},
+        {name: t.skills.server, badges: badgesServerSide(t), key: "server"},
+        {name: t.skills.uiux, badges: badgesUiUx(t), key: "uiux"},
     ];
 
     return (
         <>
-            <Header/>
-
+            <Header t={t}/>
+            <div className="language-switch">
+                <button onClick={() => setLang("de")} className={lang === "de" ? "active" : ""}>DE</button>
+                <button onClick={() => setLang("en")} className={lang === "en" ? "active" : ""}>EN</button>
+            </div>
             <main>
                 {/*<div className={'app flex-wrap'}>*/}
                 <div className={''}>
                     <section id={"skills"}>
                         <div className={"w-100"}>
-                            <h2>Skills</h2>
+                            <h2>{t.skills.title}</h2>
 
                             <div className="flex-column gap-8 w-100">
                                 {sections.map(({name, badges, key}) => (
@@ -282,7 +227,7 @@ const App = () => {
                                         <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
                                             {badges.map((badge, i) => (
                                                 <Badge key={`${key}-badge-${i}`} content={badge.label}
-                                                       tooltip={badge.tooltip} isSuccess={badge.isSuccess} />
+                                                       tooltip={badge.tooltip} isSuccess={badge.isSuccess}/>
                                             ))}
                                         </div>
                                     </div>
@@ -292,18 +237,18 @@ const App = () => {
                     </section>
 
                     <section id={"projects"}>
-                        <h2>Meine Projekte</h2>
-                        <Carousel isProject={true} data={projectImagePaths}/>
+                        <h2>{t.projects.title}</h2>
+                        <Carousel isProject={true} data={projectImagePaths(t)} t={t}/>
                     </section>
 
                     {/*has sections inside */}
-                    <VerticalTimeline/>
+                    <VerticalTimeline t={t}/>
 
                     <section id={'howiwork'}>
                         <div>
-                            <h2>How I work</h2>
+                            <h2>{t.howIWork.title}</h2>
                             <div className={'flex-column gap-8 w-100'}>
-                                <HowIWork/>
+                                <HowIWork t={t}/>
                             </div>
                         </div>
                     </section>
