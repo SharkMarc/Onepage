@@ -5,7 +5,7 @@ export const HowIWork = ({}) => {
     const workItems = [
         {
             title: "Ticketbasiertes Arbeiten",
-            content: "Ich arbeite strukturiert und nachvollziehbar mit Aufgaben und Tickets, um jederzeit den Überblick über Fortschritt und Prioritäten zu behalten."
+            content: "Ich arbeite konsequent ticketbasiert, um Aufgaben transparent zu priorisieren, den Arbeitsaufwand realistisch einzuschätzen und Deadlines zuverlässig einzuhalten. Dies ermöglicht eine klare Planung, eine saubere Dokumentation sowie eine nachvollziehbare Umsetzung für alle Beteiligten."
         },
         {
             title: "KI & Smart Tools",
