@@ -4,41 +4,40 @@ import arrowDown from '../assets/images/arrow-down.png';
 export const HowIWork = ({}) => {
     const workItems = [
         {
-            title: "Tickets",
-            content: "Ich arbeite strukturiert mit Aufgaben und Tickets, um den Überblick zu behalten."
+            title: "Ticketbasiertes Arbeiten",
+            content: "Ich arbeite strukturiert und nachvollziehbar mit Aufgaben und Tickets, um jederzeit den Überblick über Fortschritt und Prioritäten zu behalten."
         },
         {
             title: "KI & Smart Tools",
-            content: "Ich nutze KI-gestützte Tools wie GitHub Copilot, JetBrains AI und ChatGPT, " +
-                "um effizienter zu arbeiten, Ideen schneller umzusetzen und die Qualität meines Codes zu verbessern."
+            content: "Ich setze KI-gestützte Tools wie GitHub Copilot, JetBrains AI und ChatGPT gezielt ein, um effizienter zu arbeiten, Ideen schneller umzusetzen und die Codequalität nachhaltig zu verbessern."
         },
         {
             title: "Zusammenarbeit mit Product Ownern",
-            content: "Ich stimme mich regelmäßig ab, um Anforderungen klar zu verstehen."
+            content: "Durch regelmäßige Abstimmungen mit Product Ownern stelle ich sicher, dass Anforderungen klar verstanden und zielgerichtet umgesetzt werden."
         },
         {
-            title: "Zusammenarbeit mit Designer",
-            content: "Eine enge Zusammenarbeit mit den Designern stellt sicher, dass die User Experience konsistent bleibt."
+            title: "Zusammenarbeit mit Designern",
+            content: "Die enge Zusammenarbeit mit Designern gewährleistet eine konsistente User Experience und eine saubere Umsetzung der gestalterischen Konzepte."
         },
         {
             title: "Code Reviews",
-            content: "Durch gründliche Code Reviews steuere ich aktiv zur Qualitätssicherung und zur Einhaltung von Best Practices bei."
+            content: "Durch sorgfältige Code Reviews trage ich aktiv zur Qualitätssicherung sowie zur Einhaltung von Best Practices und Coding-Standards bei."
         },
         {
-            title: "Neuster Stand der Technik",
-            content: "Ich halte mich immer über aktuelle Technologien und Frameworks auf dem Laufenden."
+            title: "Aktueller Stand der Technik",
+            content: "Ich bilde mich kontinuierlich weiter und halte mein Wissen zu modernen Technologien, Frameworks und Best Practices stets auf dem neuesten Stand."
         },
         {
             title: "Pair Programming",
-            content: "Gemeinsame Programmier-Sessions ermöglichen es mir, Wissen zu teilen und gleichzeitig neue Ansätze kennenzulernen."
+            content: "Pair Programming nutze ich gezielt, um Wissen zu teilen, Lösungen gemeinsam zu erarbeiten und neue Perspektiven kennenzulernen."
         },
         {
-            title: "Selbtständigkeit",
-            content: "Ich übernehme Verantwortung und arbeite eigenständig an Aufgaben."
+            title: "Selbstständigkeit",
+            content: "Ich übernehme Verantwortung für meine Aufgaben und arbeite selbstständig sowie lösungsorientiert."
         },
         {
             title: "Teamplayer",
-            content: "Ich unterstütze das Team aktiv und fördere eine offene, kooperative Arbeitsatmosphäre."
+            content: "Als Teamplayer unterstütze ich meine Kolleginnen und Kollegen aktiv und fördere eine offene, konstruktive und kooperative Arbeitsatmosphäre."
         }
     ];
 
