@@ -1,10 +1,9 @@
 import React from 'react';
 import {Card} from './card';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Navigation, Pagination, Autoplay} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import pen from './assets/images/pen.png';
 import hammer from './assets/images/hammer.png';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -56,33 +55,6 @@ const cardsData = [
         date: "01/2021 - bis heute"
     },
 ];
-
-// const projectsData = [
-//     {
-//         title: 'designenlassen.de',
-//         place: "designenlassen.de",
-//         content: 'This is the first card.',
-//         date: "01/2019 - 12/2020"
-//     },
-//     {
-//         title: 'Frontend Developer',
-//         place: "freelanceomat.de",
-//         content: 'This is the second card.',
-//         date: "01/2021 - bis heute"
-//     },
-//     {
-//         title: 'gastromanager',
-//         place: "gastromanager.de",
-//         content: 'This is the second card.',
-//         date: "01/2021 - bis heute"
-//     },
-//     {
-//         title: 'prozessevaluation',
-//         place: "prozessevaluation.de",
-//         content: 'This is the second card.',
-//         date: "01/2021 - bis heute"
-//     },
-// ]
 
 interface CarouselProps {
     isProject: boolean;

@@ -100,6 +100,10 @@ $breakpoints: (
   padding: 0 0;
 }
 
+#howiwork .collapsible-content {
+  font-style: italic;
+}
+
 .collapsible-content.open {
   max-height: 5000px; /* groß genug für Inhalte */
   padding: 8px 0;
@@ -107,6 +111,13 @@ $breakpoints: (
   gap: 8px;
   flex-wrap: wrap;
   display: flex;
+}
+
+.d-md-none {
+  display: none !important;
+  @media (min-width: $min-width-md) {
+    display: flex !important;
+  }
 }
 
 // Optional: full width for extra small

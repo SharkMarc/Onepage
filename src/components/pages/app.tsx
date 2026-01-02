@@ -302,7 +302,7 @@ const App = () => {
                     <section id={'howiwork'}>
                         <div>
                             <h2>How I work</h2>
-                            <div className={'flex-column gap-8 w-100 text-center'}>
+                            <div className={'flex-column gap-8 w-100'}>
                                 <HowIWork/>
                             </div>
                         </div>

@@ -66,7 +66,7 @@ export const HowIWork = ({}) => {
                                  src={arrowDown}
                             />
                         </div>
-                        <p className={`collapsible-content ${openSections["how-i-work-" + i] ? 'open' : ''}`}>{item.content}</p>
+                        <p className={`collapsible-content ${openSections["how-i-work-" + i] ? 'open' : ''}`}>“{item.content}“</p>
                     </div>
                 ))}
             </div>

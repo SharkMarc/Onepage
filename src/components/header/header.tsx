@@ -2,7 +2,6 @@ import React from 'react';
 import marc from '../assets/images/marc_white.png';
 import birthday from '../assets/images/birthday.png';
 import home from '../assets/images/home.png';
-import user from '../assets/images/user.png';
 import global from '../assets/images/global.png';
 import name from '../assets/images/name.png';
 import console from '../assets/images/console.png';
@@ -40,16 +39,6 @@ export const Header = ({}) => {
                                     Ich liebe es, Menschen, Ideen und Projekte miteinander zu verbinden und
                                     Wege zu finden, wie man gemeinsam etwas bewegen kann.
                                     Was mich antreibt: echte Zusammenarbeit, klare Kommunikation und Projekte, die Spaß machen und Mehrwert schaffen.
-{/*                                    <br/>*/}
-
-{/*                                    Ich suche Möglichkeiten,*/}
-{/*                                    meine Fähigkeiten einzubringen,*/}
-{/*                                    kreativ zu denken,*/}
-{/*                                    Probleme smart zu lösen und etwas aufzubauen, das bleibt.*/}
-{/*                                    <br/>*/}
-{/*                                    Wenn du jemanden suchst, der engagiert, zuverlässig und voll dabei ist – dann lass uns sprechen.*/}
-{/*<br/>*/}
-{/*                                    Let’s meet. Let’s build. Let’s start.*/}
                                 </p>
                                 <p>Hobbys:</p>
                                 <ul>
@@ -64,19 +53,19 @@ export const Header = ({}) => {
                                     </li>
                                 </ul>
                                 {/*<p><img className={'icon'} src={global} alt={'global'}/>mit freunden unterwegs</p>*/}
-                                <button className={'d-flex cursor-pointer btn-no-style align-items-center'} onClick={() => scrollTo('skills')}>
+                                <button className={'d-flex cursor-pointer btn-no-style align-items-center d-md-none'} onClick={() => scrollTo('skills')}>
                                     <img className={'icon'} src={anchor} alt={'Skills'}/>Skills
                                 </button>
-                                <button className={'d-flex cursor-pointer btn-no-style align-items-center'} onClick={() => scrollTo('projects')}>
+                                <button className={'d-flex cursor-pointer btn-no-style align-items-center d-md-none'} onClick={() => scrollTo('projects')}>
                                     <img className={'icon'} src={anchor} alt={'Projekte'}/>Projekte
                                 </button>
-                                <button className={'d-flex cursor-pointer btn-no-style align-items-center'} onClick={() => scrollTo('resume')}>
+                                <button className={'d-flex cursor-pointer btn-no-style align-items-center d-md-none'} onClick={() => scrollTo('resume')}>
                                     <img className={'icon'} src={anchor} alt={'Lebenslauf'}/>Portfolio
                                 </button>
-                                <button className={'d-flex cursor-pointer btn-no-style align-items-center'} onClick={() => scrollTo('howiwork')}>
+                                <button className={'d-flex cursor-pointer btn-no-style align-items-center d-md-none'} onClick={() => scrollTo('howiwork')}>
                                     <img className={'icon'} src={anchor} alt={'How I work'}/>How I work
                                 </button>
-                                <button className={'d-flex cursor-pointer btn-no-style align-items-center'} onClick={() => scrollTo('contact')}>
+                                <button className={'d-flex cursor-pointer btn-no-style align-items-center d-md-none'} onClick={() => scrollTo('contact')}>
                                     <img className={'icon'} src={anchor} alt={'Kontakt'}/>Kontakt
                                 </button>
                             </div><div></div>
