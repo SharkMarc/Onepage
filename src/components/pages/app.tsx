@@ -104,40 +104,40 @@ export const projectImagePaths = (t: any) => [
 
 
 export const badgesClientSide = (t: any) => [
-    { label: t.skills.badges.javascript.label, tooltip: t.skills.badges.javascript.tooltip, isSuccess: true },
-    { label: t.skills.badges.typescript.label, tooltip: t.skills.badges.typescript.tooltip, isSuccess: true },
-    { label: t.skills.badges.react.label, tooltip: t.skills.badges.react.tooltip, isSuccess: true },
-    { label: t.skills.badges.reactSSR.label, tooltip: t.skills.badges.reactSSR.tooltip, isSuccess: true },
-    { label: t.skills.badges.responsive.label, tooltip: t.skills.badges.responsive.tooltip, isSuccess: true },
+    {label: t.skills.badges.javascript.label, tooltip: t.skills.badges.javascript.tooltip, isSuccess: true},
+    {label: t.skills.badges.typescript.label, tooltip: t.skills.badges.typescript.tooltip, isSuccess: true},
+    {label: t.skills.badges.react.label, tooltip: t.skills.badges.react.tooltip, isSuccess: true},
+    {label: t.skills.badges.reactSSR.label, tooltip: t.skills.badges.reactSSR.tooltip, isSuccess: true},
+    {label: t.skills.badges.responsive.label, tooltip: t.skills.badges.responsive.tooltip, isSuccess: true},
 
-    { label: t.skills.badges.scss.label, tooltip: t.skills.badges.scss.tooltip, isSuccess: true },
-    { label: t.skills.badges.sass.label, tooltip: t.skills.badges.sass.tooltip, isSuccess: true },
-    { label: t.skills.badges.bootstrap.label, tooltip: t.skills.badges.bootstrap.tooltip, isSuccess: true },
+    {label: t.skills.badges.scss.label, tooltip: t.skills.badges.scss.tooltip, isSuccess: true},
+    {label: t.skills.badges.sass.label, tooltip: t.skills.badges.sass.tooltip, isSuccess: true},
+    {label: t.skills.badges.bootstrap.label, tooltip: t.skills.badges.bootstrap.tooltip, isSuccess: true},
 
-    { label: t.skills.badges.twig.label, tooltip: t.skills.badges.twig.tooltip, isSuccess: false },
-    { label: t.skills.badges.node.label, tooltip: t.skills.badges.node.tooltip, isSuccess: false },
+    {label: t.skills.badges.twig.label, tooltip: t.skills.badges.twig.tooltip, isSuccess: false},
+    {label: t.skills.badges.node.label, tooltip: t.skills.badges.node.tooltip, isSuccess: false},
 
-    { label: t.skills.badges.accessibility.label, tooltip: t.skills.badges.accessibility.tooltip, isSuccess: true },
-    { label: t.skills.badges.seo.label, tooltip: t.skills.badges.seo.tooltip, isSuccess: true },
+    {label: t.skills.badges.accessibility.label, tooltip: t.skills.badges.accessibility.tooltip, isSuccess: true},
+    {label: t.skills.badges.seo.label, tooltip: t.skills.badges.seo.tooltip, isSuccess: true},
 
-    { label: t.skills.badges.jest.label, tooltip: t.skills.badges.jest.tooltip, isSuccess: true },
+    {label: t.skills.badges.jest.label, tooltip: t.skills.badges.jest.tooltip, isSuccess: true},
 ];
 
 export const badgesServerSide = (t: any) => [
-    { label: t.skills.badges.php.label, tooltip: t.skills.badges.php.tooltip, isSuccess: false },
-    { label: t.skills.badges.symfony.label, tooltip: t.skills.badges.symfony.tooltip, isSuccess: false },
-    { label: t.skills.badges.mariadb.label, tooltip: t.skills.badges.mariadb.tooltip, isSuccess: false },
+    {label: t.skills.badges.php.label, tooltip: t.skills.badges.php.tooltip, isSuccess: false},
+    {label: t.skills.badges.symfony.label, tooltip: t.skills.badges.symfony.tooltip, isSuccess: false},
+    {label: t.skills.badges.mariadb.label, tooltip: t.skills.badges.mariadb.tooltip, isSuccess: false},
 
-    { label: t.skills.badges.devops.label, tooltip: t.skills.badges.devops.tooltip, isSuccess: false },
-    { label: t.skills.badges.docker.label, tooltip: t.skills.badges.docker.tooltip, isSuccess: false },
-    { label: t.skills.badges.infrastructure.label, tooltip: t.skills.badges.infrastructure.tooltip, isSuccess: false },
+    {label: t.skills.badges.devops.label, tooltip: t.skills.badges.devops.tooltip, isSuccess: false},
+    {label: t.skills.badges.docker.label, tooltip: t.skills.badges.docker.tooltip, isSuccess: false},
+    {label: t.skills.badges.infrastructure.label, tooltip: t.skills.badges.infrastructure.tooltip, isSuccess: false},
 
-    { label: t.skills.badges.bitbucket.label, tooltip: t.skills.badges.bitbucket.tooltip, isSuccess: true },
-    { label: t.skills.badges.jira.label, tooltip: t.skills.badges.jira.tooltip, isSuccess: true },
+    {label: t.skills.badges.bitbucket.label, tooltip: t.skills.badges.bitbucket.tooltip, isSuccess: true},
+    {label: t.skills.badges.jira.label, tooltip: t.skills.badges.jira.tooltip, isSuccess: true},
 ];
 
 export const badgesUiUx = (t: any) => [
-    { label: t.skills.badges.figma.label, tooltip: t.skills.badges.figma.tooltip, isSuccess: true },
+    {label: t.skills.badges.figma.label, tooltip: t.skills.badges.figma.tooltip, isSuccess: true},
 ];
 
 
@@ -204,6 +204,16 @@ const App = () => {
     return (
         <>
             <Header t={t}/>
+            <div className="switcher mg-y-auto d-flex" data-tooltip-placement="top-center"
+                 data-tooltip-title={lang === "de" ? "Germany" : "English"}>
+                <label htmlFor="toggler"
+                       className="d-flex">
+                    <span className="switch">
+                    <input id="toggler" className="checkbox" type="checkbox" checked={lang === 'de'}
+                           name="show_active" onChange={() => setLang(lang === "de" ? "en" : "de")}/>
+                        <span className="toggle-thumb"></span></span>
+                </label>
+            </div>
             <div className="language-switch">
                 <button onClick={() => setLang("de")} className={lang === "de" ? "active" : ""}>DE</button>
                 <button onClick={() => setLang("en")} className={lang === "en" ? "active" : ""}>EN</button>
