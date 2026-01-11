@@ -3,6 +3,7 @@ header:
   headline_second: "with heart & code"
 
   personal:
+    title: About me
     name: "Marc Spree"
     birthday: "21.05.1992"
     location: "Germany, Nuremberg"

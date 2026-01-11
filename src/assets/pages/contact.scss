@@ -32,5 +32,6 @@
 
 .toast.show {
   opacity: 1;
+  z-index: 4;
   transform: translateY(0);
 }

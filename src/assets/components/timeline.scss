@@ -14,17 +14,21 @@
   flex-direction: column;
   gap: 3rem;
 
-  @media (min-width:$min-width-sm) {
+  @media (min-width: $min-width-sm) {
     padding: 2rem 1rem;
   }
 
   &.blue {
     .timeline-line {
       background: #c9baff;
-      height: 750px;
+      height: 650px;
 
       @media(min-width: $min-width-sm) {
         margin-left: 10px;
+      }
+
+      @media(min-width: $min-width-md) {
+        height: 750px;
       }
     }
 
@@ -39,14 +43,14 @@
 
 .timeline-line {
   position: absolute;
-  left:10px;
+  left: 10px;
   //left: 35px;
   top: 42px;
   bottom: 0;
   width: 4px;
-  height: 950px;
   background: #d2d2d2;
   border-radius: 2px;
+  height: 950px;
 
   @media (min-width: $min-width-sm) {
     //left: 50px;
@@ -129,7 +133,11 @@
 }
 
 .silver .timeline-line {
-  height: 975px;
+  height: 875px;
+
+  @media(min-width: $min-width-md) {
+    height: 975px;
+  }
 }
 
 .blue .timeline-card {

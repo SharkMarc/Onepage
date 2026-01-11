@@ -18,17 +18,16 @@
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 0;
   border-top: unset;
 
   @media (min-width: $min-width-md) {
     padding-top: 32px;
     border-top: 1px solid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
   }
-
 }
 
 #root {
@@ -112,18 +111,14 @@
       line-height: 1.15;
       margin-top: 0rem;
       margin-bottom: 1.5rem;
-
-      /* Typografische Veredelung */
       letter-spacing: -0.015em;
-
-      /* sanfte Farbe (statt reinem Schwarz) */
-      color: #222; /* oder #2a2a2a je nach Theme */
-
-      /* dezente Tiefe */
+      color: #222;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-
-      /* visueller Premium-Akzent */
       position: relative;
+    }
+
+    h2.about-me-title {
+      color: #fff;
     }
 
     h2 {
@@ -131,7 +126,8 @@
         content: "";
         position: absolute;
         bottom: -4px;
-        left: 45%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 80px;
         border-top: 4px solid #cf33cf;
       }

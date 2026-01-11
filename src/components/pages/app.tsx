@@ -224,18 +224,46 @@ const App = () => {
             <main>
                 {/*<div className={'app flex-wrap'}>*/}
                 <div className={''}>
-                    <section className="about-me centered-section" style={{padding: '2.5rem 1rem', textAlign: 'center'}}>
-                        <div className="about-inner" style={{maxWidth: 900, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem'}}>
-                            {/*<img src={marc} alt="Marc" className="about-avatar" style={{width: 120, height: 120, borderRadius: '50%', objectFit: 'contain'}} />*/}
-                            <div className="about-card" style={{textAlign: 'center', width: '100%'}}>
-                            <h2 className={'about-me-title'}>Über mich</h2><div className="about-personal" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.25rem'}}>
-                            <p><strong>{t.header.personal.name}</strong></p>
-                            <p><img className="icon" src={birthday} alt="birthday" style={{width:18, verticalAlign:'middle', marginRight:6}}/> {t.header.personal.birthday}</p>
-                            <p><img className="icon" src={home} alt="home" style={{width:18, verticalAlign:'middle', marginRight:6}}/> {t.header.personal.location}</p>
-                            <p><img className="icon" src={global} alt="languages" style={{width:18, verticalAlign:'middle', marginRight:6}}/> {t.header.personal.languages}</p>
-                        </div>
-                        </div>
-                        </div>
+                    <div className={'parallax-bg'}>
+
+                        <section className="about-me centered-section"
+                                 style={{padding: '2.5rem 1rem', textAlign: 'center'}}>
+                            <div className="about-inner" style={{
+                                maxWidth: 900,
+                                margin: '0 auto',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: '1rem'
+                            }}>
+                                {/*<img src={marc} alt="Marc" className="about-avatar" style={{width: 120, height: 120, borderRadius: '50%', objectFit: 'contain'}} />*/}
+                                <div className="about-card" style={{textAlign: 'center', width: '100%'}}>
+                                    <h2 className={'about-me-title'}>{t.header.personal.title}</h2>
+                                    <div className="about-personal" style={{
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        gap: '0.25rem'
+                                    }}>
+                                        <p><strong>{t.header.personal.name}</strong></p>
+                                        <p><img className="icon" src={birthday} alt="birthday" style={{
+                                            width: 18,
+                                            verticalAlign: 'middle',
+                                            marginRight: 6
+                                        }}/> {t.header.personal.birthday}</p>
+                                        <p><img className="icon" src={home} alt="home" style={{
+                                            width: 18,
+                                            verticalAlign: 'middle',
+                                            marginRight: 6
+                                        }}/> {t.header.personal.location}</p>
+                                        <p><img className="icon" src={global} alt="languages" style={{
+                                            width: 18,
+                                            verticalAlign: 'middle',
+                                            marginRight: 6
+                                        }}/> {t.header.personal.languages}</p>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div className="about-hobbies" style={{marginTop: '1rem'}}>
                                 <p style={{marginBottom: '0.25rem'}}>{t.header.hobbies.title}:</p>
@@ -255,6 +283,8 @@ const App = () => {
                                 </ul>
                             </div>
                     </section>
+                    </div>
+
                     <section id={"skills"}>
                         <div className={"w-100"}>
                             <h2>{t.skills.title}</h2>

@@ -72,6 +72,22 @@
   margin-bottom: auto;
 }
 
+.parallax-bg {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url(https://images.unsplash.com/photo-1518770660439-4636190af475);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 0 -50vw;
+  width: 100vw;
+  box-sizing: border-box;
+}
 
 .header {
   display: flex;
@@ -86,7 +102,6 @@
   @media (min-width: $min-width-lg) {
     //height: 100vh;
     padding-bottom: 64px;
-
   }
 
   .flex-column {
@@ -278,4 +293,8 @@
     }
   }
 }
+
+
+
+
 
