@@ -4,7 +4,6 @@
   width: 100%;
 
   @media (min-width: $min-width-xs) {
-    // buttons width
     width: calc(100% - 2 * 3rem);
     left: calc(-1 * 8px);
   }
@@ -209,7 +208,6 @@
     margin-top: 8px;
 
     li {
-      //margin-top: 8px;
       margin-bottom: 8px;
     }
   }
@@ -364,7 +362,6 @@
     }
   }
 }
-
 
 .swiper-text {
   display: -webkit-box;

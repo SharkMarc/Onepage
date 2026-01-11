@@ -1,6 +1,6 @@
 @use "../variables" as *;
 
-.btn-no-style{
+.btn-no-style {
   background-color: unset;
   border: unset;
   border-radius: unset;
@@ -9,7 +9,7 @@
   cursor: pointer;
   padding: 0;
 
-  &:hover{
+  &:hover {
     color: #5200ff
   }
 }

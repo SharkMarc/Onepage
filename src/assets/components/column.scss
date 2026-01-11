@@ -73,36 +73,3 @@ $breakpoints: (
   background: unset;
   border: unset;
 }
-
-//.swiper-button-prev:after, .swiper-button-next:after {
-//  font-size: 2rem;
-//  font-style: normal;
-//  color: $black;
-//  font-weight: 400;
-//  line-height: normal;
-//  text-transform: none !important;
-//  letter-spacing: 0;
-//  font-variant: initial;
-//}
-//
-//.swiper-pagination-bullet-active {
-//  color: $black;
-//}
-//
-//.swiper-button-prev, .swiper-button-next {
-//  padding: 0;
-//  color: $black;
-//  display: none;
-//
-//  @media (min-width: $min-width-md) {
-//    display: flex;
-//  }
-//}
-//
-//.swiper-text {
-//  display: -webkit-box;
-//  -webkit-line-clamp: 3; /* Anzahl der Zeilen */
-//  -webkit-box-orient: vertical;
-//  overflow: hidden;
-//  text-overflow: ellipsis;
-//}
