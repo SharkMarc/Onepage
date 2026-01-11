@@ -176,7 +176,8 @@
     height: 260px;
     width: 100%;
     object-fit: cover;
-    border: 1px solid #000;
+    //border: 1px solid #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 
   @media (min-width: $min-width-sm) {

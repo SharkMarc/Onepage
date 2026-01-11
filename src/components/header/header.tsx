@@ -29,7 +29,7 @@ export const Header = ({t}:headerProps) => {
             <header className="header">
                 <div className="hero">
                     <div className="hero-inner">
-                        <h1>{t.header.headline}</h1>
+                        <h1>{t.header.headline}<br/>{t.header.headline_second}</h1>
 
                         <div className="hero-content grid-1-1">
                             <div className="flex-column justify-content-center">

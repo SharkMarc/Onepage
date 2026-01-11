@@ -15,21 +15,78 @@
 
   .switch {
     display: inline-block;
-    height: 1.25rem;
+    //height: 1.25rem;
+    height: 1rem;
     position: relative;
     width: 2.25rem;
   }
 
   input[type=checkbox]:checked {
-    background-color: #222;
+    background:  linear-gradient(
+                    to bottom,
+                    #000 0%,
+                    #000 33.33%,
+                    #dd0000 33.33%,
+                    #dd0000 66.66%,
+                    #ffce00 66.66%,
+                    #ffce00 100%
+    ) left / 50% 100% no-repeat,
+
+      /* England (rechts 50%) */
+    linear-gradient(
+                    to bottom,
+                    #012169 0%,
+                    #012169 33.33%,
+                    #ffffff 33.33%,
+                    #ffffff 66.66%,
+                    #c8102e 66.66%,
+                    #c8102e 100%
+    ) right / 50% 100% no-repeat;
+  ;
     //background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns= 'http://www.w3.org/2000/svg' width= '12' height= '12' fill= 'none' %3E%3Cpath stroke= '%23fff' stroke-linecap= 'round' stroke-linejoin= 'round' stroke-width= '2' d= 'M10 3 4.5 8.5 2 6' /%3E%3C/svg%3E);
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
     border-color: #222;
   }
 
   .toggle-thumb {
     align-items: center;
-    background-color: #222;
+    background:
+            /* 🟥 England – vertikaler Balken (OBEN) */
+            linear-gradient(
+                            to right,
+                            transparent 0%,
+                            transparent 45%,
+                            #c8102e 45%,
+                            #c8102e 55%,
+                            transparent 55%,
+                            transparent 100%
+            ) right / 50% 100% no-repeat,
+
+              /* 🟥 England – horizontaler Balken (OBEN) */
+            linear-gradient(
+                            to bottom,
+                            transparent 0%,
+                            transparent 45%,
+                            #c8102e 45%,
+                            #c8102e 55%,
+                            transparent 55%,
+                            transparent 100%
+            ) right / 50% 100% no-repeat,
+
+              /* ⬜ England – weißer Hintergrund */
+            linear-gradient(#fff, #fff) right / 50% 100% no-repeat,
+
+              /* 🇩🇪 Deutschland – links */
+            linear-gradient(
+                            to bottom,
+                            #000 0%,
+                            #000 33.33%,
+                            #dd0000 33.33%,
+                            #dd0000 66.66%,
+                            #ffce00 66.66%,
+                            #ffce00 100%
+            ) left / 50% 100% no-repeat;
+
     border-radius: 8px;
     bottom: 0;
     cursor: pointer;
@@ -41,17 +98,19 @@
     top: 0;
   }
 
-   .toggle-thumb::before {
+  .toggle-thumb::before {
     background-color: #fff;
     border-radius: 50%;
-    bottom: .125rem;
+    //bottom: .125rem;
     content: "";
-    height: 1rem;
-    left: .188rem;
+    height: 1.125rem;
+    //left: .188rem;
+    left: 0;
     position: absolute;
-    top: .125rem;
+    //top: .125rem;
     transition: all .4s ease;
-    width: 1rem;
+    //width: 1rem;
+    width: 1.125rem;
   }
 
   //transform: translateX(0);
@@ -59,6 +118,7 @@
     background-color: #fff;
     transform: translateX(0);
   }
+
   input:checked + .toggle-thumb::before {
     transform: translateX(15px);
   }
