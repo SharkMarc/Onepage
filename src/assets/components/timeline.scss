@@ -21,7 +21,8 @@
   &.blue {
     .timeline-line {
       background: #c9baff;
-      height: 650px;
+      height: 750px;
+
       @media(min-width: $min-width-sm) {
         margin-left: 10px;
       }
@@ -128,7 +129,7 @@
 }
 
 .silver.timeline-line {
-  height: 875px;
+  height: 975px;
 }
 
 .blue .timeline-card {

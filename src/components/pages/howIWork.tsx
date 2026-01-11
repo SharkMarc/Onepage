@@ -52,7 +52,7 @@ export const HowIWork = ({ t }: HowIWorkProps) => {
                 {workItems.map((item) => (
                     <div
                         key={item.key}
-                        className="card cursor-pointer gap-8"
+                        className={`card cursor-pointer ${openSections[item.key] ? 'opened-card' : ''}`}
                         onClick={() => toggleSection(item.key)}
                     >
                         <div className="title d-flex justify-content-center">

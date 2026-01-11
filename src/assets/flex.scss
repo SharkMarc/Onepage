@@ -102,6 +102,12 @@ $breakpoints: (
 
 #howiwork .collapsible-content {
   font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  &.open {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .collapsible-content.open {
@@ -111,6 +117,10 @@ $breakpoints: (
   gap: 8px;
   flex-wrap: wrap;
   display: flex;
+}
+
+.card.opened-card {
+  gap: 1rem;
 }
 
 .d-md-none {

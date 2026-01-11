@@ -69,7 +69,7 @@ export const Carousel = ({isProject, data, t}: CarouselProps) => {
                                                     <img className="icon" alt="Werkzeug" src={pen}/>
                                                     <h3>{t.projects.label_tools}</h3>
                                                 </div>
-                                                <ul className={'grid-1-1'}>
+                                                <ul className={'pen'}>
                                                     {Array.isArray(project.content?.text) &&
                                                         project.content.text.map((item, i) => <li key={i}>{item}</li>)}
                                                 </ul>

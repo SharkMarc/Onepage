@@ -214,10 +214,6 @@ const App = () => {
                         <span className="toggle-thumb"></span></span>
                 </label>
             </div>
-            <div className="language-switch">
-                <button onClick={() => setLang("de")} className={lang === "de" ? "active" : ""}>DE</button>
-                <button onClick={() => setLang("en")} className={lang === "en" ? "active" : ""}>EN</button>
-            </div>
             <main>
                 {/*<div className={'app flex-wrap'}>*/}
                 <div className={''}>
