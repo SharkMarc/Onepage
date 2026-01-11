@@ -33,31 +33,31 @@ export const Header = ({t}:headerProps) => {
 
                         <div className="hero-content grid-1-1">
                             <div className="flex-column justify-content-center">
-                                <p><img className="icon" src={name} alt="name"/> {t.header.personal.name}</p>
-                                <p><img className="icon" src={birthday} alt="birthday"/> {t.header.personal.birthday}</p>
-                                <p><img className="icon" src={home} alt="home"/> {t.header.personal.location}</p>
-                                <p><img className="icon" src={global} alt="languages"/> {t.header.personal.languages}</p>
+                                {/*<p><img className="icon" src={name} alt="name"/> {t.header.personal.name}</p>*/}
+                                {/*<p><img className="icon" src={birthday} alt="birthday"/> {t.header.personal.birthday}</p>*/}
+                                {/*<p><img className="icon" src={home} alt="home"/> {t.header.personal.location}</p>*/}
+                                {/*<p><img className="icon" src={global} alt="languages"/> {t.header.personal.languages}</p>*/}
 
                                 <p>
                                     <strong>{t.header.intro.greeting}</strong><br/>
                                     {t.header.intro.text}
                                 </p>
 
-                                <p>{t.header.hobbies.title}:</p>
-                                <ul>
-                                    <li>
-                                        <img className="icon" src={soccre} alt="soccer"/>
-                                        {t.header.hobbies.items.soccer}
-                                    </li>
-                                    <li>
-                                        <img className="icon" src={cooking} alt="cooking"/>
-                                        {t.header.hobbies.items.cooking}
-                                    </li>
-                                    <li>
-                                        <img className="icon" src={console} alt="gaming"/>
-                                        {t.header.hobbies.items.gaming}
-                                    </li>
-                                </ul>
+                                {/*<p>{t.header.hobbies.title}:</p>*/}
+                                {/*<ul>*/}
+                                {/*    <li>*/}
+                                {/*        <img className="icon" src={soccre} alt="soccer"/>*/}
+                                {/*        {t.header.hobbies.items.soccer}*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <img className="icon" src={cooking} alt="cooking"/>*/}
+                                {/*        {t.header.hobbies.items.cooking}*/}
+                                {/*    </li>*/}
+                                {/*    <li>*/}
+                                {/*        <img className="icon" src={console} alt="gaming"/>*/}
+                                {/*        {t.header.hobbies.items.gaming}*/}
+                                {/*    </li>*/}
+                                {/*</ul>*/}
 
                                 {/* Mobile Navigation */}
                                 <button className="d-flex cursor-pointer btn-no-style align-items-center d-md-none"

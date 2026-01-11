@@ -126,6 +126,17 @@
       position: relative;
     }
 
+    h2 {
+      &.about-me-title:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 45%;
+        width: 80px;
+        border-top: 4px solid #cf33cf;
+      }
+    }
+
     h2:after {
       content: "";
       position: absolute;
