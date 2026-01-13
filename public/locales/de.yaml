@@ -1,6 +1,7 @@
 header:
   headline: "Digitale Lösungen"
-  headline_second: "mit Herz & Code"
+  headline_second: "mit Herz"
+  headline_third: "Code"
 
   personal:
     title: Über mich
@@ -126,6 +127,7 @@ projects:
       - "Pagespeed"
       - "React Admin"
       - "Figma"
+      - "SSR"
     link: "https://www.freelancermap.de/"
   designenlassen:
     title: Designenlassen
@@ -200,7 +202,10 @@ projects:
     experience:
       - "Support"
     text:
-      - "Support"
+      - "Remote‑Support (AnyDesk)"
+      - "Interner IT‑Support"
+      - "Active Directory / Benutzerverwaltung"
+      - "Dokumentation"
     link: "https://www.gossenmetrawatt.de/"
 
 howIWork:
@@ -323,5 +328,4 @@ timeline:
       details:
         - Gastromanager
         - Pickupcard
-
 

@@ -48,6 +48,9 @@ $breakpoints: (
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-between {
+  justify-content: space-between;
+}
 
 .text-center {
   text-align: center;
@@ -77,6 +80,10 @@ $breakpoints: (
 
 .align-item-start {
   align-items: start;
+}
+
+#skills .border-skills {
+  border-bottom: 1px solid #636363;
 }
 
 .collapsible-header {

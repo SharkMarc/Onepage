@@ -1,19 +1,14 @@
 import React from 'react';
 import marc from '../assets/images/marc_white.png';
-import birthday from '../assets/images/birthday.png';
-import home from '../assets/images/home.png';
-import global from '../assets/images/global.png';
-import name from '../assets/images/name.png';
-import console from '../assets/images/console.png';
-import cooking from '../assets/images/cooking-white.png';
-import soccre from '../assets/images/soccre.png';
 import anchor from '../assets/images/anchor.png';
 
-interface headerProps{
+interface headerProps {
     t: any;
 }
-export const Header = ({t}:headerProps) => {
+
+export const Header = ({t}: headerProps) => {
     const [isOpen, setIsOpen] = React.useState(false);
+    const heroSvgRef = React.useRef<HTMLDivElement | null>(null);
 
     const scrollTo = (id) => {
         setIsOpen(!isOpen);
@@ -22,42 +17,125 @@ export const Header = ({t}:headerProps) => {
             el.scrollIntoView({behavior: 'smooth'});
         }
     }
+
+    // New: adjust .hero-svg width based on viewport (clientWidth) and keep it centered.
+    React.useEffect(() => {
+        const MAX_SVG_WIDTH = 900; // should match the svg viewBox width
+        let rafId: number | null = null;
+
+        const updateHeroSvg = () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+                const vw = document.documentElement.clientWidth || window.innerWidth;
+                const svgWidth = Math.min(MAX_SVG_WIDTH, vw);
+                const wrapper = heroSvgRef.current;
+                if (!wrapper) return;
+                // set flexible width with maxWidth so layout isn't forced
+                wrapper.style.width = '100%';
+                wrapper.style.maxWidth = `${svgWidth}px`;
+                wrapper.style.marginLeft = 'auto';
+                wrapper.style.marginRight = 'auto';
+                wrapper.style.display = 'block';
+                wrapper.style.boxSizing = 'border-box';
+            });
+        };
+
+        // run initially and on resize
+        updateHeroSvg();
+        window.addEventListener('resize', updateHeroSvg);
+        return () => {
+            window.removeEventListener('resize', updateHeroSvg);
+            if (rafId) cancelAnimationFrame(rafId);
+        };
+    }, []);
+
     if (!t?.header) return null;
 
     return (
-        <div className="header-content">
+    <div className="header-content">
             <header className="header">
                 <div className="hero">
                     <div className="hero-inner">
-                        <h1>{t.header.headline}<br/>{t.header.headline_second}</h1>
+                        {/*<h1>{t.header.headline}<br/>{t.header.headline_second}</h1>*/}
+                        <div className="hero-svg" ref={heroSvgRef}>
+                            <svg width="100%" height="auto" viewBox="0 0 550 260" preserveAspectRatio="xMidYMid meet" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="clip-code" clipPathUnits="userSpaceOnUse">
+                                        <rect x="40" y="160" width="32" height="32" />
+                                    </clipPath>
+                                </defs>
+                                <g transform="translate(0 48)">
+                                    <rect x="0" y="0" width="32" height="32" rx="4"
+                                          stroke="#ff2e63" strokeWidth="2"/>
+                                    <rect x="8" y="8" width="16" height="16" rx="2"
+                                          fill="#ff2e63"
+                                          className="icon-rect"/>
+                                </g>
+
+                                <g transform="translate(0 110)">
+                                    <g className="icon-heart">
+                                        <path d="M16 4
+                                                   C16 0, 2 0, 2 14
+                                                   C2 24, 16 32, 16 32
+                                                   C16 32, 30 24, 30 14
+                                                   C30 0, 16 0, 16 4Z"
+                                              fill="#ff2e63"/>
+                                    </g>
+                                </g>
+
+                                <g transform="translate(0 164)">
+                                    <path d="M11 6 L3 16 L11 26"
+                                          stroke="#ff2e63"
+                                          strokeWidth={3}
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"/>
+                                    <path d="M21 6 L29 16 L21 26"
+                                          stroke="#ff2e63"
+                                          strokeWidth={3}
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"/>
+                                    <g className="icon-rotate">
+                                        <line x1="12" y1="28" x2="20" y2="4"
+                                              stroke="#ff2e63"
+                                              strokeWidth={2.5}
+                                              strokeLinecap="round"/>
+                                    </g>
+                                </g>
+
+                                <text x="120" y="78"
+                                      fill="#ffffff"
+                                      fontSize="40"
+                                      fontWeight="700"
+                                      fontFamily="Inter, Helvetica, Arial, sans-serif"
+                                      letterSpacing="0.8">
+                                    {t.header.headline}
+                                </text>
+                                <text x="120" y="136"
+                                      fill="#b3b3b3"
+                                      fontSize="32"
+                                      fontWeight="500"
+                                      fontFamily="Inter, Helvetica, Arial, sans-serif">
+                                    {t.header.headline_second}
+                                </text>
+                                <text x="120" y="190"
+                                      fill="#b3b3b3"
+                                      fontSize="32"
+                                      fontWeight="500"
+                                      fontFamily="Inter, Helvetica, Arial, sans-serif">
+                                    &amp; {t.header.headline_third}
+                                </text>
+
+                            </svg>
+                        </div>
 
                         <div className="hero-content grid-1-1">
                             <div className="flex-column justify-content-center">
-                                {/*<p><img className="icon" src={name} alt="name"/> {t.header.personal.name}</p>*/}
-                                {/*<p><img className="icon" src={birthday} alt="birthday"/> {t.header.personal.birthday}</p>*/}
-                                {/*<p><img className="icon" src={home} alt="home"/> {t.header.personal.location}</p>*/}
-                                {/*<p><img className="icon" src={global} alt="languages"/> {t.header.personal.languages}</p>*/}
 
                                 <p>
                                     <strong>{t.header.intro.greeting}</strong><br/>
                                     {t.header.intro.text}
                                 </p>
-
-                                {/*<p>{t.header.hobbies.title}:</p>*/}
-                                {/*<ul>*/}
-                                {/*    <li>*/}
-                                {/*        <img className="icon" src={soccre} alt="soccer"/>*/}
-                                {/*        {t.header.hobbies.items.soccer}*/}
-                                {/*    </li>*/}
-                                {/*    <li>*/}
-                                {/*        <img className="icon" src={cooking} alt="cooking"/>*/}
-                                {/*        {t.header.hobbies.items.cooking}*/}
-                                {/*    </li>*/}
-                                {/*    <li>*/}
-                                {/*        <img className="icon" src={console} alt="gaming"/>*/}
-                                {/*        {t.header.hobbies.items.gaming}*/}
-                                {/*    </li>*/}
-                                {/*</ul>*/}
 
                                 {/* Mobile Navigation */}
                                 <button className="d-flex cursor-pointer btn-no-style align-items-center d-md-none"
@@ -101,4 +179,3 @@ export const Header = ({t}:headerProps) => {
         </div>
     );
 };
-

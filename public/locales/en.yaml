@@ -1,6 +1,7 @@
 header:
   headline: "Digital solutions"
-  headline_second: "with heart & code"
+  headline_second: "with heart"
+  headline_third: "code"
 
   personal:
     title: About me
@@ -115,6 +116,8 @@ projects:
       - "Admin"
       - "Freelancer/Provider search"
       - "Daily business"
+      - "SSR"
+      - "Pagespeed"
     text:
       - "Redux"
       - "REST Api"
@@ -122,7 +125,6 @@ projects:
       - "Typescript"
       - "Jest"
       - "PHP"
-      - "Pagespeed"
       - "React Admin"
       - "Figma"
     link: "https://www.freelancermap.de/"
@@ -199,7 +201,10 @@ projects:
     experience:
       - "Support"
     text:
-      - "Support"
+      - "Remote support (AnyDesk)"
+      - "Internal IT support (user help, computer issues)"
+      - "Active Directory / user management"
+      - "Ticketing / documentation"
     link: "https://www.gossenmetrawatt.de/"
 
 howIWork:

@@ -55,7 +55,7 @@ export const Contact = ({}) => {
                             data-tooltip={showToast ? "Copied!" : "https://www.linkedin.com/in/marc-spree-357950238/"}
                             className="btn-no-style"
                         >
-                            Copy LinkedIn link
+                            Copy LinkedIn
                         </button>
                     </p>
                     <p>
@@ -64,7 +64,7 @@ export const Contact = ({}) => {
                             onClick={() => copy("https://steamcommunity.com/profiles/76561199516498788/", 'Steam')}
                             data-tooltip={showToast ? "Copied!" : "https://steamcommunity.com/profiles/76561199516498788/"}
                             className="btn-no-style">
-                            Copy Steam link
+                            Copy Steam
                         </button>
                     </p>
                     <p>
@@ -74,18 +74,19 @@ export const Contact = ({}) => {
                             data-tooltip={showToast ? "Copied!" : "https://discord.gg/aA4crfpZ"}
                             className="btn-no-style"
                         >
-                            Copy Discord link
+                            Copy Discord
                         </button>
                     </p>
 
-                    <p>
+                    <p data-tooltip="https://github.com/SharkMarc/Onepage/tree/main">
                         <img className={'icon'} src={github} alt={'Github'}/>
                         <button
-                            onClick={() => copy('https://github.com/SharkMarc/Onepage/tree/main/public', 'Github')}
-                            data-tooltip={showToast ? "Copied!" : "https://github.com/SharkMarc/Onepage/tree/main/public"}
+                            onClick={() => copy('https://github.com/SharkMarc/Onepage/tree/main', 'Github')}
+                            data-tooltip={"https://github.com/SharkMarc/Onepage/tree/main"}
+                            data-tooltip-title={'foobar'}
                             className="btn-no-style"
                         >
-                            Copy Github link
+                            Copy Github
                         </button>
                     </p>
                 </div>
@@ -93,6 +94,7 @@ export const Contact = ({}) => {
                     {toasterText}
                 </div>
             </div>
+
         </div>
     )
 };

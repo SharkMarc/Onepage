@@ -121,6 +121,27 @@
     margin: 0 auto;
   }
 
+  /* New: center svg on mobile, keep left alignment on larger screens */
+  .hero-svg {
+    display: block;
+    width: 100%;
+    margin: 0 auto 1rem auto; // default center
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: $min-width-md) {
+      /* on medium and up keep SVG left-aligned to match desktop layout */
+      svg {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+
   .hero-content {
     position: relative;
     min-height: 200px; /* optional, falls Text kurz ist */
@@ -130,7 +151,13 @@
     }
 
     p, ul, button {
-      font-size: 24px
+      font-size: 16px;
+      text-align: center;
+
+      @media (min-width: $min-width-md) {
+        font-size: 24px;
+        text-align: start;
+      }
     }
 
     button {
@@ -175,7 +202,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      text-underline: none;
+      text-decoration: none;
       align-items: center;
       margin: 0;
       padding-inline-start: 0;
@@ -187,7 +214,7 @@
 
       li:hover {
         background: #ffffff14;
-        text-underline: #764ba2;
+        text-decoration-color: #764ba2;
         color: red;
 
         font-size: $standard-font;
@@ -294,7 +321,79 @@
   }
 }
 
+/* Icon animations for header SVG */
+@keyframes rectAppear {
+  0% {
+    transform: scale(0);
+  }
+  6% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+  }
+  /* erster Puls */
+  8% {
+    transform: scale(1.18);
+  }
+  16% {
+    transform: scale(1);
+  }
+  /* zweiter Puls */
+  32% {
+    transform: scale(1.18);
+  }
+  40% {
+    transform: scale(1);
+  }
+  /* dritter Puls */
+  56% {
+    transform: scale(1.18);
+  }
+  64% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(180deg);
+  }
+  24% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
+.icon-rect {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: rectAppear 5s ease-out infinite;
+}
 
+.icon-heart {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: heartPulse 5s ease-in-out infinite;
+}
+
+.icon-rotate {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: rotateAnim 5s ease-in-out infinite;
+}

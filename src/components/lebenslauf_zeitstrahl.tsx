@@ -83,4 +83,26 @@ export const timelineExperience: TimelineEntry[] = [
             "Pickupcard"
         ],
     },
+    {
+        title: 'Werkstudent',
+        subtitle: "Gossenmetrawatt",
+        location: "Nürnberg",
+        category: "job",
+        start: "01/2019",
+        end: "12/2020",
+        details: [
+            "IT-Support-Spezialist (AnyDesk)",
+        ],
+    },
+    {
+        title: 'Frontend Developer (Praktikum)',
+        subtitle: "KOM21",
+        location: "Nürnberg",
+        category: "job",
+        start: "01/2019",
+        end: "12/2020",
+        details: [
+            "Daily Business",
+        ],
+    },
 ];

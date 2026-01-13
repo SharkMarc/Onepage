@@ -17,13 +17,13 @@ import kom21 from '../assets/images/kom21.png';
 import gossenmetrawatt from '../assets/images/gossenmetrawatt.png';
 import {VerticalTimeline} from "../timeline-fnction";
 import {useTranslation} from "../../hooks/useTranslation";
-import marc from "../assets/images/marc_white.png";
 import birthday from "../assets/images/birthday.png";
 import home from "../assets/images/home.png";
 import global from "../assets/images/global.png";
 import soccre from "../assets/images/soccre.png";
 import cooking from "../assets/images/cooking-white.png";
 import console from "../assets/images/console.png";
+import arrowDown from "../assets/images/arrow-down.png";
 
 // images bleiben wie bisher
 export const projectImagePaths = (t: any) => [
@@ -162,7 +162,7 @@ const App = () => {
 
     if (!t) return null;
 
-// Katze in der Konsole für F12-Öffner
+    // Katze in der Konsole für F12-Öffner
 //     (function () {
 //         const catArt = `
 //       |\\---/|
@@ -222,7 +222,6 @@ const App = () => {
                 </label>
             </div>
             <main>
-                {/*<div className={'app flex-wrap'}>*/}
                 <div className={''}>
                     <div className={'parallax-bg'}>
 
@@ -267,22 +266,29 @@ const App = () => {
 
                             <div className="about-hobbies" style={{marginTop: '1rem'}}>
                                 <p style={{marginBottom: '0.25rem'}}>{t.header.hobbies.title}:</p>
-                                <ul style={{listStyle: 'none', padding: 0, margin: 0, display: 'flex', gap: '1rem', justifyContent: 'center'}}>
-                                    <li style={{display:'flex', alignItems:'center', gap:8}}>
-                                        <img className="icon" src={soccre} alt="soccer" style={{width:20}}/>
+                                <ul style={{
+                                    listStyle: 'none',
+                                    padding: 0,
+                                    margin: 0,
+                                    display: 'flex',
+                                    gap: '1rem',
+                                    justifyContent: 'center'
+                                }}>
+                                    <li style={{display: 'flex', alignItems: 'center', gap: 8}}>
+                                        <img className="icon" src={soccre} alt="soccer" style={{width: 20}}/>
                                         <span>{t.header.hobbies.items.soccer}</span>
                                     </li>
-                                    <li style={{display:'flex', alignItems:'center', gap:8}}>
-                                        <img className="icon" src={cooking} alt="cooking" style={{width:20}}/>
+                                    <li style={{display: 'flex', alignItems: 'center', gap: 8}}>
+                                        <img className="icon" src={cooking} alt="cooking" style={{width: 20}}/>
                                         <span>{t.header.hobbies.items.cooking}</span>
                                     </li>
-                                    <li style={{display:'flex', alignItems:'center', gap:8}}>
-                                        <img className="icon" src={console} alt="gaming" style={{width:20}}/>
+                                    <li style={{display: 'flex', alignItems: 'center', gap: 8}}>
+                                        <img className="icon" src={console} alt="gaming" style={{width: 20}}/>
                                         <span>{t.header.hobbies.items.gaming}</span>
                                     </li>
                                 </ul>
                             </div>
-                    </section>
+                        </section>
                     </div>
 
                     <section id={"skills"}>
@@ -291,13 +297,23 @@ const App = () => {
 
                             <div className="flex-column gap-8 w-100">
                                 {sections.map(({name, badges, key}) => (
-                                    <div key={key} className="flex-column w-100">
-                                        <h3
-                                            onClick={() => toggleSection(key)}
-                                            className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
-                                        >
-                                            {name} ({badges.length})
-                                        </h3>
+                                    <div key={key} className="flex-column w-100 border-skills">
+                                        <div className={'d-flex justify-content-between'}>
+                                            <h3
+                                                onClick={() => toggleSection(key)}
+                                                className={`collapsible-header ${openSections[key] ? 'open' : ''}`}
+                                            >
+                                                {name} ({badges.length})
+
+                                            </h3>
+                                            <div onClick={() => toggleSection(key)}>
+                                                <img
+                                                    alt='collapse carrot'
+                                                    className={`img-responsive cursor-pointer caret ${openSections[key] ? "rotated" : ""}`}
+                                                    src={arrowDown}
+                                                />
+                                            </div>
+                                        </div>
                                         <div className={`collapsible-content ${openSections[key] ? 'open' : ''}`}>
                                             {badges.map((badge, i) => (
                                                 <Badge key={`${key}-badge-${i}`} content={badge.label}
