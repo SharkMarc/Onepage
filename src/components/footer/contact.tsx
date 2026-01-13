@@ -27,12 +27,6 @@ export const Contact = ({}) => {
                 <h2 className="display-desktop">Kontakt</h2>
 
                 <div className="contact d-grid gap-8">
-                    {/*<div className="rounded-image-border">*/}
-                    {/*    <div className="rounded-image" style={{borderRadius: "1rem"}}>*/}
-                    {/*        <img className={'img-marc img-responsive'} src={marc}*/}
-                    {/*             alt={'Marc'}/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                     <p>
                         <img className={'icon'} src={phone} alt={'phone'}/>
                         <a data-testid="phone-contact" data-id="phone-contact" href="phone:+49 15155540232"

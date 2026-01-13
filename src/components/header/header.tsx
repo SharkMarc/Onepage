@@ -56,7 +56,6 @@ export const Header = ({t}: headerProps) => {
             <header className="header">
                 <div className="hero">
                     <div className="hero-inner">
-                        {/*<h1>{t.header.headline}<br/>{t.header.headline_second}</h1>*/}
                         <div className="hero-svg" ref={heroSvgRef}>
                             <svg width="100%" height="auto" viewBox="0 0 550 260" preserveAspectRatio="xMidYMid meet" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">

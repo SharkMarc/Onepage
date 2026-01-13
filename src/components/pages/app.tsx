@@ -6,7 +6,6 @@ import {Badge} from "../badge";
 import {Carousel} from "../carousell";
 import {Contact} from "../footer/contact";
 import {HowIWork} from "./howIWork";
-import {AboutMe} from "./about-me";
 import freelancermapImg from '../assets/images/freelancermap.png';
 import designenlassenImg from '../assets/images/designenlassen.png';
 import speisekarteImg from '../assets/images/speisekarte.png';
@@ -342,8 +341,6 @@ const App = () => {
                             </div>
                         </div>
                     </section>
-
-                    <AboutMe/>
 
                     <section>
                         <Contact/>

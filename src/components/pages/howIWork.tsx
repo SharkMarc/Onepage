@@ -19,20 +19,7 @@ export const HowIWork = ({ t }: HowIWorkProps) => {
             [section]: !prev[section], // toggle this section
         }));
     };
-    // überschrift zu groß (digitale lösungen 2 zeilig)
-    // deutsch muttersprache englisch verhandlungssicher
-    // diesen blog irgendwie nochmal kucken
-    // hobbys oben
-    // blocktext maybe oder fließtext ?
 
-    // nach den sternen aufteilen
-    // die 3sterne
-    // 3 sterne 2 sterne aufteilen
-    // werkzeuge zweizeilig
-    // qualifikationen
-    // mobile scroll only qualifaktion udn lebenslauf
-    // copy xyz
-    // mehrsrachigkeit
     if (!t?.howIWork?.items) return null;
     const workItems: Array<{ key: string } & workItem> = Object.entries(t.howIWork.items).map(
         ([key, value]) => {
