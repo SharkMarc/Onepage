@@ -28,7 +28,7 @@ export const timeline: TimelineEntry[] = [
         end: "2018",
         category: "education",
         details: [
-            "Bachelor"
+            "Ohne Abschluss"
         ]
     },
     {
@@ -46,7 +46,7 @@ export const timeline: TimelineEntry[] = [
         title: "Fachhochschulreife",
         subtitle: "Fachhochschule Nürnberg – BWL, VWL, Wirtschaftswissenschaften",
         location: "Nürnberg",
-        start: "2012",
+        start: "2010",
         end: "2012",
         category: "education"
     },
