@@ -278,7 +278,7 @@ cards:
 timeline:
   titles:
     education: Lebenslauf
-    experience: Qualifikationen
+    experience: Berufserfahrung
   education:
     - title: Bachelor
       subtitle: Hochschule Schmalkalden – Multimediamarketing
@@ -328,4 +328,27 @@ timeline:
       details:
         - Gastromanager
         - Pickupcard
+
+    - title: Praktikum Frontend Developer
+      subtitle: KOM21
+      location: Nürnberg
+      start: "08/2016"
+      end: "11/2016"
+      category: job
+      details:
+        - Entwicklung einer mobilen Geoinformationsanwendung
+        - Aktualisierung von Fachschalen
+
+    - title: Supportmitarbeiter IT
+      subtitle: Gossenmetrawatt
+      location: Nürnberg
+      start: "02/2014"
+      end: "09/2014"
+      category: job
+      details:
+        - Imageerstellung und IT-Support
+        - Datensicherung
+        - Datenschutz
+        - Innendienstsupport
+        - Support (AnyDesk)
 

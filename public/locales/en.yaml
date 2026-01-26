@@ -291,3 +291,25 @@ timeline:
       details:
         - Gastromanager
         - Pickupcard
+
+    - title: Internship Frontend Developer
+      subtitle: KOM21
+      location: Nuremberg
+      start: "08/2016"
+      end: "11/2016"
+      category: job
+      details:
+        - Mobile Geoinformation System
+        - Updating specialist modules
+
+    - title: Support IT
+      subtitle: Gossenmetrawatt
+      location: Nürnberg
+      start: "02/2014"
+      end: "09/2014"
+      category: job
+      details:
+        - Remote Support (AnyDesk)
+        - Internal IT Support (user help, computer issues)
+        - Data protection
+        - Internal support
