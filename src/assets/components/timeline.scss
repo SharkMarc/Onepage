@@ -21,14 +21,14 @@
   &.blue {
     .timeline-line {
       background: #c9baff;
-      height: 650px;
+      height: 1350px;
 
       @media(min-width: $min-width-sm) {
         margin-left: 10px;
       }
 
       @media(min-width: $min-width-md) {
-        height: 750px;
+        height: 1480px;
       }
     }
 
